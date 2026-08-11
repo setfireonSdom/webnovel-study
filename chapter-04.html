@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>局面：让一个 Scene 获得内容 – webnovel-study</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter-05.html" rel="next">
+<link href="./chapter-03.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter-04.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">局面：让一个 Scene 获得内容</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">webnovel-study</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">简介</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">写小说，究竟是在做什么</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">小说到底写在哪里</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">空白页：第一笔从哪里来</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-04.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">局面：让一个 Scene 获得内容</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">人物为什么会行动</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">行动：人物究竟做什么</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">阻力：为什么事情不能直接成功</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">第8章　变化：Scene 为什么值得存在</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">结果：一次行动怎样产生后果</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">新局面：一个 Scene 怎样产生下一个 Scene</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">因果链：为什么下一幕会自然发生</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">升级：怎样让故事越往后越难停下来</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">期待：读者为什么愿意继续看</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">不确定：怎样让未来不能被完全看穿</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">价值：为什么结果会让人真正在乎</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-16.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">变化：为什么读者会被“发生了变化”吸引</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-17.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">第17章　人物是行动者</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-18.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">人物的内在模型</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-19.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">人物关系：两个人之间究竟存在什么</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-20.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">故事需要多少世界</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-21.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">从 Scene 反推世界</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-22.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">让世界制造故事</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-23.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">故事线：一串 Scene 怎样形成一条线</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-24.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">目标线：怎样把一个大目标写成几十个 Scene</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-25.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">问题线：一个问题怎样撑起整部长篇</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-26.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">阶段：长篇为什么必须不断进入新的状态</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-27.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">高潮与解决：故事怎样真正收束</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-28.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">从想法到第一章</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-29.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">不知道下一章写什么怎么办</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-30.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">卡文到底卡在哪里</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-31.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Scene 训练：怎样把故事基本功练到自动化</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-32.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">续写训练：怎样让故事从上一幕自然长出下一幕</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-33.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">拆小说：怎样把别人的作品变成自己的能力</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-34.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">模仿：怎样借别人的结构练出自己的东西</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-35.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">反馈与改写：怎样把一次写作真正变成能力</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">目录</h2>
+   
+  <ul>
+  <li><a href="#局面让一个-scene-获得内容" id="toc-局面让一个-scene-获得内容" class="nav-link active" data-scroll-target="#局面让一个-scene-获得内容">局面：让一个 Scene 获得内容</a>
+  <ul class="collapse">
+  <li><a href="#一局面不是事实的堆积" id="toc-一局面不是事实的堆积" class="nav-link" data-scroll-target="#一局面不是事实的堆积">一、局面不是事实的堆积</a></li>
+  <li><a href="#二局面的核心人物不能什么都不做" id="toc-二局面的核心人物不能什么都不做" class="nav-link" data-scroll-target="#二局面的核心人物不能什么都不做">二、局面的核心：人物不能什么都不做</a></li>
+  <li><a href="#三局面为什么会产生行动" id="toc-三局面为什么会产生行动" class="nav-link" data-scroll-target="#三局面为什么会产生行动">三、局面为什么会产生行动</a></li>
+  <li><a href="#四局面至少包含现实条件" id="toc-四局面至少包含现实条件" class="nav-link" data-scroll-target="#四局面至少包含现实条件">四、局面至少包含“现实条件”</a></li>
+  <li><a href="#五限制会让故事变得具体" id="toc-五限制会让故事变得具体" class="nav-link" data-scroll-target="#五限制会让故事变得具体">五、限制会让故事变得具体</a></li>
+  <li><a href="#六时间为什么特别强" id="toc-六时间为什么特别强" class="nav-link" data-scroll-target="#六时间为什么特别强">六、时间为什么特别强</a></li>
+  <li><a href="#七但不是所有局面都靠坏事" id="toc-七但不是所有局面都靠坏事" class="nav-link" data-scroll-target="#七但不是所有局面都靠坏事">七、但不是所有局面都靠“坏事”</a></li>
+  <li><a href="#八局面可以来自出现" id="toc-八局面可以来自出现" class="nav-link" data-scroll-target="#八局面可以来自出现">八、局面可以来自“出现”</a></li>
+  <li><a href="#九局面也可以来自消失" id="toc-九局面也可以来自消失" class="nav-link" data-scroll-target="#九局面也可以来自消失">九、局面也可以来自“消失”</a></li>
+  <li><a href="#十局面可以来自要求" id="toc-十局面可以来自要求" class="nav-link" data-scroll-target="#十局面可以来自要求">十、局面可以来自“要求”</a></li>
+  <li><a href="#十一局面可以来自发现" id="toc-十一局面可以来自发现" class="nav-link" data-scroll-target="#十一局面可以来自发现">十一、局面可以来自“发现”</a></li>
+  <li><a href="#十二局面可以来自选择" id="toc-十二局面可以来自选择" class="nav-link" data-scroll-target="#十二局面可以来自选择">十二、局面可以来自“选择”</a></li>
+  <li><a href="#十三局面里的价值" id="toc-十三局面里的价值" class="nav-link" data-scroll-target="#十三局面里的价值">十三、局面里的“价值”</a></li>
+  <li><a href="#十四局面里的不确定" id="toc-十四局面里的不确定" class="nav-link" data-scroll-target="#十四局面里的不确定">十四、局面里的“不确定”</a></li>
+  <li><a href="#十五一个局面为什么有戏" id="toc-十五一个局面为什么有戏" class="nav-link" data-scroll-target="#十五一个局面为什么有戏">十五、一个局面为什么“有戏”</a></li>
+  <li><a href="#十六强局面往往会压缩选择" id="toc-十六强局面往往会压缩选择" class="nav-link" data-scroll-target="#十六强局面往往会压缩选择">十六、强局面往往会压缩选择</a></li>
+  <li><a href="#十七局面也会自然制造关系" id="toc-十七局面也会自然制造关系" class="nav-link" data-scroll-target="#十七局面也会自然制造关系">十七、局面也会自然制造关系</a></li>
+  <li><a href="#十八局面不是越惨越好" id="toc-十八局面不是越惨越好" class="nav-link" data-scroll-target="#十八局面不是越惨越好">十八、局面不是越惨越好</a></li>
+  <li><a href="#十九局面与冲突是什么关系" id="toc-十九局面与冲突是什么关系" class="nav-link" data-scroll-target="#十九局面与冲突是什么关系">十九、局面与“冲突”是什么关系</a></li>
+  <li><a href="#二十局面与困境也不是一回事" id="toc-二十局面与困境也不是一回事" class="nav-link" data-scroll-target="#二十局面与困境也不是一回事">二十、局面与“困境”也不是一回事</a></li>
+  <li><a href="#二十一作者如何主动制造局面" id="toc-二十一作者如何主动制造局面" class="nav-link" data-scroll-target="#二十一作者如何主动制造局面">二十一、作者如何主动制造局面</a>
+  <ul class="collapse">
+  <li><a href="#给它一个期限" id="toc-给它一个期限" class="nav-link" data-scroll-target="#给它一个期限">给它一个期限</a></li>
+  <li><a href="#给它一个后果" id="toc-给它一个后果" class="nav-link" data-scroll-target="#给它一个后果">给它一个后果</a></li>
+  <li><a href="#拿走一个资源" id="toc-拿走一个资源" class="nav-link" data-scroll-target="#拿走一个资源">拿走一个资源</a></li>
+  <li><a href="#加入一个人" id="toc-加入一个人" class="nav-link" data-scroll-target="#加入一个人">加入一个人</a></li>
+  <li><a href="#拿走一个人" id="toc-拿走一个人" class="nav-link" data-scroll-target="#拿走一个人">拿走一个人</a></li>
+  <li><a href="#加一个要求" id="toc-加一个要求" class="nav-link" data-scroll-target="#加一个要求">加一个要求</a></li>
+  <li><a href="#加一个发现" id="toc-加一个发现" class="nav-link" data-scroll-target="#加一个发现">加一个发现</a></li>
+  <li><a href="#让两个价值发生竞争" id="toc-让两个价值发生竞争" class="nav-link" data-scroll-target="#让两个价值发生竞争">让两个价值发生竞争</a></li>
+  <li><a href="#让机会出现" id="toc-让机会出现" class="nav-link" data-scroll-target="#让机会出现">让机会出现</a></li>
+  </ul></li>
+  <li><a href="#二十二一个简单的局面检查" id="toc-二十二一个简单的局面检查" class="nav-link" data-scroll-target="#二十二一个简单的局面检查">二十二、一个简单的局面检查</a></li>
+  <li><a href="#二十三局面是故事生成的第一台机器" id="toc-二十三局面是故事生成的第一台机器" class="nav-link" data-scroll-target="#二十三局面是故事生成的第一台机器">二十三、局面是故事生成的第一台机器</a></li>
+  </ul></li>
+  <li><a href="#本章暂时结论" id="toc-本章暂时结论" class="nav-link" data-scroll-target="#本章暂时结论">本章暂时结论</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">局面：让一个 Scene 获得内容</span></h1>
+<p class="subtitle lead">《如何写好小说》</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="局面让一个-scene-获得内容" class="level1">
+<h1>局面：让一个 Scene 获得内容</h1>
+<p>上一章解决了一个问题：</p>
+<blockquote class="blockquote">
+<p>面对空白页，第一步不是想一句漂亮的话，而是先得到一个可以继续往下写的局面。</p>
+</blockquote>
+<p>我们也提出了一个很简单的动作：</p>
+<blockquote class="blockquote">
+<p><strong>把人物放进一个必须回应的现在。</strong></p>
+</blockquote>
+<p>但这句话还不够。</p>
+<p>因为“局面”到底是什么？</p>
+<p>为什么有些事实一写出来，故事立刻有了方向？</p>
+<p>为什么有些事实虽然很严重，却还是写不动？</p>
+<p>为什么：</p>
+<blockquote class="blockquote">
+<p>他欠了一百万。</p>
+</blockquote>
+<p>和：</p>
+<blockquote class="blockquote">
+<p>他欠了一百万，三天后债主来收钱。</p>
+</blockquote>
+<p>给人的感觉完全不同？</p>
+<p>这一章就专门研究这个问题。</p>
+<hr>
+<section id="一局面不是事实的堆积" class="level2">
+<h2 class="anchored" data-anchor-id="一局面不是事实的堆积">一、局面不是事实的堆积</h2>
+<p>先看一个人物。</p>
+<blockquote class="blockquote">
+<p>王磊，三十岁，失业，欠债，和父母关系不好，女朋友刚和他分手。</p>
+</blockquote>
+<p>信息很多。</p>
+<p>问题也很多。</p>
+<p>但如果现在问：</p>
+<blockquote class="blockquote">
+<p>第一幕写什么？</p>
+</blockquote>
+<p>仍然未必清楚。</p>
+<p>因为这些东西只是“关于王磊的事实”。</p>
+<p>它们告诉我们王磊处于什么状态，却没有告诉我们：</p>
+<blockquote class="blockquote">
+<p><strong>现在什么东西正在要求他做出回应。</strong></p>
+</blockquote>
+<p>所以我们首先要区分：</p>
+<blockquote class="blockquote">
+<p><strong>事实</strong></p>
+<p>与</p>
+<p><strong>局面</strong></p>
+</blockquote>
+<p>事实是：</p>
+<blockquote class="blockquote">
+<p>世界现在是什么样。</p>
+</blockquote>
+<p>局面则是：</p>
+<blockquote class="blockquote">
+<p><strong>这些事实在当前时刻形成了什么需要处理的现实。</strong></p>
+</blockquote>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>王磊欠十万元。</p>
+</blockquote>
+<p>这是事实。</p>
+<p>再加：</p>
+<blockquote class="blockquote">
+<p>今天下午五点以前必须还两万，否则债主就去他父母家。</p>
+</blockquote>
+<p>现在形成局面。</p>
+<p>因为过去的债务进入了现在。</p>
+<p>人物不能再无限拖延。</p>
+<p>他必须决定怎么办。</p>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>局面不是信息更多，而是现实开始对人物提出要求。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="二局面的核心人物不能什么都不做" class="level2">
+<h2 class="anchored" data-anchor-id="二局面的核心人物不能什么都不做">二、局面的核心：人物不能什么都不做</h2>
+<p>一个非常实用的判断是：</p>
+<blockquote class="blockquote">
+<p>如果人物什么都不做，会发生什么？</p>
+</blockquote>
+<p>如果答案是：</p>
+<blockquote class="blockquote">
+<p>基本没什么。</p>
+</blockquote>
+<p>那么这个局面往往还很弱。</p>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>小李想学钢琴。</p>
+</blockquote>
+<p>如果今天不学，也没什么。</p>
+<p>明天还可以学。</p>
+<p>下个月也可以。</p>
+<p>所以它虽然是一个欲望，却没有自动产生强烈行动。</p>
+<p>现在改成：</p>
+<blockquote class="blockquote">
+<p>小李三天后要替临时受伤的钢琴手上台，而他只会弹一首完整曲子。</p>
+</blockquote>
+<p>立刻不同。</p>
+<p>如果他什么都不做：</p>
+<blockquote class="blockquote">
+<p>三天后就会出问题。</p>
+</blockquote>
+<p>于是时间、能力和任务一起构成了局面。</p>
+<p>再看：</p>
+<blockquote class="blockquote">
+<p>她喜欢一个男人。</p>
+</blockquote>
+<p>可以长期喜欢。</p>
+<p>未必需要现在做任何事。</p>
+<p>改成：</p>
+<blockquote class="blockquote">
+<p>她喜欢的男人明天就要离开这座城市，而且可能再也不回来。</p>
+</blockquote>
+<p>现在：</p>
+<blockquote class="blockquote">
+<p>不行动本身，也是一种选择。</p>
+</blockquote>
+<p>这就是局面开始真正工作的标志。</p>
+<p>所以可以给“局面”一个非常朴素的定义：</p>
+<blockquote class="blockquote">
+<p><strong>局面，是人物当前所处的一组条件，它使“继续原样待着”也会产生后果。</strong></p>
+</blockquote>
+<p>当不行动也有代价，人物就被推入故事。</p>
+<hr>
+</section>
+<section id="三局面为什么会产生行动" class="level2">
+<h2 class="anchored" data-anchor-id="三局面为什么会产生行动">三、局面为什么会产生行动</h2>
+<p>局面并不会直接告诉人物“你必须做 A”。</p>
+<p>它只是改变行动的必要性。</p>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>三天后债主来收钱。</p>
+</blockquote>
+<p>人物可以：</p>
+<ul>
+<li>借钱；</li>
+<li>卖东西；</li>
+<li>逃跑；</li>
+<li>谈判；</li>
+<li>拖延；</li>
+<li>骗债主；</li>
+<li>找人保护自己；</li>
+<li>先处理父母；</li>
+<li>假装破产；</li>
+<li>什么都不做。</li>
+</ul>
+<p>也就是说：</p>
+<blockquote class="blockquote">
+<p><strong>局面不是剧情指令。</strong></p>
+</blockquote>
+<p>它提供的是：</p>
+<blockquote class="blockquote">
+<p><strong>必须处理的现实。</strong></p>
+</blockquote>
+<p>人物的具体行动，则由人物本身决定。</p>
+<p>这点非常重要。</p>
+<p>因为如果作者直接决定：</p>
+<blockquote class="blockquote">
+<p>“接下来我要让他去抢银行。”</p>
+</blockquote>
+<p>然后再想办法逼人物去做，人物就容易变成木偶。</p>
+<p>更自然的生成顺序是：</p>
+<blockquote class="blockquote">
+<p>当前局面是什么？</p>
+<p>这个人怎么看？</p>
+<p>他最想避免什么？</p>
+<p>他最想得到什么？</p>
+<p>在他的能力和认知里，他会怎么应对？</p>
+</blockquote>
+<p>于是行动从人物和局面的结合中产生。</p>
+<p>因此：</p>
+<blockquote class="blockquote">
+<p><strong>局面负责提出问题。</strong></p>
+<p><strong>人物负责给出回答。</strong></p>
+</blockquote>
+<p>故事，就发生在这个回答与现实的碰撞中。</p>
+<hr>
+</section>
+<section id="四局面至少包含现实条件" class="level2">
+<h2 class="anchored" data-anchor-id="四局面至少包含现实条件">四、局面至少包含“现实条件”</h2>
+<p>如果要把局面写得更清楚，可以先看它里面有什么。</p>
+<p>我们不急着做复杂分类。</p>
+<p>先看最基本的一件事：</p>
+<blockquote class="blockquote">
+<p><strong>人物现在受到哪些现实条件约束？</strong></p>
+</blockquote>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>三天后债主来收钱。</p>
+</blockquote>
+<p>这里至少有：</p>
+<ul>
+<li>债务存在；</li>
+<li>债主会采取行动；</li>
+<li>时间有限；</li>
+<li>人物目前没有足够的钱。</li>
+</ul>
+<p>如果人物已经有一百万现金，那这就不再是强局面。</p>
+<p>所以一个局面之所以成立，往往不是靠单个事实。</p>
+<p>而是多个条件同时存在。</p>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>女儿发烧了。</p>
+</blockquote>
+<p>这是一件事。</p>
+<p>但如果只是轻微发烧，而且母亲有时间、有钱、有车、医院就在楼下，那么处理起来很简单。</p>
+<p>现在增加条件：</p>
+<blockquote class="blockquote">
+<p>女儿高烧不退。</p>
+<p>外面暴雨。</p>
+<p>家里只有母女两人。</p>
+<p>手机快没电。</p>
+<p>最近的医院在二十公里外。</p>
+</blockquote>
+<p>局面迅速变强。</p>
+<p>为什么？</p>
+<p>因为人物可用的选择变少了。</p>
+<p>处理难度增加了。</p>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>局面本质上是一组现实条件共同形成的行动环境。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="五限制会让故事变得具体" class="level2">
+<h2 class="anchored" data-anchor-id="五限制会让故事变得具体">五、限制会让故事变得具体</h2>
+<p>小说里一个非常有用的东西叫：</p>
+<blockquote class="blockquote">
+<p><strong>限制。</strong></p>
+</blockquote>
+<p>如果人物什么都能做，故事反而很难写。</p>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>他需要十万元。</p>
+</blockquote>
+<p>如果他随时可以从银行账户里拿出来，就没故事。</p>
+<p>如果他有无数朋友愿意借，也很简单。</p>
+<p>真正让局面开始有内容的，往往是：</p>
+<blockquote class="blockquote">
+<p><strong>一些容易的路被堵住。</strong></p>
+</blockquote>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>他需要十万元。</p>
+<p>银行账户被冻结。</p>
+<p>父母不能知道。</p>
+<p>他只有两天时间。</p>
+</blockquote>
+<p>现在人物的行动空间被压缩。</p>
+<p>于是每个选择都开始有意义。</p>
+<p>同样：</p>
+<blockquote class="blockquote">
+<p>她想见儿子。</p>
+</blockquote>
+<p>如果直接买票过去，就结束了。</p>
+<p>加上：</p>
+<blockquote class="blockquote">
+<p>儿子不愿见她。</p>
+</blockquote>
+<p>限制出现。</p>
+<p>再加：</p>
+<blockquote class="blockquote">
+<p>她只有一天时间，明早就要出国。</p>
+</blockquote>
+<p>时间限制出现。</p>
+<p>再加：</p>
+<blockquote class="blockquote">
+<p>她不知道儿子现在住在哪里。</p>
+</blockquote>
+<p>信息限制出现。</p>
+<p>故事越来越具体。</p>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>限制不是阻止故事发生。</strong></p>
+<p><strong>限制恰恰帮助故事发生。</strong></p>
+</blockquote>
+<p>因为限制迫使人物寻找路径。</p>
+<p>而“寻找路径”本身就是行动。</p>
+<hr>
+</section>
+<section id="六时间为什么特别强" class="level2">
+<h2 class="anchored" data-anchor-id="六时间为什么特别强">六、时间为什么特别强</h2>
+<p>在各种限制中，时间尤其强。</p>
+<p>因为时间会把一个问题从：</p>
+<blockquote class="blockquote">
+<p>“迟早要处理。”</p>
+</blockquote>
+<p>变成：</p>
+<blockquote class="blockquote">
+<p><strong>“现在必须处理。”</strong></p>
+</blockquote>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>他欠了一百万。</p>
+</blockquote>
+<p>这是长期状态。</p>
+<p>加入：</p>
+<blockquote class="blockquote">
+<p>三天后债主来收钱。</p>
+</blockquote>
+<p>问题被压进现在。</p>
+<p>再看：</p>
+<blockquote class="blockquote">
+<p>她想告诉丈夫一个秘密。</p>
+</blockquote>
+<p>可以拖。</p>
+<p>加入：</p>
+<blockquote class="blockquote">
+<p>丈夫今晚十一点的飞机，之后要离开半年。</p>
+</blockquote>
+<p>时间一出现，拖延本身就开始产生成本。</p>
+<p>所以时间常常能直接提升局面的张力。</p>
+<p>它做了两件事：</p>
+<p>第一，把选择窗口缩短。</p>
+<p>第二，让“不决定”也变成一种决定。</p>
+<p>因此，当一个设定很静时，可以尝试问：</p>
+<blockquote class="blockquote">
+<p><strong>这件事什么时候必须处理？</strong></p>
+</blockquote>
+<p>很多时候，一加时间，故事就开始动。</p>
+<hr>
+</section>
+<section id="七但不是所有局面都靠坏事" class="level2">
+<h2 class="anchored" data-anchor-id="七但不是所有局面都靠坏事">七、但不是所有局面都靠“坏事”</h2>
+<p>局面不是困境的同义词。</p>
+<p>它也可以来自机会。</p>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>一个普通职员突然得到一个机会，可以跟公司老板单独吃晚饭。</p>
+</blockquote>
+<p>这不一定是坏事。</p>
+<p>但他仍然需要回应。</p>
+<p>他去不去？</p>
+<p>说什么？</p>
+<p>想争取什么？</p>
+<p>会不会得罪直属领导？</p>
+<p>这个机会本身就改变了他的行动环境。</p>
+<p>再比如：</p>
+<blockquote class="blockquote">
+<p>一个小演员突然收到通知，今晚可以替补出演女主角。</p>
+</blockquote>
+<p>这是机会。</p>
+<p>但机会也会产生压力：</p>
+<blockquote class="blockquote">
+<p>她只有六个小时准备。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>只要现实改变了人物的选择空间，就可能形成局面。</strong></p>
+</blockquote>
+<p>危险可以。</p>
+<p>机会也可以。</p>
+<p>发现可以。</p>
+<p>关系变化也可以。</p>
+<hr>
+</section>
+<section id="八局面可以来自出现" class="level2">
+<h2 class="anchored" data-anchor-id="八局面可以来自出现">八、局面可以来自“出现”</h2>
+<p>一个非常常见的生成方式是：</p>
+<blockquote class="blockquote">
+<p><strong>某个东西出现了。</strong></p>
+</blockquote>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>一个陌生人来到村子。</p>
+</blockquote>
+<p>如果这个陌生人不重要，故事可能没有变化。</p>
+<p>但如果：</p>
+<blockquote class="blockquote">
+<p>他拿着主人公失踪哥哥的照片。</p>
+</blockquote>
+<p>局面出现。</p>
+<p>再比如：</p>
+<blockquote class="blockquote">
+<p>一封信到了。</p>
+</blockquote>
+<p>普通。</p>
+<p>但如果：</p>
+<blockquote class="blockquote">
+<p>信是十年前已经去世的人寄来的。</p>
+</blockquote>
+<p>局面出现。</p>
+<p>再比如：</p>
+<blockquote class="blockquote">
+<p>一个新老师来了。</p>
+</blockquote>
+<p>普通。</p>
+<p>但如果：</p>
+<blockquote class="blockquote">
+<p>主人公发现这个老师认识自己的母亲，而且明显不愿承认。</p>
+</blockquote>
+<p>局面出现。</p>
+<p>所以“出现”之所以好用，是因为它把一个新的变量加入当前现实。</p>
+<p>人物原有的稳定状态被打破。</p>
+<hr>
+</section>
+<section id="九局面也可以来自消失" class="level2">
+<h2 class="anchored" data-anchor-id="九局面也可以来自消失">九、局面也可以来自“消失”</h2>
+<p>反过来，某样东西消失，也会形成局面。</p>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>钱不见了。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>人不见了。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>证据不见了。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>机会消失了。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>关系破裂了。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>原来一直有效的规则突然失效。</p>
+</blockquote>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>一个厨师每天凌晨四点去市场进货。</p>
+<p>今天，他一直合作的肉贩没有出现。</p>
+</blockquote>
+<p>这个“没出现”本身就是变化。</p>
+<p>如果只是换一家买，没什么。</p>
+<p>但如果：</p>
+<blockquote class="blockquote">
+<p>只有这个肉贩能提供他餐馆最重要的一道招牌菜需要的食材，而今天中午有一桌重要客人。</p>
+</blockquote>
+<p>局面立起来了。</p>
+<p>所以制造 Scene 时，不一定总要“加东西”。</p>
+<p>有时：</p>
+<blockquote class="blockquote">
+<p><strong>拿走人物原本依赖的东西，故事一样会开始。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="十局面可以来自要求" class="level2">
+<h2 class="anchored" data-anchor-id="十局面可以来自要求">十、局面可以来自“要求”</h2>
+<p>很多 Scene 的起点，本质上是有人对人物提出要求。</p>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>老板要求他今天辞退一个同事。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>母亲要求女儿回家相亲。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>警察要求他说明昨晚在哪里。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>债主要求今天还钱。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>皇帝要求将军三日内攻城。</p>
+</blockquote>
+<p>要求天然容易形成局面，因为它把另一个人的意志直接压到人物身上。</p>
+<p>人物必须：</p>
+<blockquote class="blockquote">
+<p>接受、拒绝、谈判、拖延、欺骗、反抗。</p>
+</blockquote>
+<p>所以一个非常简单的 Scene 生成问题是：</p>
+<blockquote class="blockquote">
+<p><strong>现在谁要求人物做什么？</strong></p>
+</blockquote>
+<p>只要这个要求足够重要，Scene 往往自然出现。</p>
+<hr>
+</section>
+<section id="十一局面可以来自发现" class="level2">
+<h2 class="anchored" data-anchor-id="十一局面可以来自发现">十一、局面可以来自“发现”</h2>
+<p>还有一种非常强的起点：</p>
+<blockquote class="blockquote">
+<p>人物知道了以前不知道的东西。</p>
+</blockquote>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>他发现妻子有第二部手机。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>她发现父亲根本没有病。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>警察发现监控里的嫌疑人是自己同事。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>主角发现修炼功法的最后一页被人撕掉了。</p>
+</blockquote>
+<p>信息改变了人物对现实的理解。</p>
+<p>而人的行动建立在判断上。</p>
+<p>判断一变，行动就可能跟着变。</p>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>发现不是“多知道了一条信息”。</strong></p>
+<p><strong>发现真正重要的地方，是它改变了人物接下来应该怎么做。</strong></p>
+</blockquote>
+<p>如果一个秘密揭开以后，所有人照旧，那它的故事价值就比较低。</p>
+<p>好的发现往往会重新定义当前局面。</p>
+<hr>
+</section>
+<section id="十二局面可以来自选择" class="level2">
+<h2 class="anchored" data-anchor-id="十二局面可以来自选择">十二、局面可以来自“选择”</h2>
+<p>有时候，外部世界甚至什么都没发生。</p>
+<p>变化来自人物自己。</p>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>一个妻子忍受丈夫出轨五年。</p>
+</blockquote>
+<p>昨天和今天外部条件没区别。</p>
+<p>但今天早上，她决定离婚。</p>
+<p>现在局面改变了。</p>
+<p>因为她的行动方向变了。</p>
+<p>再比如：</p>
+<blockquote class="blockquote">
+<p>一个士兵已经害怕了很久。</p>
+</blockquote>
+<p>今天晚上，他决定逃营。</p>
+<p>从这一刻开始，新的故事启动。</p>
+<p>这说明：</p>
+<blockquote class="blockquote">
+<p><strong>人物自己的决定，也可以制造新局面。</strong></p>
+</blockquote>
+<p>因为决定会改变未来行动。</p>
+<p>不过这种局面要真正有力量，决定最好不是抽象地“想通了”。</p>
+<p>它应该马上进入现实：</p>
+<blockquote class="blockquote">
+<p>她决定离婚以后，第一件事做什么？</p>
+<p>他决定逃营以后，怎么离开？</p>
+<p>她决定表白以后，什么时候去见对方？</p>
+</blockquote>
+<p>决定必须开始产生行动，才能进入 Scene。</p>
+<hr>
+</section>
+<section id="十三局面里的价值" class="level2">
+<h2 class="anchored" data-anchor-id="十三局面里的价值">十三、局面里的“价值”</h2>
+<p>为什么某些局面特别有力量？</p>
+<p>因为里面有东西可能得到，也可能失去。</p>
+<p>这可以叫“价值”。</p>
+<p>这里的“价值”不是哲学意义上的价值观。</p>
+<p>而是：</p>
+<blockquote class="blockquote">
+<p><strong>人物在乎的东西。</strong></p>
+</blockquote>
+<p>比如：</p>
+<ul>
+<li>钱；</li>
+<li>工作；</li>
+<li>关系；</li>
+<li>安全；</li>
+<li>自由；</li>
+<li>尊严；</li>
+<li>地位；</li>
+<li>家人；</li>
+<li>机会；</li>
+<li>秘密；</li>
+<li>名誉；</li>
+<li>生存。</li>
+</ul>
+<p>看：</p>
+<blockquote class="blockquote">
+<p>领导叫他去办公室。</p>
+</blockquote>
+<p>可能没什么。</p>
+<p>如果：</p>
+<blockquote class="blockquote">
+<p>今天正好是裁员名单公布的日子。</p>
+</blockquote>
+<p>同样的动作立刻变得重要。</p>
+<p>因为工作可能失去。</p>
+<p>再比如：</p>
+<blockquote class="blockquote">
+<p>她收到男朋友的信息：“今晚聊聊。”</p>
+</blockquote>
+<p>如果两人关系正常，可能只是普通对话。</p>
+<p>如果他们已经冷战两周，而她很怕分手，这句话马上获得重量。</p>
+<p>所以局面强不强，很大程度取决于：</p>
+<blockquote class="blockquote">
+<p><strong>这里有什么人物真正不想失去、真正想得到的东西。</strong></p>
+</blockquote>
+<p>没有价值，局面容易变成纯信息。</p>
+<hr>
+</section>
+<section id="十四局面里的不确定" class="level2">
+<h2 class="anchored" data-anchor-id="十四局面里的不确定">十四、局面里的“不确定”</h2>
+<p>如果一切结果都已经确定，局面也容易失去力量。</p>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>主人公要去银行取自己账户里的十万元。</p>
+</blockquote>
+<p>银行卡正常。</p>
+<p>身份证正常。</p>
+<p>银行正常营业。</p>
+<p>钱一定能取到。</p>
+<p>这件事不太需要展开。</p>
+<p>除非取钱过程中会发生别的变化。</p>
+<p>反过来：</p>
+<blockquote class="blockquote">
+<p>主人公必须今天取出十万元，但银行卡被冻结了。</p>
+</blockquote>
+<p>现在结果不确定。</p>
+<p>他能不能拿到钱？</p>
+<p>读者开始有继续理由。</p>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>局面不仅要有事情，还要有未解决的部分。</strong></p>
+</blockquote>
+<p>如果问题已经解决，就没有必要继续写。</p>
+<p>Scene 的展开，本质上就是：</p>
+<blockquote class="blockquote">
+<p>人物尝试把一个未解决状态推向某个结果。</p>
+</blockquote>
+<hr>
+</section>
+<section id="十五一个局面为什么有戏" class="level2">
+<h2 class="anchored" data-anchor-id="十五一个局面为什么有戏">十五、一个局面为什么“有戏”</h2>
+<p>现在可以看一个更完整的例子。</p>
+<p>版本 A：</p>
+<blockquote class="blockquote">
+<p>林薇开了一家饭馆。</p>
+</blockquote>
+<p>这只是状态。</p>
+<p>版本 B：</p>
+<blockquote class="blockquote">
+<p>林薇的饭馆这个月亏了三万元。</p>
+</blockquote>
+<p>问题出现，但仍然可以拖。</p>
+<p>版本 C：</p>
+<blockquote class="blockquote">
+<p>房东通知她，明天如果不补齐两个月房租，就换锁收房。</p>
+</blockquote>
+<p>时间和后果出现。</p>
+<p>版本 D：</p>
+<blockquote class="blockquote">
+<p>明天如果不补齐两个月房租，房东就换锁收房；可她今晚刚收到消息，女儿下学期的学费也必须在明天之前交。</p>
+</blockquote>
+<p>现在两个重要价值发生竞争。</p>
+<p>钱只有一份。</p>
+<p>人物必须选择。</p>
+<p>版本 E：</p>
+<blockquote class="blockquote">
+<p>她原本准备关店，但就在这时，一个短视频博主突然来到店里，说可以免费替她拍一期视频。</p>
+</blockquote>
+<p>现在机会进入局面。</p>
+<p>她怎么办？</p>
+<p>先抓机会？</p>
+<p>先筹钱？</p>
+<p>告诉博主真相？</p>
+<p>继续营业到深夜？</p>
+<p>把仅剩的钱拿去买食材？</p>
+<p>故事一下有了很多方向。</p>
+<p>注意：</p>
+<p>我们并没有添加“更多世界观”。</p>
+<p>真正增加的是：</p>
+<blockquote class="blockquote">
+<p><strong>条件、期限、后果、价值、选择。</strong></p>
+</blockquote>
+<p>局面因此开始变得有戏。</p>
+<hr>
+</section>
+<section id="十六强局面往往会压缩选择" class="level2">
+<h2 class="anchored" data-anchor-id="十六强局面往往会压缩选择">十六、强局面往往会压缩选择</h2>
+<p>如果一个人物面对十万个毫无代价的选择，读者反而很难关心。</p>
+<p>有力的局面通常会做一件事：</p>
+<blockquote class="blockquote">
+<p><strong>把人物逼到有限的几条路上。</strong></p>
+</blockquote>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>你只有一万元。</p>
+<p>母亲手术需要一万元。</p>
+<p>女儿学费也需要一万元。</p>
+<p>两边都不能拖。</p>
+</blockquote>
+<p>选择被压缩。</p>
+<p>现在人物必须暴露优先级。</p>
+<p>而优先级就是人物。</p>
+<p>他选谁？</p>
+<p>为什么？</p>
+<p>选了以后，另一边怎么办？</p>
+<p>因此：</p>
+<blockquote class="blockquote">
+<p><strong>局面越具体，人物越容易显形。</strong></p>
+</blockquote>
+<p>这也是为什么局面不是单纯的情节工具。</p>
+<p>它还是塑造人物的工具。</p>
+<p>因为人物是谁，不只体现在设定表里。</p>
+<p>更体现在：</p>
+<blockquote class="blockquote">
+<p><strong>当他没有完美答案时，他怎么选。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="十七局面也会自然制造关系" class="level2">
+<h2 class="anchored" data-anchor-id="十七局面也会自然制造关系">十七、局面也会自然制造关系</h2>
+<p>人与人之间，只要利益、期待、权力不同，就很容易形成局面。</p>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>儿子想卖掉老房子。</p>
+<p>父亲不肯。</p>
+</blockquote>
+<p>现在故事不需要外部反派。</p>
+<p>两个人本身就处在不同位置。</p>
+<p>再比如：</p>
+<blockquote class="blockquote">
+<p>老板需要员工加班。</p>
+<p>员工今晚必须去医院陪母亲。</p>
+</blockquote>
+<p>双方都可能有合理理由。</p>
+<p>局面因此更真实。</p>
+<p>所以关系型 Scene 的一个简单生成方法是：</p>
+<blockquote class="blockquote">
+<p><strong>让两个人在同一件事上想要不同结果。</strong></p>
+</blockquote>
+<p>不是一定要吵架。</p>
+<p>他们可以礼貌谈判。</p>
+<p>可以互相隐瞒。</p>
+<p>可以让步。</p>
+<p>可以试探。</p>
+<p>可以装作没事。</p>
+<p>但只要结果不能同时满足双方，互动就有方向。</p>
+<hr>
+</section>
+<section id="十八局面不是越惨越好" class="level2">
+<h2 class="anchored" data-anchor-id="十八局面不是越惨越好">十八、局面不是越惨越好</h2>
+<p>这里必须避免一个误区。</p>
+<p>既然限制、风险、损失会产生故事，是不是就不停往人物身上加惨事？</p>
+<p>不是。</p>
+<p>如果所有 Scene 都是：</p>
+<blockquote class="blockquote">
+<p>更惨。</p>
+<p>更危险。</p>
+<p>更糟糕。</p>
+</blockquote>
+<p>很快会疲劳。</p>
+<p>局面的价值不在“惨”。</p>
+<p>而在：</p>
+<blockquote class="blockquote">
+<p><strong>它改变人物现在能做什么、应该做什么、想做什么。</strong></p>
+</blockquote>
+<p>例如爱情故事里：</p>
+<blockquote class="blockquote">
+<p>两个人第一次单独吃饭。</p>
+</blockquote>
+<p>没有灾难。</p>
+<p>但如果双方都对对方有好感，又都不确定对方怎么想，这本身就是局面。</p>
+<p>一个小小的动作：</p>
+<blockquote class="blockquote">
+<p>谁先提下一次见面？</p>
+</blockquote>
+<p>都可能有意义。</p>
+<p>再比如成长小说：</p>
+<blockquote class="blockquote">
+<p>主人公第一次拿到真正属于自己的工资。</p>
+</blockquote>
+<p>这是正向变化。</p>
+<p>但也可以产生新的局面：</p>
+<blockquote class="blockquote">
+<p>他要怎么花？</p>
+</blockquote>
+<p>给母亲？</p>
+<p>买自己一直想要的东西？</p>
+<p>还债？</p>
+<p>请朋友吃饭？</p>
+<p>机会、成功、获得，同样可以制造新的行动。</p>
+<hr>
+</section>
+<section id="十九局面与冲突是什么关系" class="level2">
+<h2 class="anchored" data-anchor-id="十九局面与冲突是什么关系">十九、局面与“冲突”是什么关系</h2>
+<p>很多写作理论会直接说：</p>
+<blockquote class="blockquote">
+<p>故事需要冲突。</p>
+</blockquote>
+<p>这句话有用，但也容易把人带窄。</p>
+<p>因为局面不一定一开始就存在明确冲突。</p>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>一个女人收到十年前朋友的婚礼邀请。</p>
+</blockquote>
+<p>此刻没人阻拦她。</p>
+<p>甚至没有人和她吵架。</p>
+<p>但如果：</p>
+<blockquote class="blockquote">
+<p>她当年因为一件事背叛了这个朋友，而对方似乎一直不知道真相。</p>
+</blockquote>
+<p>这已经是非常好的局面。</p>
+<p>冲突可能后来出现。</p>
+<p>但最初真正起作用的是：</p>
+<blockquote class="blockquote">
+<p>她面对一个必须决定如何回应的现实。</p>
+</blockquote>
+<p>所以，从生成角度看：</p>
+<blockquote class="blockquote">
+<p><strong>冲突是局面可能产生的一种结构。</strong></p>
+<p><strong>局面比冲突更基础。</strong></p>
+</blockquote>
+<p>有了局面，人物开始行动。</p>
+<p>当不同力量试图把结果推向不同方向，冲突自然会出现。</p>
+<p>因此我们暂时不需要把“冲突”作为所有故事的起点。</p>
+<p>先问：</p>
+<blockquote class="blockquote">
+<p><strong>人物现在到底面对什么？</strong></p>
+</blockquote>
+<p>这个问题更宽，也更好用。</p>
+<hr>
+</section>
+<section id="二十局面与困境也不是一回事" class="level2">
+<h2 class="anchored" data-anchor-id="二十局面与困境也不是一回事">二十、局面与“困境”也不是一回事</h2>
+<p>困境通常意味着：</p>
+<blockquote class="blockquote">
+<p>每个选择都有明显代价。</p>
+</blockquote>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>救父亲就失去孩子。</p>
+<p>救孩子就失去父亲。</p>
+</blockquote>
+<p>这是强困境。</p>
+<p>但很多 Scene 根本不需要这么极端。</p>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>你去面试。</p>
+<p>面试官突然问了一个你不会的问题。</p>
+</blockquote>
+<p>这已经足够形成局面。</p>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>困境是局面的高压版本之一。</strong></p>
+</blockquote>
+<p>不是每一幕都需要两难。</p>
+<p>如果每次都是终极选择，故事也会失去层次。</p>
+<p>很多好 Scene 只需要：</p>
+<blockquote class="blockquote">
+<p>有一个具体目标。</p>
+<p>有一点限制。</p>
+<p>有不确定结果。</p>
+</blockquote>
+<p>就足够了。</p>
+<hr>
+</section>
+<section id="二十一作者如何主动制造局面" class="level2">
+<h2 class="anchored" data-anchor-id="二十一作者如何主动制造局面">二十一、作者如何主动制造局面</h2>
+<p>现在进入真正实用的部分。</p>
+<p>如果你手上已经有一个人物、一个设定，但不知道写什么，可以从几个方向去“动”它。</p>
+<section id="给它一个期限" class="level3">
+<h3 class="anchored" data-anchor-id="给它一个期限">给它一个期限</h3>
+<blockquote class="blockquote">
+<p>什么时候必须处理？</p>
+</blockquote>
+</section>
+<section id="给它一个后果" class="level3">
+<h3 class="anchored" data-anchor-id="给它一个后果">给它一个后果</h3>
+<blockquote class="blockquote">
+<p>不处理会怎样？</p>
+</blockquote>
+</section>
+<section id="拿走一个资源" class="level3">
+<h3 class="anchored" data-anchor-id="拿走一个资源">拿走一个资源</h3>
+<blockquote class="blockquote">
+<p>如果最容易的办法突然不能用了呢？</p>
+</blockquote>
+</section>
+<section id="加入一个人" class="level3">
+<h3 class="anchored" data-anchor-id="加入一个人">加入一个人</h3>
+<blockquote class="blockquote">
+<p>谁的出现会改变当前情况？</p>
+</blockquote>
+</section>
+<section id="拿走一个人" class="level3">
+<h3 class="anchored" data-anchor-id="拿走一个人">拿走一个人</h3>
+<blockquote class="blockquote">
+<p>如果人物原本依赖的人突然不在呢？</p>
+</blockquote>
+</section>
+<section id="加一个要求" class="level3">
+<h3 class="anchored" data-anchor-id="加一个要求">加一个要求</h3>
+<blockquote class="blockquote">
+<p>现在谁逼他做什么？</p>
+</blockquote>
+</section>
+<section id="加一个发现" class="level3">
+<h3 class="anchored" data-anchor-id="加一个发现">加一个发现</h3>
+<blockquote class="blockquote">
+<p>他知道什么以后，就不能再像以前那样行动？</p>
+</blockquote>
+</section>
+<section id="让两个价值发生竞争" class="level3">
+<h3 class="anchored" data-anchor-id="让两个价值发生竞争">让两个价值发生竞争</h3>
+<blockquote class="blockquote">
+<p>他想保住什么，又必须牺牲什么？</p>
+</blockquote>
+</section>
+<section id="让机会出现" class="level3">
+<h3 class="anchored" data-anchor-id="让机会出现">让机会出现</h3>
+<blockquote class="blockquote">
+<p>他一直想要的东西现在真的来了，但代价是什么？</p>
+</blockquote>
+<p>这些不是“情节模板”。</p>
+<p>它们只是让静态状态发生变化的基本操作。</p>
+<p>你可以把它们用在任何题材。</p>
+<hr>
+</section>
+</section>
+<section id="二十二一个简单的局面检查" class="level2">
+<h2 class="anchored" data-anchor-id="二十二一个简单的局面检查">二十二、一个简单的局面检查</h2>
+<p>当你想到一个 Scene，却不知道它能不能写，可以问几个问题：</p>
+<blockquote class="blockquote">
+<p><strong>现在到底发生了什么？</strong></p>
+</blockquote>
+<p>如果答案只是背景介绍，继续往下。</p>
+<blockquote class="blockquote">
+<p><strong>人物为什么现在要回应？</strong></p>
+</blockquote>
+<p>如果可以无限拖延，局面可能还不够具体。</p>
+<blockquote class="blockquote">
+<p><strong>他如果什么都不做，会怎样？</strong></p>
+</blockquote>
+<p>如果没什么后果，行动必要性较弱。</p>
+<blockquote class="blockquote">
+<p><strong>他在乎什么？</strong></p>
+</blockquote>
+<p>如果没有任何得失，读者也很难在乎。</p>
+<blockquote class="blockquote">
+<p><strong>最容易的解决办法为什么不能直接用？</strong></p>
+</blockquote>
+<p>如果一步就解决，Scene 可能很短，或者需要新的变化。</p>
+<blockquote class="blockquote">
+<p><strong>结果确定吗？</strong></p>
+</blockquote>
+<p>如果完全确定，就要看看这一幕是否值得展开。</p>
+<p>这些问题不是必须全部满足。</p>
+<p>它们只是帮你判断：</p>
+<blockquote class="blockquote">
+<p><strong>当前这块素材有没有开始变成真正可写的现实。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="二十三局面是故事生成的第一台机器" class="level2">
+<h2 class="anchored" data-anchor-id="二十三局面是故事生成的第一台机器">二十三、局面是故事生成的第一台机器</h2>
+<p>到这里，可以把一个非常重要的关系说清楚：</p>
+<blockquote class="blockquote">
+<p><strong>人物不是自己凭空行动。</strong></p>
+<p><strong>局面给他行动的理由。</strong></p>
+</blockquote>
+<p>但局面也不会自动决定行动。</p>
+<p>所以真正的生成结构是：</p>
+<blockquote class="blockquote">
+<p><strong>人物 × 局面 → 行动</strong></p>
+</blockquote>
+<p>同一个局面，换个人，故事就变了。</p>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>三天后必须还十万元。</p>
+</blockquote>
+<p>落在一个胆小守法的人身上：</p>
+<blockquote class="blockquote">
+<p>他可能四处借钱。</p>
+</blockquote>
+<p>落在一个赌徒身上：</p>
+<blockquote class="blockquote">
+<p>他可能拿最后的钱去赌。</p>
+</blockquote>
+<p>落在一个骗子身上：</p>
+<blockquote class="blockquote">
+<p>他开始找下一个受害者。</p>
+</blockquote>
+<p>落在一个极度自尊的人身上：</p>
+<blockquote class="blockquote">
+<p>他宁愿卖房，也不求人。</p>
+</blockquote>
+<p>落在一个亡命徒身上：</p>
+<blockquote class="blockquote">
+<p>他可能直接想处理掉债主。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>局面负责让故事启动。</strong></p>
+<p><strong>人物负责让故事走向特定方向。</strong></p>
+</blockquote>
+<p>这正是下一章要进入的问题。</p>
+<hr>
+</section>
+</section>
+<section id="本章暂时结论" class="level1">
+<h1>本章暂时结论</h1>
+<p>我们现在可以把“局面”暂时定义为：</p>
+<blockquote class="blockquote">
+<p><strong>人物当前所处的一组现实条件；这些条件改变了他的选择空间，使他必须或值得作出回应，而不行动本身也可能产生后果。</strong></p>
+</blockquote>
+<p>一个局面常常会包含：</p>
+<blockquote class="blockquote">
+<p>限制、期限、后果、机会、要求、信息变化、资源变化、关系变化，以及人物在乎的东西。</p>
+</blockquote>
+<p>但不要急着背分类。</p>
+<p>最重要的判断只有几个：</p>
+<blockquote class="blockquote">
+<p><strong>现在发生了什么？</strong></p>
+<p><strong>为什么人物不能完全无视它？</strong></p>
+<p><strong>如果什么都不做，会怎样？</strong></p>
+<p><strong>他在乎什么？</strong></p>
+<p><strong>现在有哪些路可以走，又有哪些路被堵住？</strong></p>
+</blockquote>
+<p>当这些东西逐渐清楚，一个 Scene 就不再是空的。</p>
+<p>它获得了内容。</p>
+<p>人物也终于有了可以回应的现实。</p>
+<p>接下来，故事真正开始分叉。</p>
+<p>因为同一个局面，不同的人会做完全不同的事。</p>
+<p>所以第五章要继续问：</p>
+<blockquote class="blockquote">
+<p><strong>人物为什么会采取某个行动？</strong></p>
+</blockquote>
+<p>也就是：</p>
+<blockquote class="blockquote">
+<p><strong>人物的欲望、目标、判断、性格、信息和能力，怎样把“局面”转化成“行动”？</strong></p>
+</blockquote>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter-03.html" class="pagination-link" aria-label="空白页：第一笔从哪里来">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">空白页：第一笔从哪里来</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter-05.html" class="pagination-link" aria-label="人物为什么会行动">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">人物为什么会行动</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

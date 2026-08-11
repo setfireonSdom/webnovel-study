@@ -1,0 +1,3097 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>从 Scene 反推世界 – webnovel-study</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter-22.html" rel="next">
+<link href="./chapter-20.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter-21.html"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">从 Scene 反推世界</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">webnovel-study</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">简介</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">写小说，究竟是在做什么</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">小说到底写在哪里</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">空白页：第一笔从哪里来</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">局面：让一个 Scene 获得内容</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">人物为什么会行动</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">行动：人物究竟做什么</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">阻力：为什么事情不能直接成功</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">第8章　变化：Scene 为什么值得存在</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">结果：一次行动怎样产生后果</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">新局面：一个 Scene 怎样产生下一个 Scene</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">因果链：为什么下一幕会自然发生</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">升级：怎样让故事越往后越难停下来</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">期待：读者为什么愿意继续看</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">不确定：怎样让未来不能被完全看穿</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">价值：为什么结果会让人真正在乎</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-16.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">变化：为什么读者会被“发生了变化”吸引</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-17.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">第17章　人物是行动者</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-18.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">人物的内在模型</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-19.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">人物关系：两个人之间究竟存在什么</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-20.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">故事需要多少世界</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-21.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">从 Scene 反推世界</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-22.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">chapter-22.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-23.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">chapter-23.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-24.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">chapter-24.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-25.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">chapter-25.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-26.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">chapter-26.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-27.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">chapter-27.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-28.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">chapter-28.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-29.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">chapter-29.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-30.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">chapter-30.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-31.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">chapter-31.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-32.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">chapter-32.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-33.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">chapter-33.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-34.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">chapter-34.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-35.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">chapter-35.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">目录</h2>
+   
+  <ul>
+  <li><a href="#从-scene-反推世界" id="toc-从-scene-反推世界" class="nav-link active" data-scroll-target="#从-scene-反推世界">从 Scene 反推世界</a>
+  <ul class="collapse">
+  <li><a href="#一不要先问这个世界有什么" id="toc-一不要先问这个世界有什么" class="nav-link" data-scroll-target="#一不要先问这个世界有什么">一、不要先问“这个世界有什么”</a></li>
+  <li><a href="#二从人物要做什么开始" id="toc-二从人物要做什么开始" class="nav-link" data-scroll-target="#二从人物要做什么开始">二、从“人物要做什么”开始</a></li>
+  <li><a href="#三行动路径就是世界的第一条骨架" id="toc-三行动路径就是世界的第一条骨架" class="nav-link" data-scroll-target="#三行动路径就是世界的第一条骨架">三、行动路径就是世界的第一条骨架</a></li>
+  <li><a href="#四每个行动都可以追问中间要经过什么" id="toc-四每个行动都可以追问中间要经过什么" class="nav-link" data-scroll-target="#四每个行动都可以追问中间要经过什么">四、每个行动都可以追问：“中间要经过什么”</a></li>
+  <li><a href="#五世界的第一个反推问题谁在控制这条路" id="toc-五世界的第一个反推问题谁在控制这条路" class="nav-link" data-scroll-target="#五世界的第一个反推问题谁在控制这条路">五、世界的第一个反推问题：“谁在控制这条路”</a></li>
+  <li><a href="#六第二个问题凭什么给你" id="toc-六第二个问题凭什么给你" class="nav-link" data-scroll-target="#六第二个问题凭什么给你">六、第二个问题：“凭什么给你”</a></li>
+  <li><a href="#七第三个问题如果不给还有什么路" id="toc-七第三个问题如果不给还有什么路" class="nav-link" data-scroll-target="#七第三个问题如果不给还有什么路">七、第三个问题：“如果不给，还有什么路”</a></li>
+  <li><a href="#八第四个问题如果违规会发生什么" id="toc-八第四个问题如果违规会发生什么" class="nav-link" data-scroll-target="#八第四个问题如果违规会发生什么">八、第四个问题：“如果违规，会发生什么”</a></li>
+  <li><a href="#九第五个问题谁从这个规则中获利" id="toc-九第五个问题谁从这个规则中获利" class="nav-link" data-scroll-target="#九第五个问题谁从这个规则中获利">九、第五个问题：“谁从这个规则中获利”</a></li>
+  <li><a href="#十一个制度词背后一定不只一个对象" id="toc-十一个制度词背后一定不只一个对象" class="nav-link" data-scroll-target="#十一个制度词背后一定不只一个对象">十、一个制度词，背后一定不只一个对象</a></li>
+  <li><a href="#十一从官府反推世界" id="toc-十一从官府反推世界" class="nav-link" data-scroll-target="#十一从官府反推世界">十一、从“官府”反推世界</a></li>
+  <li><a href="#十二从学校反推世界" id="toc-十二从学校反推世界" class="nav-link" data-scroll-target="#十二从学校反推世界">十二、从“学校”反推世界</a></li>
+  <li><a href="#十三从饭馆反推世界" id="toc-十三从饭馆反推世界" class="nav-link" data-scroll-target="#十三从饭馆反推世界">十三、从“饭馆”反推世界</a></li>
+  <li><a href="#十四从问题往后追比从背景往前列更强" id="toc-十四从问题往后追比从背景往前列更强" class="nav-link" data-scroll-target="#十四从问题往后追比从背景往前列更强">十四、从“问题”往后追，比从“背景”往前列更强</a></li>
+  <li><a href="#十五问题背后通常有多层原因" id="toc-十五问题背后通常有多层原因" class="nav-link" data-scroll-target="#十五问题背后通常有多层原因">十五、问题背后通常有多层原因</a>
+  <ul class="collapse">
+  <li><a href="#直接原因" id="toc-直接原因" class="nav-link" data-scroll-target="#直接原因">直接原因</a></li>
+  <li><a href="#上一层" id="toc-上一层" class="nav-link" data-scroll-target="#上一层">上一层</a></li>
+  <li><a href="#再上一层" id="toc-再上一层" class="nav-link" data-scroll-target="#再上一层">再上一层</a></li>
+  <li><a href="#再上一层-1" id="toc-再上一层-1" class="nav-link" data-scroll-target="#再上一层-1">再上一层</a></li>
+  <li><a href="#再上一层-2" id="toc-再上一层-2" class="nav-link" data-scroll-target="#再上一层-2">再上一层</a></li>
+  </ul></li>
+  <li><a href="#十六越往后追原因世界越大" id="toc-十六越往后追原因世界越大" class="nav-link" data-scroll-target="#十六越往后追原因世界越大">十六、越往后追原因，世界越大</a></li>
+  <li><a href="#十七从结果也可以反推世界" id="toc-十七从结果也可以反推世界" class="nav-link" data-scroll-target="#十七从结果也可以反推世界">十七、从“结果”也可以反推世界</a></li>
+  <li><a href="#十八世界不能只解释成功也要解释失败" id="toc-十八世界不能只解释成功也要解释失败" class="nav-link" data-scroll-target="#十八世界不能只解释成功也要解释失败">十八、世界不能只解释成功，也要解释失败</a></li>
+  <li><a href="#十九阻力本身就是世界的显影" id="toc-十九阻力本身就是世界的显影" class="nav-link" data-scroll-target="#十九阻力本身就是世界的显影">十九、阻力本身就是世界的“显影”</a></li>
+  <li><a href="#二十从谁能阻止我反推权力" id="toc-二十从谁能阻止我反推权力" class="nav-link" data-scroll-target="#二十从谁能阻止我反推权力">二十、从“谁能阻止我”反推权力</a></li>
+  <li><a href="#二十一从谁能帮我反推资源网络" id="toc-二十一从谁能帮我反推资源网络" class="nav-link" data-scroll-target="#二十一从谁能帮我反推资源网络">二十一、从“谁能帮我”反推资源网络</a></li>
+  <li><a href="#二十二人物关系其实也是世界的一部分" id="toc-二十二人物关系其实也是世界的一部分" class="nav-link" data-scroll-target="#二十二人物关系其实也是世界的一部分">二十二、人物关系其实也是世界的一部分</a></li>
+  <li><a href="#二十三从谁认识谁可以反推社会结构" id="toc-二十三从谁认识谁可以反推社会结构" class="nav-link" data-scroll-target="#二十三从谁认识谁可以反推社会结构">二十三、从“谁认识谁”可以反推社会结构</a></li>
+  <li><a href="#二十四从信息怎么流动反推世界" id="toc-二十四从信息怎么流动反推世界" class="nav-link" data-scroll-target="#二十四从信息怎么流动反推世界">二十四、从“信息怎么流动”反推世界</a></li>
+  <li><a href="#二十五信息流动会决定很多情节是否成立" id="toc-二十五信息流动会决定很多情节是否成立" class="nav-link" data-scroll-target="#二十五信息流动会决定很多情节是否成立">二十五、信息流动会决定很多情节是否成立</a></li>
+  <li><a href="#二十六从东西怎么来反推资源系统" id="toc-二十六从东西怎么来反推资源系统" class="nav-link" data-scroll-target="#二十六从东西怎么来反推资源系统">二十六、从“东西怎么来”反推资源系统</a></li>
+  <li><a href="#二十七从东西去哪反推后果系统" id="toc-二十七从东西去哪反推后果系统" class="nav-link" data-scroll-target="#二十七从东西去哪反推后果系统">二十七、从“东西去哪”反推后果系统</a></li>
+  <li><a href="#二十八从谁生产反推组织" id="toc-二十八从谁生产反推组织" class="nav-link" data-scroll-target="#二十八从谁生产反推组织">二十八、从“谁生产”反推组织</a></li>
+  <li><a href="#二十九世界中的组织本质上是在持续解决某类问题" id="toc-二十九世界中的组织本质上是在持续解决某类问题" class="nav-link" data-scroll-target="#二十九世界中的组织本质上是在持续解决某类问题">二十九、世界中的组织，本质上是在持续解决某类问题</a></li>
+  <li><a href="#三十组织有目标就会产生内部角色" id="toc-三十组织有目标就会产生内部角色" class="nav-link" data-scroll-target="#三十组织有目标就会产生内部角色">三十、组织有目标，就会产生内部角色</a></li>
+  <li><a href="#三十一从谁负责什么反推组织结构" id="toc-三十一从谁负责什么反推组织结构" class="nav-link" data-scroll-target="#三十一从谁负责什么反推组织结构">三十一、从“谁负责什么”反推组织结构</a></li>
+  <li><a href="#三十二从决定是怎么做出来的反推决策机制" id="toc-三十二从决定是怎么做出来的反推决策机制" class="nav-link" data-scroll-target="#三十二从决定是怎么做出来的反推决策机制">三十二、从“决定是怎么做出来的”反推决策机制</a></li>
+  <li><a href="#三十三从谁承担成本反推利益结构" id="toc-三十三从谁承担成本反推利益结构" class="nav-link" data-scroll-target="#三十三从谁承担成本反推利益结构">三十三、从“谁承担成本”反推利益结构</a></li>
+  <li><a href="#三十四从谁得利谁吃亏反推阵营" id="toc-三十四从谁得利谁吃亏反推阵营" class="nav-link" data-scroll-target="#三十四从谁得利谁吃亏反推阵营">三十四、从“谁得利，谁吃亏”反推阵营</a></li>
+  <li><a href="#三十五从规则能不能被绕过反推灰色空间" id="toc-三十五从规则能不能被绕过反推灰色空间" class="nav-link" data-scroll-target="#三十五从规则能不能被绕过反推灰色空间">三十五、从“规则能不能被绕过”反推灰色空间</a></li>
+  <li><a href="#三十六世界风格其实会从事情怎么被办成中显现" id="toc-三十六世界风格其实会从事情怎么被办成中显现" class="nav-link" data-scroll-target="#三十六世界风格其实会从事情怎么被办成中显现">三十六、世界风格，其实会从“事情怎么被办成”中显现</a></li>
+  <li><a href="#三十七从一个-scene-反推世界不需要无限追问" id="toc-三十七从一个-scene-反推世界不需要无限追问" class="nav-link" data-scroll-target="#三十七从一个-scene-反推世界不需要无限追问">三十七、从一个 Scene 反推世界，不需要无限追问</a></li>
+  <li><a href="#三十八什么时候应该停止反推" id="toc-三十八什么时候应该停止反推" class="nav-link" data-scroll-target="#三十八什么时候应该停止反推">三十八、什么时候应该停止反推</a></li>
+  <li><a href="#三十九反推深度由因果需要决定" id="toc-三十九反推深度由因果需要决定" class="nav-link" data-scroll-target="#三十九反推深度由因果需要决定">三十九、反推深度由“因果需要”决定</a></li>
+  <li><a href="#四十一个-scene-可以作为探针" id="toc-四十一个-scene-可以作为探针" class="nav-link" data-scroll-target="#四十一个-scene-可以作为探针">四十、一个 Scene 可以作为“探针”</a></li>
+  <li><a href="#四十一作者甚至可以先写再补世界" id="toc-四十一作者甚至可以先写再补世界" class="nav-link" data-scroll-target="#四十一作者甚至可以先写再补世界">四十一、作者甚至可以先写，再补世界</a></li>
+  <li><a href="#四十二世界构建和研究可以直接对接" id="toc-四十二世界构建和研究可以直接对接" class="nav-link" data-scroll-target="#四十二世界构建和研究可以直接对接">四十二、世界构建和研究可以直接对接</a></li>
+  <li><a href="#四十三研究时也要带着行动问题" id="toc-四十三研究时也要带着行动问题" class="nav-link" data-scroll-target="#四十三研究时也要带着行动问题">四十三、研究时也要带着“行动问题”</a></li>
+  <li><a href="#四十四从-scene-反推世界还能防止设定只存在于说明里" id="toc-四十四从-scene-反推世界还能防止设定只存在于说明里" class="nav-link" data-scroll-target="#四十四从-scene-反推世界还能防止设定只存在于说明里">四十四、从 Scene 反推世界还能防止“设定只存在于说明里”</a></li>
+  <li><a href="#四十五世界结构必须最终落到具体动作差异" id="toc-四十五世界结构必须最终落到具体动作差异" class="nav-link" data-scroll-target="#四十五世界结构必须最终落到具体动作差异">四十五、世界结构必须最终落到“具体动作差异”</a></li>
+  <li><a href="#四十六从一个动作为什么不能做反推文化" id="toc-四十六从一个动作为什么不能做反推文化" class="nav-link" data-scroll-target="#四十六从一个动作为什么不能做反推文化">四十六、从“一个动作为什么不能做”反推文化</a></li>
+  <li><a href="#四十七文化规则同样要有惩罚" id="toc-四十七文化规则同样要有惩罚" class="nav-link" data-scroll-target="#四十七文化规则同样要有惩罚">四十七、文化规则同样要有“惩罚”</a></li>
+  <li><a href="#四十八从人物为什么不直接说反推社会环境" id="toc-四十八从人物为什么不直接说反推社会环境" class="nav-link" data-scroll-target="#四十八从人物为什么不直接说反推社会环境">四十八、从“人物为什么不直接说”反推社会环境</a></li>
+  <li><a href="#四十九从最容易的解决办法为什么不能用反推世界比凭空加阻力自然" id="toc-四十九从最容易的解决办法为什么不能用反推世界比凭空加阻力自然" class="nav-link" data-scroll-target="#四十九从最容易的解决办法为什么不能用反推世界比凭空加阻力自然">四十九、从“最容易的解决办法为什么不能用”反推世界，比凭空加阻力自然</a></li>
+  <li><a href="#五十世界与人物历史可以在一个点上接起来" id="toc-五十世界与人物历史可以在一个点上接起来" class="nav-link" data-scroll-target="#五十世界与人物历史可以在一个点上接起来">五十、世界与人物历史可以在一个点上接起来</a></li>
+  <li><a href="#五十一世界的记忆机制很重要" id="toc-五十一世界的记忆机制很重要" class="nav-link" data-scroll-target="#五十一世界的记忆机制很重要">五十一、世界的“记忆机制”很重要</a></li>
+  <li><a href="#五十二从这个世界会记住什么反推长期后果" id="toc-五十二从这个世界会记住什么反推长期后果" class="nav-link" data-scroll-target="#五十二从这个世界会记住什么反推长期后果">五十二、从“这个世界会记住什么”反推长期后果</a></li>
+  <li><a href="#五十三一个完整示范从交不起粮税反推世界" id="toc-五十三一个完整示范从交不起粮税反推世界" class="nav-link" data-scroll-target="#五十三一个完整示范从交不起粮税反推世界">五十三、一个完整示范：从“交不起粮税”反推世界</a></li>
+  <li><a href="#五十四一个完整示范从饭馆被查反推现代世界" id="toc-五十四一个完整示范从饭馆被查反推现代世界" class="nav-link" data-scroll-target="#五十四一个完整示范从饭馆被查反推现代世界">五十四、一个完整示范：从“饭馆被查”反推现代世界</a></li>
+  <li><a href="#五十五一个完整示范从进入宗门反推幻想世界" id="toc-五十五一个完整示范从进入宗门反推幻想世界" class="nav-link" data-scroll-target="#五十五一个完整示范从进入宗门反推幻想世界">五十五、一个完整示范：从“进入宗门”反推幻想世界</a></li>
+  <li><a href="#五十六反推世界的核心不是补知识而是补因果" id="toc-五十六反推世界的核心不是补知识而是补因果" class="nav-link" data-scroll-target="#五十六反推世界的核心不是补知识而是补因果">五十六、反推世界的核心不是“补知识”，而是“补因果”</a></li>
+  <li><a href="#五十七一个实用的scene-世界反推器" id="toc-五十七一个实用的scene-世界反推器" class="nav-link" data-scroll-target="#五十七一个实用的scene-世界反推器">五十七、一个实用的“Scene → 世界”反推器</a>
+  <ul class="collapse">
+  <li><a href="#人物想做什么" id="toc-人物想做什么" class="nav-link" data-scroll-target="#人物想做什么">1. 人物想做什么？</a></li>
+  <li><a href="#正常情况下这件事怎么做" id="toc-正常情况下这件事怎么做" class="nav-link" data-scroll-target="#正常情况下这件事怎么做">2. 正常情况下，这件事怎么做？</a></li>
+  <li><a href="#这条路径经过哪些人机构地点工具" id="toc-这条路径经过哪些人机构地点工具" class="nav-link" data-scroll-target="#这条路径经过哪些人机构地点工具">3. 这条路径经过哪些人、机构、地点、工具？</a></li>
+  <li><a href="#谁控制关键资源或权限" id="toc-谁控制关键资源或权限" class="nav-link" data-scroll-target="#谁控制关键资源或权限">4. 谁控制关键资源或权限？</a></li>
+  <li><a href="#凭什么允许人物获得" id="toc-凭什么允许人物获得" class="nav-link" data-scroll-target="#凭什么允许人物获得">5. 凭什么允许人物获得？</a></li>
+  <li><a href="#最容易的办法为什么不能直接用" id="toc-最容易的办法为什么不能直接用" class="nav-link" data-scroll-target="#最容易的办法为什么不能直接用">6. 最容易的办法为什么不能直接用？</a></li>
+  <li><a href="#有没有灰色或替代路径" id="toc-有没有灰色或替代路径" class="nav-link" data-scroll-target="#有没有灰色或替代路径">7. 有没有灰色或替代路径？</a></li>
+  <li><a href="#违反规则会怎样" id="toc-违反规则会怎样" class="nav-link" data-scroll-target="#违反规则会怎样">8. 违反规则会怎样？</a></li>
+  <li><a href="#谁从当前规则中获利谁吃亏" id="toc-谁从当前规则中获利谁吃亏" class="nav-link" data-scroll-target="#谁从当前规则中获利谁吃亏">9. 谁从当前规则中获利，谁吃亏？</a></li>
+  <li><a href="#这件事为什么今天变成问题" id="toc-这件事为什么今天变成问题" class="nav-link" data-scroll-target="#这件事为什么今天变成问题">10. 这件事为什么今天变成问题？</a></li>
+  </ul></li>
+  <li><a href="#五十八反推以后再决定哪些东西进入文本" id="toc-五十八反推以后再决定哪些东西进入文本" class="nav-link" data-scroll-target="#五十八反推以后再决定哪些东西进入文本">五十八、反推以后，再决定哪些东西进入文本</a></li>
+  <li><a href="#五十九世界构建真正的单位不是设定条目而是可产生后果的机制" id="toc-五十九世界构建真正的单位不是设定条目而是可产生后果的机制" class="nav-link" data-scroll-target="#五十九世界构建真正的单位不是设定条目而是可产生后果的机制">五十九、世界构建真正的单位，不是“设定条目”，而是“可产生后果的机制”</a></li>
+  <li><a href="#六十从-scene-反推世界本质上是在问支撑这一幕成立的现实是什么" id="toc-六十从-scene-反推世界本质上是在问支撑这一幕成立的现实是什么" class="nav-link" data-scroll-target="#六十从-scene-反推世界本质上是在问支撑这一幕成立的现实是什么">六十、从 Scene 反推世界，本质上是在问：“支撑这一幕成立的现实是什么”</a></li>
+  </ul></li>
+  <li><a href="#本章暂时结论" id="toc-本章暂时结论" class="nav-link" data-scroll-target="#本章暂时结论">本章暂时结论</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">从 Scene 反推世界</span></h1>
+<p class="subtitle lead">《如何写好小说》</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="从-scene-反推世界" class="level1">
+<h1>从 Scene 反推世界</h1>
+<p>上一章，我们提出了一个非常重要的原则：</p>
+<blockquote class="blockquote">
+<p><strong>局面提出需求，需求召唤世界。</strong></p>
+</blockquote>
+<p>小说不需要在第一章开始之前，把整个世界全部建完。</p>
+<p>真正需要的是：</p>
+<blockquote class="blockquote">
+<p><strong>最低充分世界。</strong></p>
+</blockquote>
+<p>也就是：</p>
+<blockquote class="blockquote">
+<p>足够让当前人物的行动、阻力、资源、权力、规则和后果成立的那部分世界。</p>
+</blockquote>
+<p>但现在问题来了：</p>
+<blockquote class="blockquote">
+<p><strong>具体怎么做？</strong></p>
+</blockquote>
+<p>假设我已经有一个 Scene。</p>
+<p>人物正在：</p>
+<blockquote class="blockquote">
+<p>欠税。</p>
+<p>求医。</p>
+<p>找工作。</p>
+<p>进城。</p>
+<p>借钱。</p>
+<p>参加科举。</p>
+<p>逃亡。</p>
+<p>开店。</p>
+<p>进入宗门。</p>
+<p>调查一件事。</p>
+</blockquote>
+<p>我怎样从这个小小的 Scene，反推出背后真正需要的世界？</p>
+<p>这一章，我们就把这个过程拆开。</p>
+<hr>
+<section id="一不要先问这个世界有什么" class="level2">
+<h2 class="anchored" data-anchor-id="一不要先问这个世界有什么">一、不要先问“这个世界有什么”</h2>
+<p>这是世界构建最容易走偏的一步。</p>
+<p>作者一想到：</p>
+<blockquote class="blockquote">
+<p>古代。</p>
+</blockquote>
+<p>就开始列：</p>
+<blockquote class="blockquote">
+<p>官府。</p>
+<p>农村。</p>
+<p>城池。</p>
+<p>地主。</p>
+<p>商人。</p>
+<p>军队。</p>
+</blockquote>
+<p>想到：</p>
+<blockquote class="blockquote">
+<p>仙侠。</p>
+</blockquote>
+<p>就开始列：</p>
+<blockquote class="blockquote">
+<p>宗门。</p>
+<p>灵石。</p>
+<p>法器。</p>
+<p>境界。</p>
+<p>秘境。</p>
+<p>丹药。</p>
+</blockquote>
+<p>这些都没错。</p>
+<p>但它们只是：</p>
+<blockquote class="blockquote">
+<p><strong>世界里可能存在的对象。</strong></p>
+</blockquote>
+<p>真正写故事时，更有效的问题是：</p>
+<blockquote class="blockquote">
+<p><strong>人物现在要做什么？</strong></p>
+</blockquote>
+<p>因为行动一旦确定，</p>
+<p>世界需求会自动出现。</p>
+<hr>
+</section>
+<section id="二从人物要做什么开始" class="level2">
+<h2 class="anchored" data-anchor-id="二从人物要做什么开始">二、从“人物要做什么”开始</h2>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>主角想进城。</p>
+</blockquote>
+<p>不要先设计全国地图。</p>
+<p>先问：</p>
+<blockquote class="blockquote">
+<p><strong>他怎样进去？</strong></p>
+</blockquote>
+<p>这一个问题就会立刻召唤：</p>
+<blockquote class="blockquote">
+<p>城门。</p>
+<p>守卫。</p>
+<p>开关城门时间。</p>
+<p>身份检查。</p>
+<p>进城费用。</p>
+<p>路引。</p>
+<p>通缉制度。</p>
+</blockquote>
+<p>如果人物：</p>
+<blockquote class="blockquote">
+<p>身份正常。</p>
+</blockquote>
+<p>这些东西可能只是背景。</p>
+<p>如果：</p>
+<blockquote class="blockquote">
+<p>他正在逃亡。</p>
+</blockquote>
+<p>它们立刻变成：</p>
+<blockquote class="blockquote">
+<p>阻力。</p>
+</blockquote>
+<p>所以同一个世界对象有没有必要展开，</p>
+<p>取决于：</p>
+<blockquote class="blockquote">
+<p><strong>当前行动有没有碰到它。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="三行动路径就是世界的第一条骨架" class="level2">
+<h2 class="anchored" data-anchor-id="三行动路径就是世界的第一条骨架">三、行动路径就是世界的第一条骨架</h2>
+<p>假设人物要：</p>
+<blockquote class="blockquote">
+<p>见县令。</p>
+</blockquote>
+<p>我们可以直接追问：</p>
+<blockquote class="blockquote">
+<p>第一步是什么？</p>
+</blockquote>
+<p>可能：</p>
+<blockquote class="blockquote">
+<p>去县衙。</p>
+</blockquote>
+<p>然后：</p>
+<blockquote class="blockquote">
+<p>能直接进去吗？</p>
+</blockquote>
+<p>不能。</p>
+<p>那么：</p>
+<blockquote class="blockquote">
+<p>谁拦？</p>
+</blockquote>
+<p>门房。</p>
+<p>然后：</p>
+<blockquote class="blockquote">
+<p>怎样让县令知道自己来了？</p>
+</blockquote>
+<p>递状纸。</p>
+<p>谁收？</p>
+<blockquote class="blockquote">
+<p>书吏。</p>
+</blockquote>
+<p>是否一定会递上去？</p>
+<blockquote class="blockquote">
+<p>不一定。</p>
+</blockquote>
+<p>为什么？</p>
+<blockquote class="blockquote">
+<p>有程序、有关系、有利益。</p>
+</blockquote>
+<p>人物怎么办？</p>
+<blockquote class="blockquote">
+<p>等、求人、送钱、找中间人。</p>
+</blockquote>
+<p>你会发现：</p>
+<blockquote class="blockquote">
+<p><strong>只追一条行动路径，世界结构已经开始自然出现。</strong></p>
+</blockquote>
+<p>包括：</p>
+<blockquote class="blockquote">
+<p>建筑。</p>
+<p>层级。</p>
+<p>职务。</p>
+<p>程序。</p>
+<p>权力。</p>
+<p>腐败空间。</p>
+<p>社会关系。</p>
+</blockquote>
+<p>所以一个非常强的方法就是：</p>
+<blockquote class="blockquote">
+<p><strong>不要从世界对象开始。</strong></p>
+<p><strong>从行动路径开始。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="四每个行动都可以追问中间要经过什么" class="level2">
+<h2 class="anchored" data-anchor-id="四每个行动都可以追问中间要经过什么">四、每个行动都可以追问：“中间要经过什么”</h2>
+<p>人物想：</p>
+<blockquote class="blockquote">
+<p>借到十万元。</p>
+</blockquote>
+<p>中间可能经过：</p>
+<blockquote class="blockquote">
+<p>找借款人。</p>
+<p>证明自己能还。</p>
+<p>谈利息。</p>
+<p>提供担保。</p>
+<p>签协议。</p>
+<p>拿到钱。</p>
+</blockquote>
+<p>这就召唤出：</p>
+<blockquote class="blockquote">
+<p>信用。</p>
+<p>抵押。</p>
+<p>金融规则。</p>
+<p>合同。</p>
+<p>执行机制。</p>
+</blockquote>
+<p>人物想：</p>
+<blockquote class="blockquote">
+<p>参加科举。</p>
+</blockquote>
+<p>中间需要：</p>
+<blockquote class="blockquote">
+<p>报名。</p>
+<p>身份资格。</p>
+<p>考场。</p>
+<p>考试内容。</p>
+<p>评卷。</p>
+<p>录取。</p>
+</blockquote>
+<p>每一步背后都可能有：</p>
+<blockquote class="blockquote">
+<p>人。</p>
+<p>规则。</p>
+<p>机构。</p>
+<p>资源。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>行动的中间步骤，就是世界的接口。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="五世界的第一个反推问题谁在控制这条路" class="level2">
+<h2 class="anchored" data-anchor-id="五世界的第一个反推问题谁在控制这条路">五、世界的第一个反推问题：“谁在控制这条路”</h2>
+<p>人物想要一个东西。</p>
+<p>就问：</p>
+<blockquote class="blockquote">
+<p><strong>谁控制它？</strong></p>
+</blockquote>
+<p>想拿到土地。</p>
+<p>谁控制？</p>
+<blockquote class="blockquote">
+<p>地主？</p>
+<p>官府？</p>
+<p>宗族？</p>
+<p>国家？</p>
+</blockquote>
+<p>想进大学。</p>
+<p>谁控制？</p>
+<blockquote class="blockquote">
+<p>学校。</p>
+<p>招生系统。</p>
+<p>考试机构。</p>
+</blockquote>
+<p>想进入宗门内门。</p>
+<p>谁控制？</p>
+<blockquote class="blockquote">
+<p>长老。</p>
+<p>考核制度。</p>
+<p>资源名额。</p>
+</blockquote>
+<p>一旦问“谁控制”：</p>
+<blockquote class="blockquote">
+<p>权力结构就出现。</p>
+</blockquote>
+<hr>
+</section>
+<section id="六第二个问题凭什么给你" class="level2">
+<h2 class="anchored" data-anchor-id="六第二个问题凭什么给你">六、第二个问题：“凭什么给你”</h2>
+<p>人物想获得：</p>
+<blockquote class="blockquote">
+<p>钱。</p>
+<p>身份。</p>
+<p>权力。</p>
+<p>资格。</p>
+<p>资源。</p>
+<p>机会。</p>
+</blockquote>
+<p>世界不会自动给。</p>
+<p>要问：</p>
+<blockquote class="blockquote">
+<p><strong>凭什么给？</strong></p>
+</blockquote>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>银行凭信用和抵押放贷。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>学校凭考试和申请录取。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>官府凭身份和程序受理。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>宗门凭资质、考核、关系分配资源。</p>
+</blockquote>
+<p>这会反推出：</p>
+<blockquote class="blockquote">
+<p><strong>准入机制。</strong></p>
+</blockquote>
+<p>一旦有准入：</p>
+<blockquote class="blockquote">
+<p>就有谁能进、谁不能进。</p>
+</blockquote>
+<p>故事立刻有差异。</p>
+<hr>
+</section>
+<section id="七第三个问题如果不给还有什么路" class="level2">
+<h2 class="anchored" data-anchor-id="七第三个问题如果不给还有什么路">七、第三个问题：“如果不给，还有什么路”</h2>
+<p>人物被正常路径挡住以后：</p>
+<blockquote class="blockquote">
+<p>有没有替代路径？</p>
+</blockquote>
+<p>例如：</p>
+<p>不能合法拿到文件。</p>
+<p>那可以：</p>
+<blockquote class="blockquote">
+<p>偷。</p>
+<p>买通内部人。</p>
+<p>找关系。</p>
+<p>伪造权限。</p>
+<p>等对方犯错。</p>
+</blockquote>
+<p>这会反推出世界中的：</p>
+<blockquote class="blockquote">
+<p>灰色渠道。</p>
+</blockquote>
+<p>一个世界越真实，</p>
+<p>通常越不是只有：</p>
+<blockquote class="blockquote">
+<p>正常规则。</p>
+</blockquote>
+<p>还会有：</p>
+<blockquote class="blockquote">
+<p>绕规则的方法。</p>
+</blockquote>
+<p>但这些方法也要有：</p>
+<blockquote class="blockquote">
+<p>成本和风险。</p>
+</blockquote>
+<hr>
+</section>
+<section id="八第四个问题如果违规会发生什么" class="level2">
+<h2 class="anchored" data-anchor-id="八第四个问题如果违规会发生什么">八、第四个问题：“如果违规，会发生什么”</h2>
+<p>规则真正存在，</p>
+<p>必须有：</p>
+<blockquote class="blockquote">
+<p>后果。</p>
+</blockquote>
+<p>人物伪造通行证。</p>
+<p>谁会查？</p>
+<p>被发现以后：</p>
+<blockquote class="blockquote">
+<p>罚钱？</p>
+<p>监禁？</p>
+<p>通缉？</p>
+<p>没收？</p>
+</blockquote>
+<p>人物偷税。</p>
+<p>谁知道？</p>
+<p>谁执行？</p>
+<p>人物违反宗门规定。</p>
+<p>谁审判？</p>
+<p>谁惩罚？</p>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>规则 → 检测 → 执行 → 后果</strong></p>
+</blockquote>
+<p>这一整条链都属于世界机制。</p>
+<hr>
+</section>
+<section id="九第五个问题谁从这个规则中获利" class="level2">
+<h2 class="anchored" data-anchor-id="九第五个问题谁从这个规则中获利">九、第五个问题：“谁从这个规则中获利”</h2>
+<p>这是一个非常强的反推问题。</p>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>城门进城要收费。</p>
+</blockquote>
+<p>那么：</p>
+<blockquote class="blockquote">
+<p>钱去哪？</p>
+</blockquote>
+<p>谁收？</p>
+<p>谁有利益维持这个制度？</p>
+<p>又比如：</p>
+<blockquote class="blockquote">
+<p>某行业必须获得许可证。</p>
+</blockquote>
+<p>谁发许可证？</p>
+<p>谁会利用审批权？</p>
+<p>再比如：</p>
+<blockquote class="blockquote">
+<p>宗门资源按排名分配。</p>
+</blockquote>
+<p>那么高排名者：</p>
+<blockquote class="blockquote">
+<p>有利益维持规则。</p>
+</blockquote>
+<p>低排名者：</p>
+<blockquote class="blockquote">
+<p>可能想改变规则。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>规则背后往往有利益结构。</strong></p>
+</blockquote>
+<p>一旦利益出现：</p>
+<blockquote class="blockquote">
+<p>人物、阵营、冲突都会自然生长。</p>
+</blockquote>
+<hr>
+</section>
+<section id="十一个制度词背后一定不只一个对象" class="level2">
+<h2 class="anchored" data-anchor-id="十一个制度词背后一定不只一个对象">十、一个制度词，背后一定不只一个对象</h2>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>“徭役”。</p>
+</blockquote>
+<p>这个词出现时，</p>
+<p>背后不只是：</p>
+<blockquote class="blockquote">
+<p>有人去干活。</p>
+</blockquote>
+<p>还至少意味着：</p>
+<blockquote class="blockquote">
+<p>谁被征？</p>
+<p>谁登记？</p>
+<p>谁下令？</p>
+<p>谁执行？</p>
+<p>干多久？</p>
+<p>能不能免？</p>
+<p>谁有资格免？</p>
+<p>逃了会怎样？</p>
+</blockquote>
+<p>于是：</p>
+<blockquote class="blockquote">
+<p>一个词</p>
+</blockquote>
+<p>可以反推出：</p>
+<blockquote class="blockquote">
+<p>一整套人口管理和资源汲取机制。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>制度词就是世界结构压缩后的表面标签。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="十一从官府反推世界" class="level2">
+<h2 class="anchored" data-anchor-id="十一从官府反推世界">十一、从“官府”反推世界</h2>
+<p>小说里出现：</p>
+<blockquote class="blockquote">
+<p>官府。</p>
+</blockquote>
+<p>可以问：</p>
+<blockquote class="blockquote">
+<p>官府负责什么？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>有哪些人？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>谁能下令？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>谁执行？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>普通人怎样接触？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>钱从哪里来？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>谁监督？</p>
+</blockquote>
+<p>如果当前 Scene 只是：</p>
+<blockquote class="blockquote">
+<p>主角去报案，</p>
+</blockquote>
+<p>你不需要回答所有问题。</p>
+<p>只要回答：</p>
+<blockquote class="blockquote">
+<p>怎么报案？</p>
+<p>谁受理？</p>
+<p>什么情况下会查？</p>
+<p>什么情况下不查？</p>
+</blockquote>
+<p>就够。</p>
+<p>这就是：</p>
+<blockquote class="blockquote">
+<p><strong>按当前接口反推。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="十二从学校反推世界" class="level2">
+<h2 class="anchored" data-anchor-id="十二从学校反推世界">十二、从“学校”反推世界</h2>
+<p>一个学生被学校处分。</p>
+<p>这个 Scene 会自动提出：</p>
+<blockquote class="blockquote">
+<p>谁能处分？</p>
+<p>根据什么规则？</p>
+<p>学生能申诉吗？</p>
+<p>处分会记录在哪里？</p>
+<p>会影响什么？</p>
+</blockquote>
+<p>于是：</p>
+<blockquote class="blockquote">
+<p>学校不再只是建筑。</p>
+</blockquote>
+<p>它变成：</p>
+<blockquote class="blockquote">
+<p>一个规则系统。</p>
+</blockquote>
+<p>而人物面对的是：</p>
+<blockquote class="blockquote">
+<p>这个系统带来的具体后果。</p>
+</blockquote>
+<hr>
+</section>
+<section id="十三从饭馆反推世界" class="level2">
+<h2 class="anchored" data-anchor-id="十三从饭馆反推世界">十三、从“饭馆”反推世界</h2>
+<p>人物经营一家饭馆。</p>
+<p>不要先问：</p>
+<blockquote class="blockquote">
+<p>饭馆有多少桌。</p>
+</blockquote>
+<p>先问：</p>
+<blockquote class="blockquote">
+<p>它怎样活下来？</p>
+</blockquote>
+<p>收入：</p>
+<blockquote class="blockquote">
+<p>顾客付钱。</p>
+</blockquote>
+<p>成本：</p>
+<blockquote class="blockquote">
+<p>房租、工资、食材、水电。</p>
+</blockquote>
+<p>谁控制关键资源？</p>
+<blockquote class="blockquote">
+<p>房东、供应商、平台、监管部门。</p>
+</blockquote>
+<p>哪里最容易出问题？</p>
+<blockquote class="blockquote">
+<p>客流下降。</p>
+<p>食材涨价。</p>
+<p>员工离开。</p>
+<p>食品安全。</p>
+<p>房租到期。</p>
+</blockquote>
+<p>你会发现：</p>
+<blockquote class="blockquote">
+<p><strong>经营机制本身就在制造 Scene。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="十四从问题往后追比从背景往前列更强" class="level2">
+<h2 class="anchored" data-anchor-id="十四从问题往后追比从背景往前列更强">十四、从“问题”往后追，比从“背景”往前列更强</h2>
+<p>比如人物：</p>
+<blockquote class="blockquote">
+<p>饿。</p>
+</blockquote>
+<p>不要写：</p>
+<blockquote class="blockquote">
+<p>这个世界经济不发达。</p>
+</blockquote>
+<p>继续追：</p>
+<blockquote class="blockquote">
+<p>为什么饿？</p>
+</blockquote>
+<p>因为：</p>
+<blockquote class="blockquote">
+<p>没粮。</p>
+</blockquote>
+<p>为什么没粮？</p>
+<blockquote class="blockquote">
+<p>收成差。</p>
+</blockquote>
+<p>为什么收成差？</p>
+<blockquote class="blockquote">
+<p>干旱。</p>
+</blockquote>
+<p>那为什么不能买粮？</p>
+<blockquote class="blockquote">
+<p>价格上涨。</p>
+</blockquote>
+<p>为什么涨？</p>
+<blockquote class="blockquote">
+<p>周边几个县都歉收，商人囤粮。</p>
+</blockquote>
+<p>为什么官府不调粮？</p>
+<blockquote class="blockquote">
+<p>仓里也不够，或者有人截留。</p>
+</blockquote>
+<p>一条问题链：</p>
+<blockquote class="blockquote">
+<p>直接长出了气候、市场、行政、腐败。</p>
+</blockquote>
+<p>这就是：</p>
+<blockquote class="blockquote">
+<p><strong>从问题反推结构。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="十五问题背后通常有多层原因" class="level2">
+<h2 class="anchored" data-anchor-id="十五问题背后通常有多层原因">十五、问题背后通常有多层原因</h2>
+<p>一个局面可以有：</p>
+<section id="直接原因" class="level3">
+<h3 class="anchored" data-anchor-id="直接原因">直接原因</h3>
+<blockquote class="blockquote">
+<p>没钱。</p>
+</blockquote>
+</section>
+<section id="上一层" class="level3">
+<h3 class="anchored" data-anchor-id="上一层">上一层</h3>
+<blockquote class="blockquote">
+<p>失业。</p>
+</blockquote>
+</section>
+<section id="再上一层" class="level3">
+<h3 class="anchored" data-anchor-id="再上一层">再上一层</h3>
+<blockquote class="blockquote">
+<p>公司裁员。</p>
+</blockquote>
+</section>
+<section id="再上一层-1" class="level3">
+<h3 class="anchored" data-anchor-id="再上一层-1">再上一层</h3>
+<blockquote class="blockquote">
+<p>公司订单下降。</p>
+</blockquote>
+</section>
+<section id="再上一层-2" class="level3">
+<h3 class="anchored" data-anchor-id="再上一层-2">再上一层</h3>
+<blockquote class="blockquote">
+<p>行业发生变化。</p>
+</blockquote>
+<p>不需要全写。</p>
+<p>但作者可以知道：</p>
+<blockquote class="blockquote">
+<p>当前问题不是凭空出现。</p>
+</blockquote>
+<p>这样如果故事继续追：</p>
+<blockquote class="blockquote">
+<p>背后的层级已经存在。</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="十六越往后追原因世界越大" class="level2">
+<h2 class="anchored" data-anchor-id="十六越往后追原因世界越大">十六、越往后追原因，世界越大</h2>
+<p>人物最初只面对：</p>
+<blockquote class="blockquote">
+<p>一件具体麻烦。</p>
+</blockquote>
+<p>往后追：</p>
+<blockquote class="blockquote">
+<p>家庭。</p>
+</blockquote>
+<p>再追：</p>
+<blockquote class="blockquote">
+<p>公司。</p>
+</blockquote>
+<p>再追：</p>
+<blockquote class="blockquote">
+<p>行业。</p>
+</blockquote>
+<p>再追：</p>
+<blockquote class="blockquote">
+<p>政策。</p>
+</blockquote>
+<p>世界会自然扩张。</p>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>世界规模可以沿因果链扩展。</strong></p>
+</blockquote>
+<p>这比一开始画全国地图自然得多。</p>
+<hr>
+</section>
+<section id="十七从结果也可以反推世界" class="level2">
+<h2 class="anchored" data-anchor-id="十七从结果也可以反推世界">十七、从“结果”也可以反推世界</h2>
+<p>人物做了一件事：</p>
+<blockquote class="blockquote">
+<p>举报老板。</p>
+</blockquote>
+<p>结果：</p>
+<blockquote class="blockquote">
+<p>老板马上知道。</p>
+</blockquote>
+<p>那么你可以反推：</p>
+<blockquote class="blockquote">
+<p>举报机制可能不保密。</p>
+</blockquote>
+<p>或者：</p>
+<blockquote class="blockquote">
+<p>内部有人通风报信。</p>
+</blockquote>
+<p>这会暴露：</p>
+<blockquote class="blockquote">
+<p>组织内部结构。</p>
+</blockquote>
+<p>再比如：</p>
+<p>人物偷东西。</p>
+<p>第二天就被找到。</p>
+<p>说明世界里可能有：</p>
+<blockquote class="blockquote">
+<p>监控。</p>
+<p>身份追踪。</p>
+<p>交易记录。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>结果本身也会告诉作者，世界里必须有什么机制。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="十八世界不能只解释成功也要解释失败" class="level2">
+<h2 class="anchored" data-anchor-id="十八世界不能只解释成功也要解释失败">十八、世界不能只解释成功，也要解释失败</h2>
+<p>人物想：</p>
+<blockquote class="blockquote">
+<p>贷款。</p>
+</blockquote>
+<p>失败。</p>
+<p>为什么失败？</p>
+<blockquote class="blockquote">
+<p>信用不好。</p>
+</blockquote>
+<p>那信用怎样形成？</p>
+<blockquote class="blockquote">
+<p>借款记录。</p>
+<p>收入。</p>
+<p>逾期。</p>
+</blockquote>
+<p>人物想：</p>
+<blockquote class="blockquote">
+<p>找关系办事。</p>
+</blockquote>
+<p>失败。</p>
+<p>为什么？</p>
+<blockquote class="blockquote">
+<p>对方权限不够。</p>
+<p>事情已经进入更高层。</p>
+</blockquote>
+<p>于是：</p>
+<blockquote class="blockquote">
+<p>世界层级出现。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>失败往往比成功更能暴露世界结构。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="十九阻力本身就是世界的显影" class="level2">
+<h2 class="anchored" data-anchor-id="十九阻力本身就是世界的显影">十九、阻力本身就是世界的“显影”</h2>
+<p>第7章说：</p>
+<blockquote class="blockquote">
+<p>阻力是人物不能直接成功的原因。</p>
+</blockquote>
+<p>现在从世界角度看：</p>
+<blockquote class="blockquote">
+<p>很多阻力其实就是世界规则在发生作用。</p>
+</blockquote>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>没资格。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>没权限。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>没钱。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>没身份。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>路被封。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>对方有权拒绝。</p>
+</blockquote>
+<p>这些阻力会让：</p>
+<blockquote class="blockquote">
+<p>世界变得可感知。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>人物碰壁的地方，往往就是世界结构最容易显形的地方。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="二十从谁能阻止我反推权力" class="level2">
+<h2 class="anchored" data-anchor-id="二十从谁能阻止我反推权力">二十、从“谁能阻止我”反推权力</h2>
+<p>人物要做某件事。</p>
+<p>问：</p>
+<blockquote class="blockquote">
+<p><strong>谁有能力说“不”？</strong></p>
+</blockquote>
+<p>开店：</p>
+<blockquote class="blockquote">
+<p>房东、监管、资金方。</p>
+</blockquote>
+<p>办案：</p>
+<blockquote class="blockquote">
+<p>上级、法律、证据规则。</p>
+</blockquote>
+<p>进宗门：</p>
+<blockquote class="blockquote">
+<p>长老、资格制度。</p>
+</blockquote>
+<p>跨国：</p>
+<blockquote class="blockquote">
+<p>边境、签证、身份系统。</p>
+</blockquote>
+<p>只要知道：</p>
+<blockquote class="blockquote">
+<p>谁能阻止，</p>
+</blockquote>
+<p>就开始知道：</p>
+<blockquote class="blockquote">
+<p>权力在哪里。</p>
+</blockquote>
+<hr>
+</section>
+<section id="二十一从谁能帮我反推资源网络" class="level2">
+<h2 class="anchored" data-anchor-id="二十一从谁能帮我反推资源网络">二十一、从“谁能帮我”反推资源网络</h2>
+<p>反过来：</p>
+<blockquote class="blockquote">
+<p>谁能帮？</p>
+</blockquote>
+<p>借钱：</p>
+<blockquote class="blockquote">
+<p>家人、朋友、银行、地下借贷。</p>
+</blockquote>
+<p>查信息：</p>
+<blockquote class="blockquote">
+<p>警察、记者、内部员工、黑客。</p>
+</blockquote>
+<p>获得身份：</p>
+<blockquote class="blockquote">
+<p>官员、组织、担保人。</p>
+</blockquote>
+<p>于是人物关系网络和世界资源网络：</p>
+<blockquote class="blockquote">
+<p>开始连接。</p>
+</blockquote>
+<hr>
+</section>
+<section id="二十二人物关系其实也是世界的一部分" class="level2">
+<h2 class="anchored" data-anchor-id="二十二人物关系其实也是世界的一部分">二十二、人物关系其实也是世界的一部分</h2>
+<p>上一章我们研究：</p>
+<blockquote class="blockquote">
+<p>人物关系。</p>
+</blockquote>
+<p>现在可以看到：</p>
+<p>关系不仅是人物层。</p>
+<p>它也是：</p>
+<blockquote class="blockquote">
+<p><strong>资源流动和行动路径的一部分。</strong></p>
+</blockquote>
+<p>在有些社会：</p>
+<blockquote class="blockquote">
+<p>没关系很难办事。</p>
+</blockquote>
+<p>在另一些制度里：</p>
+<blockquote class="blockquote">
+<p>关系作用较小。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p>人情网络强不强</p>
+</blockquote>
+<p>本身就是世界特征。</p>
+<hr>
+</section>
+<section id="二十三从谁认识谁可以反推社会结构" class="level2">
+<h2 class="anchored" data-anchor-id="二十三从谁认识谁可以反推社会结构">二十三、从“谁认识谁”可以反推社会结构</h2>
+<p>比如：</p>
+<p>村里所有人都互相认识。</p>
+<p>意味着：</p>
+<blockquote class="blockquote">
+<p>信息传播快。</p>
+<p>隐私少。</p>
+<p>名声重要。</p>
+</blockquote>
+<p>大城市：</p>
+<blockquote class="blockquote">
+<p>匿名性更高。</p>
+</blockquote>
+<p>同一个人物做错事：</p>
+<blockquote class="blockquote">
+<p>后果完全不同。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>社会连接密度会改变故事。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="二十四从信息怎么流动反推世界" class="level2">
+<h2 class="anchored" data-anchor-id="二十四从信息怎么流动反推世界">二十四、从“信息怎么流动”反推世界</h2>
+<p>人物知道一件事。</p>
+<p>别人多久会知道？</p>
+<p>靠：</p>
+<blockquote class="blockquote">
+<p>口口相传？</p>
+<p>报纸？</p>
+<p>电话？</p>
+<p>社交媒体？</p>
+<p>官府公告？</p>
+<p>宗门传讯？</p>
+</blockquote>
+<p>信息传播速度会直接改变：</p>
+<blockquote class="blockquote">
+<p>误会持续多久。</p>
+<p>秘密能藏多久。</p>
+<p>危险传播多快。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>信息系统是世界非常核心的一层。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="二十五信息流动会决定很多情节是否成立" class="level2">
+<h2 class="anchored" data-anchor-id="二十五信息流动会决定很多情节是否成立">二十五、信息流动会决定很多情节是否成立</h2>
+<p>现代故事里：</p>
+<blockquote class="blockquote">
+<p>一个人失踪三天没人发现</p>
+</blockquote>
+<p>需要理由。</p>
+<p>因为：</p>
+<blockquote class="blockquote">
+<p>手机、监控、支付记录、社交关系</p>
+</blockquote>
+<p>都可能留下痕迹。</p>
+<p>古代：</p>
+<blockquote class="blockquote">
+<p>人消失几个月</p>
+</blockquote>
+<p>可能更容易。</p>
+<p>所以时代差异不只是服装和建筑。</p>
+<p>它会改变：</p>
+<blockquote class="blockquote">
+<p><strong>哪些情节合理。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="二十六从东西怎么来反推资源系统" class="level2">
+<h2 class="anchored" data-anchor-id="二十六从东西怎么来反推资源系统">二十六、从“东西怎么来”反推资源系统</h2>
+<p>人物手里有：</p>
+<blockquote class="blockquote">
+<p>一把枪。</p>
+</blockquote>
+<p>从哪来？</p>
+<p>合法买？</p>
+<p>偷？</p>
+<p>黑市？</p>
+<p>别人给？</p>
+<p>不同来源意味着：</p>
+<blockquote class="blockquote">
+<p>不同关系、风险、记录。</p>
+</blockquote>
+<p>人物有：</p>
+<blockquote class="blockquote">
+<p>一袋粮。</p>
+</blockquote>
+<p>谁种？</p>
+<p>谁卖？</p>
+<p>价格怎么定？</p>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>物品来源本身就是世界机制。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="二十七从东西去哪反推后果系统" class="level2">
+<h2 class="anchored" data-anchor-id="二十七从东西去哪反推后果系统">二十七、从“东西去哪”反推后果系统</h2>
+<p>人物卖掉房子。</p>
+<p>钱去哪？</p>
+<p>还债？</p>
+<p>投资？</p>
+<p>被别人拿走？</p>
+<p>这会影响：</p>
+<blockquote class="blockquote">
+<p>下一局面。</p>
+</blockquote>
+<p>世界中的资源不是：</p>
+<blockquote class="blockquote">
+<p>出现—消失。</p>
+</blockquote>
+<p>而应该：</p>
+<blockquote class="blockquote">
+<p>流动。</p>
+</blockquote>
+<p>所以反推世界时，可以一直问：</p>
+<blockquote class="blockquote">
+<p><strong>它从哪里来？</strong></p>
+<p><strong>现在到谁手里？</strong></p>
+<p><strong>之后会去哪？</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="二十八从谁生产反推组织" class="level2">
+<h2 class="anchored" data-anchor-id="二十八从谁生产反推组织">二十八、从“谁生产”反推组织</h2>
+<p>一个城市需要：</p>
+<blockquote class="blockquote">
+<p>粮食。</p>
+<p>电。</p>
+<p>水。</p>
+<p>药品。</p>
+</blockquote>
+<p>这些都不是凭空出现。</p>
+<p>小说未必要写基础设施。</p>
+<p>但如果某个资源断了：</p>
+<blockquote class="blockquote">
+<p>就必须知道生产和供应在哪里。</p>
+</blockquote>
+<p>于是：</p>
+<blockquote class="blockquote">
+<p>组织结构自然出现。</p>
+</blockquote>
+<hr>
+</section>
+<section id="二十九世界中的组织本质上是在持续解决某类问题" class="level2">
+<h2 class="anchored" data-anchor-id="二十九世界中的组织本质上是在持续解决某类问题">二十九、世界中的组织，本质上是在持续解决某类问题</h2>
+<p>医院：</p>
+<blockquote class="blockquote">
+<p>处理疾病。</p>
+</blockquote>
+<p>银行：</p>
+<blockquote class="blockquote">
+<p>处理资金与信用。</p>
+</blockquote>
+<p>学校：</p>
+<blockquote class="blockquote">
+<p>处理教育和资格。</p>
+</blockquote>
+<p>政府：</p>
+<blockquote class="blockquote">
+<p>处理公共管理。</p>
+</blockquote>
+<p>军队：</p>
+<blockquote class="blockquote">
+<p>处理战争和安全。</p>
+</blockquote>
+<p>公司：</p>
+<blockquote class="blockquote">
+<p>组织资源创造产品或服务。</p>
+</blockquote>
+<p>所以看到一个组织，可以问：</p>
+<blockquote class="blockquote">
+<p><strong>它为什么存在？</strong></p>
+</blockquote>
+<p>答案会告诉你：</p>
+<blockquote class="blockquote">
+<p>它平时做什么。</p>
+<p>会产生什么规则。</p>
+<p>会和谁冲突。</p>
+</blockquote>
+<hr>
+</section>
+<section id="三十组织有目标就会产生内部角色" class="level2">
+<h2 class="anchored" data-anchor-id="三十组织有目标就会产生内部角色">三十、组织有目标，就会产生内部角色</h2>
+<p>例如：</p>
+<p>医院要治病。</p>
+<p>所以需要：</p>
+<blockquote class="blockquote">
+<p>医生。</p>
+<p>护士。</p>
+<p>药师。</p>
+<p>行政。</p>
+<p>财务。</p>
+</blockquote>
+<p>军队要作战。</p>
+<p>所以需要：</p>
+<blockquote class="blockquote">
+<p>指挥。</p>
+<p>补给。</p>
+<p>侦察。</p>
+<p>战斗人员。</p>
+</blockquote>
+<p>这说明：</p>
+<blockquote class="blockquote">
+<p><strong>角色不是凭空列职位。</strong></p>
+<p><strong>角色是系统功能分工的结果。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="三十一从谁负责什么反推组织结构" class="level2">
+<h2 class="anchored" data-anchor-id="三十一从谁负责什么反推组织结构">三十一、从“谁负责什么”反推组织结构</h2>
+<p>人物想：</p>
+<blockquote class="blockquote">
+<p>找人批一笔钱。</p>
+</blockquote>
+<p>谁批？</p>
+<p>部门经理？</p>
+<p>财务？</p>
+<p>老板？</p>
+<p>董事会？</p>
+<p>不同金额：</p>
+<blockquote class="blockquote">
+<p>权限不同。</p>
+</blockquote>
+<p>于是：</p>
+<blockquote class="blockquote">
+<p>组织层级出现。</p>
+</blockquote>
+<p>只需要追：</p>
+<blockquote class="blockquote">
+<p>“这件事到底谁能决定？”</p>
+</blockquote>
+<p>就能从一个行动反推出：</p>
+<blockquote class="blockquote">
+<p>权责结构。</p>
+</blockquote>
+<hr>
+</section>
+<section id="三十二从决定是怎么做出来的反推决策机制" class="level2">
+<h2 class="anchored" data-anchor-id="三十二从决定是怎么做出来的反推决策机制">三十二、从“决定是怎么做出来的”反推决策机制</h2>
+<p>一个组织做决定：</p>
+<blockquote class="blockquote">
+<p>谁说了算？</p>
+</blockquote>
+<p>一个人？</p>
+<p>投票？</p>
+<p>集体讨论？</p>
+<p>上级批？</p>
+<p>按制度自动执行？</p>
+<p>这会直接改变：</p>
+<blockquote class="blockquote">
+<p>人物应该说服谁。</p>
+</blockquote>
+<p>如果是个人决策：</p>
+<blockquote class="blockquote">
+<p>攻一个人。</p>
+</blockquote>
+<p>如果是委员会：</p>
+<blockquote class="blockquote">
+<p>需要多个支持。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>决策机制直接决定情节结构。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="三十三从谁承担成本反推利益结构" class="level2">
+<h2 class="anchored" data-anchor-id="三十三从谁承担成本反推利益结构">三十三、从“谁承担成本”反推利益结构</h2>
+<p>例如：</p>
+<p>公司决定降价。</p>
+<p>谁承担？</p>
+<blockquote class="blockquote">
+<p>公司利润。</p>
+<p>员工奖金。</p>
+<p>供应商。</p>
+</blockquote>
+<p>政府提高税：</p>
+<blockquote class="blockquote">
+<p>谁承担？</p>
+</blockquote>
+<p>战争征粮：</p>
+<blockquote class="blockquote">
+<p>谁失去粮食？</p>
+</blockquote>
+<p>一个制度只要涉及资源分配：</p>
+<blockquote class="blockquote">
+<p>就一定有人得，有人失。</p>
+</blockquote>
+<p>这就是冲突来源。</p>
+<hr>
+</section>
+<section id="三十四从谁得利谁吃亏反推阵营" class="level2">
+<h2 class="anchored" data-anchor-id="三十四从谁得利谁吃亏反推阵营">三十四、从“谁得利，谁吃亏”反推阵营</h2>
+<p>假设新政策：</p>
+<blockquote class="blockquote">
+<p>限制某种贸易。</p>
+</blockquote>
+<p>受益：</p>
+<blockquote class="blockquote">
+<p>本地生产者。</p>
+</blockquote>
+<p>受损：</p>
+<blockquote class="blockquote">
+<p>进口商。</p>
+</blockquote>
+<p>于是两个阵营自然出现。</p>
+<p>不需要作者先想：</p>
+<blockquote class="blockquote">
+<p>“我要设计两个派系。”</p>
+</blockquote>
+<p>现实机制会自动产生：</p>
+<blockquote class="blockquote">
+<p>利益群体。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>阵营可以从资源分配反推。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="三十五从规则能不能被绕过反推灰色空间" class="level2">
+<h2 class="anchored" data-anchor-id="三十五从规则能不能被绕过反推灰色空间">三十五、从“规则能不能被绕过”反推灰色空间</h2>
+<p>所有社会系统都会有：</p>
+<blockquote class="blockquote">
+<p>规则。</p>
+</blockquote>
+<p>也可能有：</p>
+<blockquote class="blockquote">
+<p>漏洞。</p>
+</blockquote>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>可以找关系。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>可以伪造。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>可以行贿。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>可以钻制度空子。</p>
+</blockquote>
+<p>灰色空间的大小会影响：</p>
+<blockquote class="blockquote">
+<p>世界气质。</p>
+</blockquote>
+<p>如果什么都能靠关系解决：</p>
+<blockquote class="blockquote">
+<p>是一种世界。</p>
+</blockquote>
+<p>如果系统极度程序化：</p>
+<blockquote class="blockquote">
+<p>是另一种世界。</p>
+</blockquote>
+<hr>
+</section>
+<section id="三十六世界风格其实会从事情怎么被办成中显现" class="level2">
+<h2 class="anchored" data-anchor-id="三十六世界风格其实会从事情怎么被办成中显现">三十六、世界风格，其实会从“事情怎么被办成”中显现</h2>
+<p>一个社会是否：</p>
+<blockquote class="blockquote">
+<p>人情化。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>法治化。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>暴力化。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>金钱化。</p>
+</blockquote>
+<p>不需要作者直接说明。</p>
+<p>看人物：</p>
+<blockquote class="blockquote">
+<p>遇到问题后首先找谁。</p>
+</blockquote>
+<p>就能看出来。</p>
+<p>例如：</p>
+<p>办事先找：</p>
+<blockquote class="blockquote">
+<p>熟人。</p>
+</blockquote>
+<p>说明关系重要。</p>
+<p>先查：</p>
+<blockquote class="blockquote">
+<p>规则和流程。</p>
+</blockquote>
+<p>说明制度更可靠。</p>
+<p>先找：</p>
+<blockquote class="blockquote">
+<p>强者。</p>
+</blockquote>
+<p>说明权力结构更直接。</p>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>世界气质可以通过行动路径展示。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="三十七从一个-scene-反推世界不需要无限追问" class="level2">
+<h2 class="anchored" data-anchor-id="三十七从一个-scene-反推世界不需要无限追问">三十七、从一个 Scene 反推世界，不需要无限追问</h2>
+<p>这是必须限制的一点。</p>
+<p>比如：</p>
+<p>人物进医院。</p>
+<p>追到：</p>
+<blockquote class="blockquote">
+<p>挂号、医生、费用</p>
+</blockquote>
+<p>已经够写。</p>
+<p>不需要继续追：</p>
+<blockquote class="blockquote">
+<p>医院财政从哪来？</p>
+<p>医学院怎样培养医生？</p>
+<p>药品产业链是什么？</p>
+</blockquote>
+<p>除非：</p>
+<blockquote class="blockquote">
+<p>故事真的继续碰到。</p>
+</blockquote>
+<p>否则会重新陷入：</p>
+<blockquote class="blockquote">
+<p>世界百科。</p>
+</blockquote>
+<hr>
+</section>
+<section id="三十八什么时候应该停止反推" class="level2">
+<h2 class="anchored" data-anchor-id="三十八什么时候应该停止反推">三十八、什么时候应该停止反推</h2>
+<p>一个非常实用的标准：</p>
+<blockquote class="blockquote">
+<p><strong>当你已经知道人物下一步怎么做、世界怎样回应、为什么会这样，就可以停。</strong></p>
+</blockquote>
+<p>比如：</p>
+<p>人物要报警。</p>
+<p>只要你知道：</p>
+<blockquote class="blockquote">
+<p>去哪里。</p>
+<p>谁受理。</p>
+<p>需要什么。</p>
+<p>有什么可能结果。</p>
+</blockquote>
+<p>当前 Scene 就够了。</p>
+<p>不需要继续扩大。</p>
+<hr>
+</section>
+<section id="三十九反推深度由因果需要决定" class="level2">
+<h2 class="anchored" data-anchor-id="三十九反推深度由因果需要决定">三十九、反推深度由“因果需要”决定</h2>
+<p>如果结果只是：</p>
+<blockquote class="blockquote">
+<p>报警成功。</p>
+</blockquote>
+<p>浅层机制足够。</p>
+<p>如果故事里：</p>
+<blockquote class="blockquote">
+<p>警方为什么不立案</p>
+</blockquote>
+<p>成为核心问题，</p>
+<p>那就要继续：</p>
+<blockquote class="blockquote">
+<p>立案条件。</p>
+<p>证据标准。</p>
+<p>权限。</p>
+<p>利益。</p>
+<p>关系。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>故事越往某处深入，世界就越往该处加深。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="四十一个-scene-可以作为探针" class="level2">
+<h2 class="anchored" data-anchor-id="四十一个-scene-可以作为探针">四十、一个 Scene 可以作为“探针”</h2>
+<p>可以把 Scene 想成：</p>
+<blockquote class="blockquote">
+<p><strong>插入世界的一根探针。</strong></p>
+</blockquote>
+<p>人物一行动，</p>
+<p>就会碰到：</p>
+<blockquote class="blockquote">
+<p>规则。</p>
+<p>人。</p>
+<p>资源。</p>
+<p>权力。</p>
+<p>机制。</p>
+</blockquote>
+<p>这些被碰到的地方：</p>
+<blockquote class="blockquote">
+<p>就是作者需要建的地方。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p>Scene 不只是故事单位。</p>
+</blockquote>
+<p>它还是：</p>
+<blockquote class="blockquote">
+<p><strong>世界探索单位。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="四十一作者甚至可以先写再补世界" class="level2">
+<h2 class="anchored" data-anchor-id="四十一作者甚至可以先写再补世界">四十一、作者甚至可以先写，再补世界</h2>
+<p>如果你不知道：</p>
+<blockquote class="blockquote">
+<p>古代普通人怎么递状纸。</p>
+</blockquote>
+<p>完全可以先写：</p>
+<blockquote class="blockquote">
+<p>他去县衙告状。</p>
+</blockquote>
+<p>写到那里卡住。</p>
+<p>然后再研究：</p>
+<blockquote class="blockquote">
+<p>当时具体程序。</p>
+</blockquote>
+<p>补完以后：</p>
+<blockquote class="blockquote">
+<p>把 Scene 改实。</p>
+</blockquote>
+<p>所以世界构建不一定全发生在写之前。</p>
+<p>它可以是：</p>
+<blockquote class="blockquote">
+<p><strong>写作—发现需求—补世界—继续写</strong></p>
+</blockquote>
+<p>的循环。</p>
+<hr>
+</section>
+<section id="四十二世界构建和研究可以直接对接" class="level2">
+<h2 class="anchored" data-anchor-id="四十二世界构建和研究可以直接对接">四十二、世界构建和研究可以直接对接</h2>
+<p>当故事需要：</p>
+<blockquote class="blockquote">
+<p>古代盐政。</p>
+</blockquote>
+<p>你就研究盐政。</p>
+<p>需要：</p>
+<blockquote class="blockquote">
+<p>现代医院流程。</p>
+</blockquote>
+<p>就研究医院。</p>
+<p>需要：</p>
+<blockquote class="blockquote">
+<p>餐饮供应链。</p>
+</blockquote>
+<p>就研究供应链。</p>
+<p>这比：</p>
+<blockquote class="blockquote">
+<p>漫无目的地研究整个时代</p>
+</blockquote>
+<p>效率高很多。</p>
+<p>因为：</p>
+<blockquote class="blockquote">
+<p><strong>Scene 会告诉你研究问题是什么。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="四十三研究时也要带着行动问题" class="level2">
+<h2 class="anchored" data-anchor-id="四十三研究时也要带着行动问题">四十三、研究时也要带着“行动问题”</h2>
+<p>不要只查：</p>
+<blockquote class="blockquote">
+<p>“古代县衙制度”。</p>
+</blockquote>
+<p>可以更具体：</p>
+<blockquote class="blockquote">
+<p>普通百姓怎样告状？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>谁受理状纸？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>告状要不要费用？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>如果县令不想受理怎么办？</p>
+</blockquote>
+<p>这种问题直接对应：</p>
+<blockquote class="blockquote">
+<p>Scene。</p>
+</blockquote>
+<p>得到的信息也更容易进入小说。</p>
+<hr>
+</section>
+<section id="四十四从-scene-反推世界还能防止设定只存在于说明里" class="level2">
+<h2 class="anchored" data-anchor-id="四十四从-scene-反推世界还能防止设定只存在于说明里">四十四、从 Scene 反推世界还能防止“设定只存在于说明里”</h2>
+<p>例如：</p>
+<p>作者说：</p>
+<blockquote class="blockquote">
+<p>这是一个等级森严的社会。</p>
+</blockquote>
+<p>如果 Scene 里：</p>
+<blockquote class="blockquote">
+<p>所有人平等说话。</p>
+</blockquote>
+<p>这个设定没进入故事。</p>
+<p>真正反推时会问：</p>
+<blockquote class="blockquote">
+<p>等级森严具体影响什么行动？</p>
+</blockquote>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>谁能坐哪里。</p>
+<p>谁先说话。</p>
+<p>谁能命令谁。</p>
+<p>谁不能直呼名字。</p>
+<p>谁犯法后处罚不同。</p>
+</blockquote>
+<p>现在：</p>
+<blockquote class="blockquote">
+<p>等级真正存在。</p>
+</blockquote>
+<hr>
+</section>
+<section id="四十五世界结构必须最终落到具体动作差异" class="level2">
+<h2 class="anchored" data-anchor-id="四十五世界结构必须最终落到具体动作差异">四十五、世界结构必须最终落到“具体动作差异”</h2>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>两个阶层不同的人进入同一饭馆。</p>
+</blockquote>
+<p>高阶层人物：</p>
+<blockquote class="blockquote">
+<p>可以进包间。</p>
+</blockquote>
+<p>低阶层：</p>
+<blockquote class="blockquote">
+<p>只能在外面等。</p>
+</blockquote>
+<p>这就是：</p>
+<blockquote class="blockquote">
+<p>世界结构转化成动作差异。</p>
+</blockquote>
+<p>如果某种制度、阶层、文化：</p>
+<blockquote class="blockquote">
+<p>永远不改变人物实际做法，</p>
+</blockquote>
+<p>它很难被读者感受到。</p>
+<hr>
+</section>
+<section id="四十六从一个动作为什么不能做反推文化" class="level2">
+<h2 class="anchored" data-anchor-id="四十六从一个动作为什么不能做反推文化">四十六、从“一个动作为什么不能做”反推文化</h2>
+<p>世界不只有法律。</p>
+<p>还有：</p>
+<blockquote class="blockquote">
+<p>习俗。</p>
+<p>礼仪。</p>
+<p>禁忌。</p>
+</blockquote>
+<p>比如：</p>
+<p>人物不能：</p>
+<blockquote class="blockquote">
+<p>直接叫长辈名字。</p>
+</blockquote>
+<p>为什么？</p>
+<blockquote class="blockquote">
+<p>文化规则。</p>
+</blockquote>
+<p>人物不能：</p>
+<blockquote class="blockquote">
+<p>在某种场合直接拒绝。</p>
+</blockquote>
+<p>为什么？</p>
+<blockquote class="blockquote">
+<p>面子和礼仪。</p>
+</blockquote>
+<p>这些规则虽然没有警察执行，</p>
+<p>却有：</p>
+<blockquote class="blockquote">
+<p>社会后果。</p>
+</blockquote>
+<p>所以文化也可以从：</p>
+<blockquote class="blockquote">
+<p><strong>行为限制</strong></p>
+</blockquote>
+<p>反推出来。</p>
+<hr>
+</section>
+<section id="四十七文化规则同样要有惩罚" class="level2">
+<h2 class="anchored" data-anchor-id="四十七文化规则同样要有惩罚">四十七、文化规则同样要有“惩罚”</h2>
+<p>不是法律惩罚。</p>
+<p>可能是：</p>
+<blockquote class="blockquote">
+<p>丢脸。</p>
+<p>被排斥。</p>
+<p>失去信任。</p>
+<p>名声变坏。</p>
+<p>婚姻机会下降。</p>
+</blockquote>
+<p>只要有后果：</p>
+<blockquote class="blockquote">
+<p>文化就是真实力量。</p>
+</blockquote>
+<hr>
+</section>
+<section id="四十八从人物为什么不直接说反推社会环境" class="level2">
+<h2 class="anchored" data-anchor-id="四十八从人物为什么不直接说反推社会环境">四十八、从“人物为什么不直接说”反推社会环境</h2>
+<p>比如：</p>
+<p>人物知道：</p>
+<blockquote class="blockquote">
+<p>老板违法。</p>
+</blockquote>
+<p>为什么不举报？</p>
+<p>可能：</p>
+<blockquote class="blockquote">
+<p>怕失业。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>行业内黑名单。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>没证据。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>举报系统不可靠。</p>
+</blockquote>
+<p>一个简单的：</p>
+<blockquote class="blockquote">
+<p>“为什么不直接做”</p>
+</blockquote>
+<p>往往能反推出：</p>
+<blockquote class="blockquote">
+<p>整个社会约束。</p>
+</blockquote>
+<p>所以这是一个极强的问题：</p>
+<blockquote class="blockquote">
+<p><strong>最直接的路为什么不能走？</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="四十九从最容易的解决办法为什么不能用反推世界比凭空加阻力自然" class="level2">
+<h2 class="anchored" data-anchor-id="四十九从最容易的解决办法为什么不能用反推世界比凭空加阻力自然">四十九、从“最容易的解决办法为什么不能用”反推世界，比凭空加阻力自然</h2>
+<p>例如：</p>
+<p>主角缺钱。</p>
+<p>最容易：</p>
+<blockquote class="blockquote">
+<p>银行贷款。</p>
+</blockquote>
+<p>为什么不能？</p>
+<blockquote class="blockquote">
+<p>信用坏。</p>
+</blockquote>
+<p>为什么坏？</p>
+<blockquote class="blockquote">
+<p>之前替父亲担保过。</p>
+</blockquote>
+<p>这里同时生成：</p>
+<blockquote class="blockquote">
+<p>世界机制</p>
+</blockquote>
+<p>和</p>
+<blockquote class="blockquote">
+<p>人物历史。</p>
+</blockquote>
+<p>这比：</p>
+<blockquote class="blockquote">
+<p>“银行突然系统故障”</p>
+</blockquote>
+<p>更有因果。</p>
+<hr>
+</section>
+<section id="五十世界与人物历史可以在一个点上接起来" class="level2">
+<h2 class="anchored" data-anchor-id="五十世界与人物历史可以在一个点上接起来">五十、世界与人物历史可以在一个点上接起来</h2>
+<p>这非常重要。</p>
+<p>世界不是纯外部结构。</p>
+<p>人物过去和世界发生过交互。</p>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>他信用坏。</p>
+</blockquote>
+<p>这是金融系统里的记录。</p>
+<p>也是：</p>
+<blockquote class="blockquote">
+<p>人物过去选择留下的痕迹。</p>
+</blockquote>
+<p>又比如：</p>
+<blockquote class="blockquote">
+<p>他有案底。</p>
+</blockquote>
+<p>这是法律系统记录。</p>
+<p>也是：</p>
+<blockquote class="blockquote">
+<p>人物历史。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>世界系统会保存人物过去。</strong></p>
+</blockquote>
+<p>这会让故事特别有连续性。</p>
+<hr>
+</section>
+<section id="五十一世界的记忆机制很重要" class="level2">
+<h2 class="anchored" data-anchor-id="五十一世界的记忆机制很重要">五十一、世界的“记忆机制”很重要</h2>
+<p>现代社会有：</p>
+<blockquote class="blockquote">
+<p>档案。</p>
+<p>监控。</p>
+<p>数据库。</p>
+<p>信用记录。</p>
+</blockquote>
+<p>古代可能有：</p>
+<blockquote class="blockquote">
+<p>户籍。</p>
+<p>官府文书。</p>
+<p>宗族记忆。</p>
+<p>名声。</p>
+</blockquote>
+<p>世界怎样记住一个人，</p>
+<p>会影响：</p>
+<blockquote class="blockquote">
+<p>他能不能逃离过去。</p>
+</blockquote>
+<p>这是很强的故事来源。</p>
+<hr>
+</section>
+<section id="五十二从这个世界会记住什么反推长期后果" class="level2">
+<h2 class="anchored" data-anchor-id="五十二从这个世界会记住什么反推长期后果">五十二、从“这个世界会记住什么”反推长期后果</h2>
+<p>人物犯罪。</p>
+<p>现代：</p>
+<blockquote class="blockquote">
+<p>可能留下电子证据。</p>
+</blockquote>
+<p>小村社会：</p>
+<blockquote class="blockquote">
+<p>可能留下口碑。</p>
+</blockquote>
+<p>宗门：</p>
+<blockquote class="blockquote">
+<p>可能有门规记录。</p>
+</blockquote>
+<p>一个人做错事以后，</p>
+<p>世界如何保留痕迹：</p>
+<blockquote class="blockquote">
+<p>决定后果多久会回来。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>世界记忆决定因果链长度。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="五十三一个完整示范从交不起粮税反推世界" class="level2">
+<h2 class="anchored" data-anchor-id="五十三一个完整示范从交不起粮税反推世界">五十三、一个完整示范：从“交不起粮税”反推世界</h2>
+<p>我们从一个很小的 Scene 开始。</p>
+<p>局面：</p>
+<blockquote class="blockquote">
+<p>陈六家今年交不起粮税。</p>
+</blockquote>
+<p>第一步问：</p>
+<blockquote class="blockquote">
+<p>为什么要交？</p>
+</blockquote>
+<p>因为：</p>
+<blockquote class="blockquote">
+<p>官府征收。</p>
+</blockquote>
+<p>世界出现：</p>
+<blockquote class="blockquote">
+<p>税制。</p>
+</blockquote>
+<p>再问：</p>
+<blockquote class="blockquote">
+<p>谁来收？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>里正和差役。</p>
+</blockquote>
+<p>角色出现。</p>
+<p>再问：</p>
+<blockquote class="blockquote">
+<p>他们怎么知道陈六家该交多少？</p>
+</blockquote>
+<p>需要：</p>
+<blockquote class="blockquote">
+<p>户籍、土地记录、产量估算。</p>
+</blockquote>
+<p>管理机制出现。</p>
+<p>再问：</p>
+<blockquote class="blockquote">
+<p>交不上怎么办？</p>
+</blockquote>
+<p>可能：</p>
+<blockquote class="blockquote">
+<p>罚。</p>
+<p>抓人。</p>
+<p>没收财产。</p>
+<p>加入欠税。</p>
+</blockquote>
+<p>执行机制出现。</p>
+<p>再问：</p>
+<blockquote class="blockquote">
+<p>能不能借？</p>
+</blockquote>
+<p>谁有粮？</p>
+<blockquote class="blockquote">
+<p>地主、富户、粮商。</p>
+</blockquote>
+<p>资源结构出现。</p>
+<p>再问：</p>
+<blockquote class="blockquote">
+<p>为什么今年尤其难？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>干旱 + 税额未降。</p>
+</blockquote>
+<p>于是：</p>
+<blockquote class="blockquote">
+<p>自然环境和行政制度发生冲突。</p>
+</blockquote>
+<p>再问：</p>
+<blockquote class="blockquote">
+<p>有没有人可以少交？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>有身份、有关系的人。</p>
+</blockquote>
+<p>权力差异出现。</p>
+<p>你会发现：</p>
+<blockquote class="blockquote">
+<p><strong>从“交不起粮税”一个 Scene，已经可以推出大量世界。</strong></p>
+</blockquote>
+<p>但每一层都和人物当前问题有关。</p>
+<hr>
+</section>
+<section id="五十四一个完整示范从饭馆被查反推现代世界" class="level2">
+<h2 class="anchored" data-anchor-id="五十四一个完整示范从饭馆被查反推现代世界">五十四、一个完整示范：从“饭馆被查”反推现代世界</h2>
+<p>局面：</p>
+<blockquote class="blockquote">
+<p>林薇的饭馆突然被检查。</p>
+</blockquote>
+<p>问：</p>
+<blockquote class="blockquote">
+<p>谁查？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>市场监管。</p>
+</blockquote>
+<p>问：</p>
+<blockquote class="blockquote">
+<p>查什么？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>食品卫生、证照、后厨。</p>
+</blockquote>
+<p>问：</p>
+<blockquote class="blockquote">
+<p>为什么今天来？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>有人投诉，或者例行检查。</p>
+</blockquote>
+<p>问：</p>
+<blockquote class="blockquote">
+<p>如果发现问题？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>整改、罚款、停业。</p>
+</blockquote>
+<p>问：</p>
+<blockquote class="blockquote">
+<p>能不能马上恢复？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>看问题严重程度。</p>
+</blockquote>
+<p>问：</p>
+<blockquote class="blockquote">
+<p>停业一天损失多少？</p>
+</blockquote>
+<p>这又进入：</p>
+<blockquote class="blockquote">
+<p>现金流。</p>
+</blockquote>
+<p>问：</p>
+<blockquote class="blockquote">
+<p>谁投诉？</p>
+</blockquote>
+<p>如果是竞争对手：</p>
+<blockquote class="blockquote">
+<p>商业关系进入。</p>
+</blockquote>
+<p>如果是顾客：</p>
+<blockquote class="blockquote">
+<p>服务问题进入。</p>
+</blockquote>
+<p>如果是房东：</p>
+<blockquote class="blockquote">
+<p>租赁冲突进入。</p>
+</blockquote>
+<p>一个检查 Scene，</p>
+<p>可以自然打开：</p>
+<blockquote class="blockquote">
+<p>监管、商业、关系、现金流。</p>
+</blockquote>
+<hr>
+</section>
+<section id="五十五一个完整示范从进入宗门反推幻想世界" class="level2">
+<h2 class="anchored" data-anchor-id="五十五一个完整示范从进入宗门反推幻想世界">五十五、一个完整示范：从“进入宗门”反推幻想世界</h2>
+<p>局面：</p>
+<blockquote class="blockquote">
+<p>主角想进入某宗门。</p>
+</blockquote>
+<p>问：</p>
+<blockquote class="blockquote">
+<p>为什么想进？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>学功法、获取资源、获得身份。</p>
+</blockquote>
+<p>于是：</p>
+<blockquote class="blockquote">
+<p>宗门提供稀缺价值。</p>
+</blockquote>
+<p>问：</p>
+<blockquote class="blockquote">
+<p>谁能进？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>有资质要求。</p>
+</blockquote>
+<p>准入机制出现。</p>
+<p>问：</p>
+<blockquote class="blockquote">
+<p>谁判断资质？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>执事、测试法器。</p>
+</blockquote>
+<p>角色和工具出现。</p>
+<p>问：</p>
+<blockquote class="blockquote">
+<p>进入以后资源怎么分？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>外门、内门不同。</p>
+</blockquote>
+<p>等级结构出现。</p>
+<p>问：</p>
+<blockquote class="blockquote">
+<p>怎么升级？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>考核、贡献、实力。</p>
+</blockquote>
+<p>晋升机制出现。</p>
+<p>问：</p>
+<blockquote class="blockquote">
+<p>谁会反对主角进入？</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>竞争者、派系。</p>
+</blockquote>
+<p>利益冲突出现。</p>
+<p>你不需要先设计：</p>
+<blockquote class="blockquote">
+<p>整个修真界。</p>
+</blockquote>
+<p>只需要：</p>
+<blockquote class="blockquote">
+<p><strong>把“进入宗门”这条行动路径做实。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="五十六反推世界的核心不是补知识而是补因果" class="level2">
+<h2 class="anchored" data-anchor-id="五十六反推世界的核心不是补知识而是补因果">五十六、反推世界的核心不是“补知识”，而是“补因果”</h2>
+<p>如果只是为了显得专业：</p>
+<blockquote class="blockquote">
+<p>补很多细节。</p>
+</blockquote>
+<p>很容易过量。</p>
+<p>真正应该补的是：</p>
+<blockquote class="blockquote">
+<p><strong>没有它，人物这一步为什么成功或失败就解释不清。</strong></p>
+</blockquote>
+<p>比如：</p>
+<p>人物为什么借不到钱？</p>
+<p>需要：</p>
+<blockquote class="blockquote">
+<p>信用机制。</p>
+</blockquote>
+<p>人物为什么进不了城？</p>
+<p>需要：</p>
+<blockquote class="blockquote">
+<p>身份制度。</p>
+</blockquote>
+<p>人物为什么不敢说真话？</p>
+<p>需要：</p>
+<blockquote class="blockquote">
+<p>关系和社会后果。</p>
+</blockquote>
+<p>这就是：</p>
+<blockquote class="blockquote">
+<p>因果型世界构建。</p>
+</blockquote>
+<hr>
+</section>
+<section id="五十七一个实用的scene-世界反推器" class="level2">
+<h2 class="anchored" data-anchor-id="五十七一个实用的scene-世界反推器">五十七、一个实用的“Scene → 世界”反推器</h2>
+<p>拿一个 Scene，可以按顺序问：</p>
+<section id="人物想做什么" class="level3">
+<h3 class="anchored" data-anchor-id="人物想做什么">1. 人物想做什么？</h3>
+<blockquote class="blockquote">
+<p>明确行动。</p>
+</blockquote>
+</section>
+<section id="正常情况下这件事怎么做" class="level3">
+<h3 class="anchored" data-anchor-id="正常情况下这件事怎么做">2. 正常情况下，这件事怎么做？</h3>
+<blockquote class="blockquote">
+<p>找到标准路径。</p>
+</blockquote>
+</section>
+<section id="这条路径经过哪些人机构地点工具" class="level3">
+<h3 class="anchored" data-anchor-id="这条路径经过哪些人机构地点工具">3. 这条路径经过哪些人、机构、地点、工具？</h3>
+<blockquote class="blockquote">
+<p>找到世界对象。</p>
+</blockquote>
+</section>
+<section id="谁控制关键资源或权限" class="level3">
+<h3 class="anchored" data-anchor-id="谁控制关键资源或权限">4. 谁控制关键资源或权限？</h3>
+<blockquote class="blockquote">
+<p>找到权力。</p>
+</blockquote>
+</section>
+<section id="凭什么允许人物获得" class="level3">
+<h3 class="anchored" data-anchor-id="凭什么允许人物获得">5. 凭什么允许人物获得？</h3>
+<blockquote class="blockquote">
+<p>找到准入规则。</p>
+</blockquote>
+</section>
+<section id="最容易的办法为什么不能直接用" class="level3">
+<h3 class="anchored" data-anchor-id="最容易的办法为什么不能直接用">6. 最容易的办法为什么不能直接用？</h3>
+<blockquote class="blockquote">
+<p>找到阻力。</p>
+</blockquote>
+</section>
+<section id="有没有灰色或替代路径" class="level3">
+<h3 class="anchored" data-anchor-id="有没有灰色或替代路径">7. 有没有灰色或替代路径？</h3>
+<blockquote class="blockquote">
+<p>找到漏洞和关系网络。</p>
+</blockquote>
+</section>
+<section id="违反规则会怎样" class="level3">
+<h3 class="anchored" data-anchor-id="违反规则会怎样">8. 违反规则会怎样？</h3>
+<blockquote class="blockquote">
+<p>找到执行与后果。</p>
+</blockquote>
+</section>
+<section id="谁从当前规则中获利谁吃亏" class="level3">
+<h3 class="anchored" data-anchor-id="谁从当前规则中获利谁吃亏">9. 谁从当前规则中获利，谁吃亏？</h3>
+<blockquote class="blockquote">
+<p>找到利益结构。</p>
+</blockquote>
+</section>
+<section id="这件事为什么今天变成问题" class="level3">
+<h3 class="anchored" data-anchor-id="这件事为什么今天变成问题">10. 这件事为什么今天变成问题？</h3>
+<blockquote class="blockquote">
+<p>向后追原因链。</p>
+</blockquote>
+<p>问到：</p>
+<blockquote class="blockquote">
+<p>足够支撑当前 Scene，</p>
+</blockquote>
+<p>就停止。</p>
+<hr>
+</section>
+</section>
+<section id="五十八反推以后再决定哪些东西进入文本" class="level2">
+<h2 class="anchored" data-anchor-id="五十八反推以后再决定哪些东西进入文本">五十八、反推以后，再决定哪些东西进入文本</h2>
+<p>作者可能已经知道：</p>
+<blockquote class="blockquote">
+<p>十条世界信息。</p>
+</blockquote>
+<p>但文本现在只需要：</p>
+<blockquote class="blockquote">
+<p>三条。</p>
+</blockquote>
+<p>例如：</p>
+<p>人物去县衙告状。</p>
+<p>读者只需知道：</p>
+<blockquote class="blockquote">
+<p>普通人不能直接见县令。</p>
+<p>状纸先交书吏。</p>
+<p>主角没有关系，所以被拖。</p>
+</blockquote>
+<p>这三条就足够制造 Scene。</p>
+<p>其他世界信息：</p>
+<blockquote class="blockquote">
+<p>留在作者脑中。</p>
+</blockquote>
+<p>以后需要再用。</p>
+<hr>
+</section>
+<section id="五十九世界构建真正的单位不是设定条目而是可产生后果的机制" class="level2">
+<h2 class="anchored" data-anchor-id="五十九世界构建真正的单位不是设定条目而是可产生后果的机制">五十九、世界构建真正的单位，不是“设定条目”，而是“可产生后果的机制”</h2>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>有宗门。</p>
+</blockquote>
+<p>不是机制。</p>
+<blockquote class="blockquote">
+<p>宗门按贡献点分配资源。</p>
+</blockquote>
+<p>是机制。</p>
+<blockquote class="blockquote">
+<p>有银行。</p>
+</blockquote>
+<p>不是机制。</p>
+<blockquote class="blockquote">
+<p>银行根据信用和抵押决定放贷。</p>
+</blockquote>
+<p>是机制。</p>
+<blockquote class="blockquote">
+<p>有官府。</p>
+</blockquote>
+<p>不是机制。</p>
+<blockquote class="blockquote">
+<p>官府按户籍和土地记录征税。</p>
+</blockquote>
+<p>是机制。</p>
+<p>只有机制：</p>
+<blockquote class="blockquote">
+<p>才能持续生成结果。</p>
+</blockquote>
+<hr>
+</section>
+<section id="六十从-scene-反推世界本质上是在问支撑这一幕成立的现实是什么" class="level2">
+<h2 class="anchored" data-anchor-id="六十从-scene-反推世界本质上是在问支撑这一幕成立的现实是什么">六十、从 Scene 反推世界，本质上是在问：“支撑这一幕成立的现实是什么”</h2>
+<p>这可以压成一句话。</p>
+<p>看到一个 Scene：</p>
+<blockquote class="blockquote">
+<p>不要只看表面的动作。</p>
+</blockquote>
+<p>往后问：</p>
+<blockquote class="blockquote">
+<p><strong>为了让这件事在这个世界里真实发生，背后必须有什么？</strong></p>
+</blockquote>
+<p>人物去交税。</p>
+<p>背后：</p>
+<blockquote class="blockquote">
+<p>税制。</p>
+</blockquote>
+<p>人物报名考试。</p>
+<p>背后：</p>
+<blockquote class="blockquote">
+<p>教育和资格体系。</p>
+</blockquote>
+<p>人物被裁员。</p>
+<p>背后：</p>
+<blockquote class="blockquote">
+<p>公司、劳动关系、经营压力。</p>
+</blockquote>
+<p>人物进宗门。</p>
+<p>背后：</p>
+<blockquote class="blockquote">
+<p>准入、资源、等级、组织。</p>
+</blockquote>
+<p>于是：</p>
+<blockquote class="blockquote">
+<p><strong>Scene 是地面。</strong></p>
+<p><strong>世界结构是地下。</strong></p>
+</blockquote>
+<p>地面露出什么，</p>
+<p>就往地下挖到足够支撑它为止。</p>
+<hr>
+</section>
+</section>
+<section id="本章暂时结论" class="level1">
+<h1>本章暂时结论</h1>
+<p>世界不必从地图、历史、种族、制度总表开始。</p>
+<p>一个更直接的方法是：</p>
+<blockquote class="blockquote">
+<p><strong>从 Scene 反推。</strong></p>
+</blockquote>
+<p>先问：</p>
+<blockquote class="blockquote">
+<p>人物现在要做什么？</p>
+</blockquote>
+<p>然后沿行动路径追：</p>
+<blockquote class="blockquote">
+<p>怎么做？</p>
+<p>要经过谁？</p>
+<p>谁控制资源？</p>
+<p>凭什么给？</p>
+<p>谁能阻止？</p>
+<p>有什么替代路线？</p>
+<p>违规会怎样？</p>
+<p>谁得利？</p>
+<p>谁吃亏？</p>
+</blockquote>
+<p>再沿问题往后追：</p>
+<blockquote class="blockquote">
+<p>为什么现在会出现这个问题？</p>
+</blockquote>
+<p>于是：</p>
+<blockquote class="blockquote">
+<p>对象、关系、组织、制度、资源、权力和机制</p>
+</blockquote>
+<p>都会逐渐出现。</p>
+<p>真正需要构建的不是：</p>
+<blockquote class="blockquote">
+<p>一个完整百科。</p>
+</blockquote>
+<p>而是：</p>
+<blockquote class="blockquote">
+<p><strong>支撑当前 Scene 因果成立的世界结构。</strong></p>
+</blockquote>
+<p>可以把方法压成：</p>
+<blockquote class="blockquote">
+<p><strong>Scene → 行动路径 → 规则与资源 → 权力与利益 → 背后机制</strong></p>
+</blockquote>
+<p>同时：</p>
+<blockquote class="blockquote">
+<p><strong>问题 → 直接原因 → 上层原因 → 更大的世界结构</strong></p>
+</blockquote>
+<p>两个方向结合：</p>
+<blockquote class="blockquote">
+<p>你就可以从一个极小的局面，逐渐向下挖出整个世界。</p>
+</blockquote>
+<p>而且这个世界不是装饰。</p>
+<p>它从出现的第一刻起就会：</p>
+<blockquote class="blockquote">
+<p>改变人物的选择。</p>
+<p>制造阻力。</p>
+<p>分配机会。</p>
+<p>产生后果。</p>
+<p>继续生成新的局面。</p>
+</blockquote>
+<p>下一章，我们会把方向反过来。</p>
+<p>这一章研究的是：</p>
+<blockquote class="blockquote">
+<p><strong>怎样从 Scene 反推世界。</strong></p>
+</blockquote>
+<p>第22章要研究：</p>
+<blockquote class="blockquote">
+<p><strong>怎样让已经存在的世界结构反过来主动制造故事。</strong></p>
+</blockquote>
+<p>也就是：</p>
+<blockquote class="blockquote">
+<p>一套制度、资源结构、权力关系、技术条件或社会机制，</p>
+<p>为什么会自动生产某类人物问题、冲突、机会和故事线。</p>
+</blockquote>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter-20.html" class="pagination-link" aria-label="故事需要多少世界">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">故事需要多少世界</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter-22.html" class="pagination-link" aria-label="chapter-22.html">
+        <span class="nav-page-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">chapter-22.html</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
