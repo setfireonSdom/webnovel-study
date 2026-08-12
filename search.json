@@ -1,5 +1,15 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "webnovel-study",
+    "section": "",
+    "text": "1 简介",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>简介</span>"
+    ]
+  },
+  {
     "objectID": "chapter-01.html",
     "href": "chapter-01.html",
     "title": "写小说，究竟是在做什么",
@@ -107,16 +117,6 @@
     "text": "十、从这里开始\n这一章暂时只做一件事：\n把我们的研究对象确定下来。\n我们不是为了建立一个庞大、漂亮、完整的“小说理论体系”。\n我们只追一个问题：\n\n怎样写出越来越好的小说？\n\n因此，本书以后遇到任何概念，都要接受同一个检验：\n\n它怎样改变作者的实际创作？\n\n如果说不清楚，就先放在旁边。\n下一章，我们开始继续往下压。\n既然小说最终必须落到具体内容，那么就要问：\n\n作者真正写下来的基本单位是什么？\n\n是句子？\n段落？\n事件？\nScene？\n还是别的东西？\n只有找到真正适合创作操作的基本单位，我们才有可能继续回答更重要的问题：\n\n面对空白页，第一步究竟怎么写。",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>写小说，究竟是在做什么</span>"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "webnovel-study",
-    "section": "",
-    "text": "1 简介",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>简介</span>"
     ]
   },
   {
@@ -9660,6 +9660,676 @@
     ]
   },
   {
+    "objectID": "chapter-24.html",
+    "href": "chapter-24.html",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "",
+    "text": "目标线：怎样把一个大目标写成几十个 Scene\n上一章，我们第一次真正进入长篇结构。\n我们提出：\n这意味着：\n但故事线有很多种。\n其中最常见、最稳定、也最容易直接转化成剧情的一种，就是：\n人物想：\n这些都可以成为：\n问题是：\n“我要成为冠军”只是一句话。\n真正写成小说，需要几十个甚至几百个 Scene。\n那么：\n这就是这一章要解决的问题。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#一大目标不是-scene",
+    "href": "chapter-24.html#一大目标不是-scene",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "一、大目标不是 Scene",
+    "text": "一、大目标不是 Scene\n例如：\n\n我要成为冠军。\n\n这不是 Scene。\n因为人物现在没法直接：\n\n“执行成为冠军”。\n\n他只能做下一步：\n\n报名比赛。\n找教练。\n训练。\n赢下一场。\n获得资格。\n\n所以：\n\n大目标只提供方向。\nScene 需要当前可执行目标。\n\n这就是目标线的第一个核心：\n\n把远处的“我要什么”，不断压成眼前的“我现在要做什么”。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#二目标有尺度",
+    "href": "chapter-24.html#二目标有尺度",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "二、目标有尺度",
+    "text": "二、目标有尺度\n一个人物可以同时拥有不同尺度的目标。\n例如：\n长期目标：\n\n保住饭馆。\n\n阶段目标：\n\n撑过这个月。\n\n当前目标：\n\n今天找到两万元。\n\nScene 目标：\n\n说服姐姐借钱。\n\n行动：\n\n去姐姐公司找她。\n\n这样：\n\n大目标 → 阶段目标 → 当前目标 → Scene 行动\n\n逐层落地。\n作者才真正有东西可写。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#三目标线最核心的结构是目标不断具体化",
+    "href": "chapter-24.html#三目标线最核心的结构是目标不断具体化",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "三、目标线最核心的结构是“目标不断具体化”",
+    "text": "三、目标线最核心的结构是“目标不断具体化”\n比如：\n大目标：\n\n我要复仇。\n\n太大。\n先问：\n\n现在离复仇还差什么？\n\n答案：\n\n不知道仇人在哪。\n\n于是阶段目标：\n\n找到仇人。\n\n再问：\n\n怎么找？\n\n\n先找到当年的知情人。\n\n当前目标出现。\n于是：\n\n找知情人\n\n可以写成 Scene。\nScene 结果：\n\n知情人已经死了，但留下一个地址。\n\n目标再具体化：\n\n去查这个地址。\n\n所以：\n\n目标线不是大目标一直重复。\n而是大目标不断生成新的局部目标。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#四一个目标如果不能生成下一步就还不够可写",
+    "href": "chapter-24.html#四一个目标如果不能生成下一步就还不够可写",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "四、一个目标如果不能生成“下一步”，就还不够可写",
+    "text": "四、一个目标如果不能生成“下一步”，就还不够可写\n例如：\n\n“我要成功。”\n\n太抽象。\n下一步是什么？\n不知道。\n如果改成：\n\n我要让公司活过三个月。\n\n继续：\n\n现在最大问题是什么？\n\n\n现金流。\n\n再具体：\n\n两周内拿到一笔订单。\n\n现在：\n\n目标开始进入 Scene。\n\n所以卡文时可以问：\n\n这个目标还能不能继续压下一层？\n\n直到出现：\n\n今天。\n这个人。\n这件事。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#五目标线不是目标清单而是目标的继承",
+    "href": "chapter-24.html#五目标线不是目标清单而是目标的继承",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "五、目标线不是目标清单，而是“目标的继承”",
+    "text": "五、目标线不是目标清单，而是“目标的继承”\n假设：\nScene 1：\n\n借钱。\n\nScene 2：\n\n找工作。\n\nScene 3：\n\n卖车。\n\n如果这三个只是并列办法，\n看起来会像任务列表。\n真正的目标线需要：\n\n上一步的结果改变下一步目标。\n\n例如：\n借钱失败。\n所以：\n\n正常筹钱路径关闭。\n\n人物决定：\n\n卖车。\n\n卖车以后：\n\n只筹到一半。\n\n于是：\n\n必须找临时工作。\n\n这就变成：\n\n目标 → 行动 → 结果 → 新目标\n\n目标开始有继承。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#六目标不是永远不变",
+    "href": "chapter-24.html#六目标不是永远不变",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "六、目标不是永远不变",
+    "text": "六、目标不是永远不变\n人物一开始想：\n\n还债。\n\n后来发现：\n\n债务本身有问题。\n\n目标可能变成：\n\n查清债务来源。\n\n再后来：\n\n保护家人。\n\n所以目标线不是：\n\n从第一章到结尾一直重复一句目标。\n\n它也会：\n\n更新。\n\n重要的是：\n\n更新以后仍然和前面的因果连续。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#七目标线会长大",
+    "href": "chapter-24.html#七目标线会长大",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "七、目标线会“长大”",
+    "text": "七、目标线会“长大”\n比如：\n最初：\n\n保住饭馆。\n\n后来：\n\n发现饭馆真正的问题不是房租，而是经营模式已经撑不住。\n\n目标变成：\n\n让饭馆重新活下来。\n\n再后来：\n\n饭馆不只是生意，还关系到女儿是否愿意接手、自己是否继续母亲留下的生活。\n\n目标逐渐从：\n\n外部任务\n\n进入：\n\n人物价值和身份。\n\n所以：\n\n目标可以随着故事深入被重新理解。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#八表面目标和深层目标可以不同",
+    "href": "chapter-24.html#八表面目标和深层目标可以不同",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "八、表面目标和深层目标可以不同",
+    "text": "八、表面目标和深层目标可以不同\n人物说：\n\n“我要赚一百万。”\n\n表面目标：\n\n钱。\n\n但为什么？\n可能：\n\n想证明父亲错了。\n\n或者：\n\n想获得安全。\n\n或者：\n\n想离开原来的阶层。\n\n所以目标线可以有两层：\n\n外部目标：人物想完成什么。\n内部目标：他真正想通过这件事解决什么。\n\n故事早期可能只看见外部。\n后来：\n\n深层目标逐渐浮出来。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#九长期目标最好连接价值",
+    "href": "chapter-24.html#九长期目标最好连接价值",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "九、长期目标最好连接价值",
+    "text": "九、长期目标最好连接价值\n人物为什么一直不放弃？\n因为：\n\n目标背后有价值。\n\n例如：\n\n保住饭馆\n\n不是只为了：\n\n店。\n\n它可能连接：\n\n母亲。\n身份。\n家庭。\n独立。\n尊严。\n\n所以目标线越长：\n\n越需要价值支撑。\n\n否则人物一次失败就应该：\n\n换目标。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#十目标需要有完成条件",
+    "href": "chapter-24.html#十目标需要有完成条件",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "十、目标需要有“完成条件”",
+    "text": "十、目标需要有“完成条件”\n这是非常重要的一点。\n“我要变强。”\n什么叫完成？\n不清楚。\n“我要成为冠军。”\n明确。\n“我要让公司活下来。”\n也还可以继续具体：\n\n连续六个月现金流为正？\n\n如果目标没有完成条件：\n\n它很容易无限拖。\n\n所以长期目标最好能回答：\n\n什么时候我可以说：这件事完成了？",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#十一有完成条件故事线才知道什么时候结束",
+    "href": "chapter-24.html#十一有完成条件故事线才知道什么时候结束",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "十一、有完成条件，故事线才知道什么时候结束",
+    "text": "十一、有完成条件，故事线才知道什么时候结束\n例如：\n目标：\n\n找到妹妹。\n\n找到：\n\n结束。\n\n但找到以后发现：\n\n妹妹不愿回来。\n\n那就是：\n\n新问题。\n\n旧目标已经完成。\n新目标：\n\n说服她回来？\n\n或者：\n\n搞清她为什么离开。\n\n这样故事线会自然换挡。\n所以：\n\n目标完成，不等于小说必须结束。\n但它应该真正关闭一个阶段。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#十二长期目标需要阶段门槛",
+    "href": "chapter-24.html#十二长期目标需要阶段门槛",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "十二、长期目标需要“阶段门槛”",
+    "text": "十二、长期目标需要“阶段门槛”\n如果人物想：\n\n成为冠军。\n\n不是每一章都写：\n\n“离冠军更近一点”。\n\n更自然的是：\n阶段 1：\n\n获得参赛资格。\n\n阶段 2：\n\n进入正式赛。\n\n阶段 3：\n\n打进淘汰赛。\n\n阶段 4：\n\n进入决赛。\n\n阶段 5：\n\n冠军战。\n\n每个阶段：\n\n有自己的局面、对手、目标。\n\n这就是：\n\n阶段目标。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#十三阶段目标是长篇最重要的中间层之一",
+    "href": "chapter-24.html#十三阶段目标是长篇最重要的中间层之一",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "十三、阶段目标是长篇最重要的中间层之一",
+    "text": "十三、阶段目标是长篇最重要的中间层之一\n大目标太远。\nScene 目标太近。\n中间缺一个东西：\n\n阶段目标。\n\n例如创业线：\n长期目标：\n\n公司活下来并稳定增长。\n\n阶段 1：\n\n做出产品。\n\n阶段 2：\n\n找到第一批客户。\n\n阶段 3：\n\n现金流转正。\n\n阶段 4：\n\n扩张团队。\n\n阶段 5：\n\n应对竞争。\n\n这样作者不需要同时想完：\n\n整本书。\n\n只需要先知道：\n\n当前阶段解决什么。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#十四一个阶段解决一种当前主要限制",
+    "href": "chapter-24.html#十四一个阶段解决一种当前主要限制",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "十四、一个阶段解决一种“当前主要限制”",
+    "text": "十四、一个阶段解决一种“当前主要限制”\n例如：\n主角想成为职业拳手。\n早期主要限制：\n\n不够强。\n\n阶段目标：\n\n训练。\n\n后来：\n\n已经够强，但没有资格。\n\n新阶段：\n\n获得比赛资格。\n\n再后来：\n\n有资格，但缺比赛经验。\n\n新阶段：\n\n连胜。\n\n所以：\n\n阶段往往围绕当前最大瓶颈组织。\n\n一旦瓶颈解决：\n\n目标线进入下一层。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#十五目标线真正好写是因为每个阶段都有新问题",
+    "href": "chapter-24.html#十五目标线真正好写是因为每个阶段都有新问题",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "十五、目标线真正好写，是因为“每个阶段都有新问题”",
+    "text": "十五、目标线真正好写，是因为“每个阶段都有新问题”\n如果大目标只是：\n\n不断重复同一个动作，\n\n会变成刷任务。\n例如：\n\n打怪。\n再打怪。\n再打更强怪。\n\n更好的目标线是：\n\n每次前进以后，\n问题性质发生变化。\n\n比如：\n早期：\n\n能不能打赢。\n\n中期：\n\n有没有资格参赛。\n\n再后来：\n\n如何面对媒体和名声。\n\n再后来：\n\n是否愿意牺牲健康继续比赛。\n\n目标仍然是：\n\n冠军。\n\n但故事内容在变化。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#十六大目标会不断产生前置条件",
+    "href": "chapter-24.html#十六大目标会不断产生前置条件",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "十六、大目标会不断产生“前置条件”",
+    "text": "十六、大目标会不断产生“前置条件”\n人物想：\n\n拿下项目。\n\n需要：\n\n先见到客户。\n\n要见客户：\n\n需要有人介绍。\n\n要找介绍人：\n\n先修复一段旧关系。\n\n于是：\n\n一个大目标不断产生前置目标。\n\n这就是非常实用的生成方式：\n\n我想做到 X。\n在做到 X 之前，必须先有什么？",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#十七前置条件是-scene-生成器",
+    "href": "chapter-24.html#十七前置条件是-scene-生成器",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "十七、前置条件是 Scene 生成器",
+    "text": "十七、前置条件是 Scene 生成器\n例如：\n目标：\n\n偷到档案。\n\n需要：\n\n进入办公室。\n\n进入办公室：\n\n需要门卡。\n\n拿门卡：\n\n需要接近某个员工。\n\n接近员工：\n\n需要制造一个理由。\n\n你已经获得：\n\n多个 Scene。\n\n所以：\n\n目标线可以通过不断寻找前置条件向下生长。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#十八但不能无限套娃",
+    "href": "chapter-24.html#十八但不能无限套娃",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "十八、但不能无限“套娃”",
+    "text": "十八、但不能无限“套娃”\n如果每个目标都：\n\n先做 A。\nA 又要先做 B。\nB 又要先做 C。\n\n无限下去，\n故事会拖。\n所以前置目标最好：\n\n真正产生变化、代价或新信息。\n\n而不是单纯延迟。\n例如：\n\n为了门卡去接近员工。\n\n如果这个员工之后：\n\n变成重要关系。\n\n或者：\n\n发现主角身份。\n\n这个前置 Scene 就有后果。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#十九目标路径最好会留下痕迹",
+    "href": "chapter-24.html#十九目标路径最好会留下痕迹",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "十九、目标路径最好会留下痕迹",
+    "text": "十九、目标路径最好会留下痕迹\n人物为了达到目标：\n\n求过谁。\n骗过谁。\n得罪谁。\n欠过谁。\n\n这些都应该留下：\n\n人情债。\n关系变化。\n风险。\n\n这样目标线不是：\n\n一条无痕任务路线。\n\n而是：\n\n越走，历史越厚。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#二十人物到达目标的方式会改变目标完成后的世界",
+    "href": "chapter-24.html#二十人物到达目标的方式会改变目标完成后的世界",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "二十、人物到达目标的方式，会改变“目标完成后的世界”",
+    "text": "二十、人物到达目标的方式，会改变“目标完成后的世界”\n例如：\n两个人都成功开公司。\nA：\n\n靠朋友支持。\n\nB：\n\n靠背叛合伙人。\n\n结果都是：\n\n公司成功。\n\n但完成目标后的关系、人格、风险：\n\n完全不同。\n\n所以：\n\n故事不只关心是否达到目标。\n还关心人物怎样到达。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#二十一目标线最重要的不是完成率而是路径质量",
+    "href": "chapter-24.html#二十一目标线最重要的不是完成率而是路径质量",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "二十一、目标线最重要的不是“完成率”，而是“路径质量”",
+    "text": "二十一、目标线最重要的不是“完成率”，而是“路径质量”\n一个角色每次：\n\n想做什么就成功。\n\n目标线很快会无聊。\n如果每次：\n\n都失败。\n\n也会疲劳。\n更有力量的是：\n\n成功，但留下代价。\n失败，但获得新信息。\n部分成功。\n达成一个目标，却改变大目标。\n\n这和第9章的结果结构直接连接。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#二十二阶段目标最好能够改变行动空间",
+    "href": "chapter-24.html#二十二阶段目标最好能够改变行动空间",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "二十二、阶段目标最好能够“改变行动空间”",
+    "text": "二十二、阶段目标最好能够“改变行动空间”\n例如：\n目标：\n\n获得律师资格。\n\n一旦完成：\n\n人物可以接触以前不能碰的案件。\n\n新的故事空间打开。\n又比如：\n\n加入宗门。\n\n完成以后：\n\n获得修炼资源。\n也进入派系争斗。\n\n所以好的阶段目标：\n\n不是只打一勾。\n完成后应当改变人物的位置。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#二十三目标完成以后最好出现新权利-新责任",
+    "href": "chapter-24.html#二十三目标完成以后最好出现新权利-新责任",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "二十三、目标完成以后，最好出现“新权利 + 新责任”",
+    "text": "二十三、目标完成以后，最好出现“新权利 + 新责任”\n例如：\n升职。\n权利：\n\n能调资源。\n\n责任：\n\n要管理团队。\n\n进入内门。\n权利：\n\n获得功法。\n\n责任：\n\n完成更危险任务。\n\n结婚。\n获得：\n\n亲密关系。\n\n同时：\n\n新义务出现。\n\n所以：\n\n目标完成最好打开新局面，而不是只给奖励。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#二十四这就是成功也能制造下一阶段",
+    "href": "chapter-24.html#二十四这就是成功也能制造下一阶段",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "二十四、这就是“成功也能制造下一阶段”",
+    "text": "二十四、这就是“成功也能制造下一阶段”\n人物成功：\n\n进入公司。\n\n下一阶段：\n\n如何留下。\n\n成功：\n\n成为经理。\n\n下一阶段：\n\n如何带团队。\n\n成功：\n\n赢得战争。\n\n下一阶段：\n\n如何治理。\n\n目标线因此可以不断：\n\n成功 → 新位置 → 新目标\n\n自然延长。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#二十五失败也会改变目标线",
+    "href": "chapter-24.html#二十五失败也会改变目标线",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "二十五、失败也会改变目标线",
+    "text": "二十五、失败也会改变目标线\n人物目标：\n\n借到钱。\n\n银行拒绝。\n如果：\n\n失败什么都没留下，\n\n只能换一家。\n但如果失败原因是：\n\n信用记录有问题。\n\n人物新目标：\n\n搞清信用问题。\n\n再发现：\n\n是父亲以前的担保。\n\n目标线开始转向。\n所以：\n\n失败不只是目标没完成。\n失败可以重新定义目标。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#二十六一个目标可以被放弃",
+    "href": "chapter-24.html#二十六一个目标可以被放弃",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "二十六、一个目标可以被放弃",
+    "text": "二十六、一个目标可以被放弃\n不是所有目标都必须坚持到底。\n人物可能发现：\n\n原来这不是自己真正想要的。\n\n例如：\n\n一直想得到父亲认可。\n\n后来：\n\n放弃。\n\n这本身也可以是：\n\n目标线的完成。\n\n因为人物从：\n\n追逐\n\n变成：\n\n不再需要。\n\n所以：\n\n放弃也可能是一种状态变化。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#二十七但放弃必须是有原因的变化",
+    "href": "chapter-24.html#二十七但放弃必须是有原因的变化",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "二十七、但放弃必须是“有原因的变化”",
+    "text": "二十七、但放弃必须是“有原因的变化”\n如果人物追了五十章。\n突然说：\n\n算了。\n\n读者会失望。\n除非前面已经发生：\n\n价值变化。\n信息变化。\n人物变化。\n\n让放弃成为：\n\n新的选择。\n\n所以目标可以改变。\n但必须进入：\n\n因果链。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#二十八目标之间会发生冲突",
+    "href": "chapter-24.html#二十八目标之间会发生冲突",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "二十八、目标之间会发生冲突",
+    "text": "二十八、目标之间会发生冲突\n人物同时想：\n\n保住工作。\n\n又想：\n\n陪伴家人。\n\n两者可能同时成立。\n当时间冲突：\n\n目标线就碰撞。\n\n这会制造：\n\n高价值 Scene。\n\n所以长篇里多目标并存很正常。\n关键是：\n\n什么时候它们互相支持，什么时候互相排斥。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#二十九多条目标线可以共享一个-scene",
+    "href": "chapter-24.html#二十九多条目标线可以共享一个-scene",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "二十九、多条目标线可以共享一个 Scene",
+    "text": "二十九、多条目标线可以共享一个 Scene\n例如：\n人物去参加商务晚宴。\n目标 A：\n\n拿到客户。\n\n目标 B：\n\n修复和姐姐关系。\n\n因为：\n\n姐姐也在那里。\n\n目标 C：\n\n隐瞒自己欠债。\n\n一个 Scene：\n\n三条目标线同时作用。\n\n人物每一句话：\n\n都可能同时服务或伤害几个目标。\n\n这会很有密度。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#三十目标冲突会逼出人物价值排序",
+    "href": "chapter-24.html#三十目标冲突会逼出人物价值排序",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "三十、目标冲突会逼出人物价值排序",
+    "text": "三十、目标冲突会逼出人物价值排序\n如果两个目标都能完成：\n\n没有真正选择。\n\n真正有力的是：\n\n完成 A 会损害 B。\n\n例如：\n\n公开真相\n\n可以：\n\n保住职业清白。\n\n但：\n\n会伤害朋友。\n\n现在：\n\n目标线变成人物价值测试。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#三十一目标线还会形成优先级",
+    "href": "chapter-24.html#三十一目标线还会形成优先级",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "三十一、目标线还会形成“优先级”",
+    "text": "三十一、目标线还会形成“优先级”\n人物有很多目标。\n但当前时刻：\n\n哪一个最紧？\n\n比如：\n长期：\n\n公司发展。\n\n中期：\n\n拿下投资。\n\n今天：\n\n母亲住院。\n\n当前 Scene：\n\n先去医院。\n\n这不意味着事业线消失。\n而是：\n\n优先级暂时改变。\n\n所以长篇人物的目标应该像：\n\n一个动态队列。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#三十二时间限制会提升目标优先级",
+    "href": "chapter-24.html#三十二时间限制会提升目标优先级",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "三十二、时间限制会提升目标优先级",
+    "text": "三十二、时间限制会提升目标优先级\n例如：\n目标 A：\n\n三个月后融资。\n\n目标 B：\n\n今天晚上前交手术费。\n\n显然：\n\nB 进入前台。\n\n所以期限不仅制造压力。\n还决定：\n\n哪条目标线当前应该被写。\n\n这可以帮助作者安排章节。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#三十三后果也会重排优先级",
+    "href": "chapter-24.html#三十三后果也会重排优先级",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "三十三、后果也会重排优先级",
+    "text": "三十三、后果也会重排优先级\n人物原本最重要：\n\n工作。\n\n突然：\n\n孩子失踪。\n\n目标系统瞬间重排。\n所以目标线并不是：\n\n作者预先排好以后不动。\n\n现实会持续：\n\n重新排序人物的目标。\n\n这会让故事更像生活。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#三十四一个强目标必须有阻力",
+    "href": "chapter-24.html#三十四一个强目标必须有阻力",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "三十四、一个强目标必须有阻力",
+    "text": "三十四、一个强目标必须有阻力\n如果人物目标：\n\n拿一杯水。\n\n伸手：\n\n拿到。\n\n没有线。\n要形成长期目标线：\n\n目标和完成之间必须有距离。\n\n这个距离来自：\n\n资源不足。\n能力不足。\n信息不足。\n对手。\n制度。\n人物自身。\n\n所以：\n\n目标 + 距离 = 可展开空间。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#三十五目标线的长度取决于目标距离",
+    "href": "chapter-24.html#三十五目标线的长度取决于目标距离",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "三十五、目标线的长度，取决于“目标距离”",
+    "text": "三十五、目标线的长度，取决于“目标距离”\n一个目标：\n\n五分钟能完成。\n\n适合 Scene。\n一个目标：\n\n一周。\n\n可能适合短线。\n一个目标：\n\n五年。\n\n可以成为长期主线。\n所以写长篇时：\n\n目标尺度和篇幅应该匹配。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#三十六不能靠人为拖延制造目标距离",
+    "href": "chapter-24.html#三十六不能靠人为拖延制造目标距离",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "三十六、不能靠“人为拖延”制造目标距离",
+    "text": "三十六、不能靠“人为拖延”制造目标距离\n例如：\n男女主明明一句话就能解决误会。\n作者偏偏让：\n\n手机坏。\n进门被打断。\n每次刚要说就有人来。\n\n拖五十章。\n这不是有效目标距离。\n真正的距离应该来自：\n\n人物、关系或现实结构。\n\n比如：\n\n即使说清误会，\n两人的价值冲突仍然存在。\n\n这样线才能长期成立。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#三十七目标线越长越需要多层阻力",
+    "href": "chapter-24.html#三十七目标线越长越需要多层阻力",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "三十七、目标线越长，越需要“多层阻力”",
+    "text": "三十七、目标线越长，越需要“多层阻力”\n例如：\n主角要成为皇帝。\n不能只是：\n\n最后打败一个敌人。\n\n中间可能有：\n\n身份。\n资源。\n联盟。\n军事。\n合法性。\n内部信任。\n治理能力。\n\n不同阶段遇到不同阻力。\n长篇才不会重复。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#三十八阻力应该随着人物能力变化",
+    "href": "chapter-24.html#三十八阻力应该随着人物能力变化",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "三十八、阻力应该随着人物能力变化",
+    "text": "三十八、阻力应该随着人物能力变化\n早期：\n\n缺钱。\n\n后来人物有钱了。\n如果故事还一直：\n\n缺一点钱\n\n就会疲劳。\n此时阻力应该进入：\n\n更高层。\n\n比如：\n\n有钱买不到合法性。\n有权解决不了信任。\n有实力解决不了政治联盟。\n\n这就是目标线和升级结合。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#三十九目标线必须有进展指标",
+    "href": "chapter-24.html#三十九目标线必须有进展指标",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "三十九、目标线必须有“进展指标”",
+    "text": "三十九、目标线必须有“进展指标”\n人物想成为：\n\n最强的人。\n\n太模糊。\n读者需要看到：\n\n离目标近了多少。\n\n例如：\n\n资格。\n排名。\n资源。\n对手。\n位置。\n\n创业线：\n\n产品完成。\n第一批客户。\n收入。\n融资。\n\n调查线：\n\n线索。\n嫌疑人。\n证据。\n\n这些都可以提供：\n\n进展感。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#四十但不要把进展完全变成数字",
+    "href": "chapter-24.html#四十但不要把进展完全变成数字",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "四十、但不要把进展完全变成数字",
+    "text": "四十、但不要把进展完全变成数字\n数字可以用。\n比如：\n\n排名从 100 到 20。\n\n但真正有故事感的是：\n\n位置和能力怎样改变人物的现实。\n\n排名提高以后：\n\n谁开始注意他？\n他能进入什么地方？\n谁把他当威胁？\n\n这样：\n\n进展进入世界。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#四十一目标线需要阶段性兑现",
+    "href": "chapter-24.html#四十一目标线需要阶段性兑现",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "四十一、目标线需要“阶段性兑现”",
+    "text": "四十一、目标线需要“阶段性兑现”\n如果终极目标：\n\n一百章以后才能完成。\n\n中间必须给：\n\n小成功。\n\n例如：\n想成为冠军。\n先：\n\n赢第一次正式比赛。\n\n再：\n\n击败曾经打不过的人。\n\n再：\n\n进入全国赛。\n\n这些都是：\n\n期待兑现。\n\n否则读者一直只看：\n\n“还没冠军”。\n\n会疲劳。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#四十二小目标是长期目标的支付点",
+    "href": "chapter-24.html#四十二小目标是长期目标的支付点",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "四十二、小目标是长期目标的“支付点”",
+    "text": "四十二、小目标是长期目标的“支付点”\n可以这样理解：\n大目标建立：\n\n长期期待。\n\n阶段目标完成：\n\n给读者支付一部分回报。\n\n然后：\n\n新阶段出现。\n\n所以目标线要有：\n\n阶段性支付。\n\n这和第13章期待的“建立—推进—兑现”完全一致。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#四十三目标线最好不断改变问题性质",
+    "href": "chapter-24.html#四十三目标线最好不断改变问题性质",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "四十三、目标线最好不断改变“问题性质”",
+    "text": "四十三、目标线最好不断改变“问题性质”\n例如：\n创业线。\n阶段一：\n\n做得出产品吗？\n\n阶段二：\n\n有人买吗？\n\n阶段三：\n\n赚得到钱吗？\n\n阶段四：\n\n扩得起来吗？\n\n阶段五：\n\n竞争对手来了怎么办？\n\n阶段六：\n\n公司变大以后，自己还能控制吗？\n\n目标始终围绕：\n\n公司成功。\n\n但问题不断变。\n这就是长篇的耐久性。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#四十四目标线最危险的写法永远做同一件事",
+    "href": "chapter-24.html#四十四目标线最危险的写法永远做同一件事",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "四十四、目标线最危险的写法：永远做同一件事",
+    "text": "四十四、目标线最危险的写法：永远做同一件事\n例如：\n\n接任务。\n完成。\n升级。\n接更大的任务。\n完成。\n升级。\n\n如果任务内容和人物状态没有本质变化：\n\n只是重复。\n\n所以每个阶段最好至少有一项改变：\n\n规则。\n责任。\n对手。\n代价。\n关系。\n人物内部问题。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#四十五目标线可以不断引入新世界",
+    "href": "chapter-24.html#四十五目标线可以不断引入新世界",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "四十五、目标线可以不断引入新世界",
+    "text": "四十五、目标线可以不断引入新世界\n人物目标扩大：\n\n世界也扩大。\n\n例如：\n想开好一个饭馆。\n先处理：\n\n店内经营。\n\n后来：\n\n供应商。\n\n再后来：\n\n城市商业圈。\n\n再后来：\n\n连锁扩张。\n\n每一个目标阶段：\n\n召唤新的世界机制。\n\n所以目标线也能：\n\n驱动世界构建。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#四十六目标线可以不断引入新人物",
+    "href": "chapter-24.html#四十六目标线可以不断引入新人物",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "四十六、目标线可以不断引入新人物",
+    "text": "四十六、目标线可以不断引入新人物\n人物要达成目标：\n\n需要谁？\n\n教练。\n竞争者。\n投资人。\n官员。\n客户。\n盟友。\n敌人。\n这些人物不是：\n\n为了增加角色数量。\n\n而是：\n\n目标路径上的功能位置。\n\n这会让人物引入更自然。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#四十七一个新人物最好和目标发生关系",
+    "href": "chapter-24.html#四十七一个新人物最好和目标发生关系",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "四十七、一个新人物最好和目标发生关系",
+    "text": "四十七、一个新人物最好和目标发生关系\n例如：\n新角色出现。\n问：\n\n他对主角当前目标意味着什么？\n\n可能：\n\n资源。\n\n\n阻力。\n\n\n信息。\n\n\n替代路径。\n\n\n新目标。\n\n如果毫无关系：\n\n他进入故事的理由会弱。\n\n当然后面可以发展出独立关系线。\n但最初：\n\n最好有清楚接口。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#四十八目标线还能帮助作者筛-scene",
+    "href": "chapter-24.html#四十八目标线还能帮助作者筛-scene",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "四十八、目标线还能帮助作者筛 Scene",
+    "text": "四十八、目标线还能帮助作者筛 Scene\n想写一个 Scene。\n问：\n\n它是否改变人物离目标的距离？\n\n可能是：\n\n更近。\n\n\n更远。\n\n\n换了一条路。\n\n\n发现目标本身错了。\n\n\n代价变大。\n\n只要有一种：\n\n它就在推进目标线。\n\n如果完全没影响：\n\n需要确认它是不是在推进别的故事线。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#四十九不是只有更近才叫推进",
+    "href": "chapter-24.html#四十九不是只有更近才叫推进",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "四十九、不是只有“更近”才叫推进",
+    "text": "四十九、不是只有“更近”才叫推进\n人物努力以后：\n\n离目标更远。\n\n也是推进。\n例如：\n想修复关系。\n结果：\n\n说错话，关系更坏。\n\n线仍然变化。\n所以：\n\n推进 = 状态改变。\n不等于进度增加。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#五十目标线也可以出现倒退",
+    "href": "chapter-24.html#五十目标线也可以出现倒退",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "五十、目标线也可以出现“倒退”",
+    "text": "五十、目标线也可以出现“倒退”\n事业：\n\n从盈利重新亏损。\n\n关系：\n\n从接近重新疏远。\n\n比赛：\n\n从主力变替补。\n\n倒退会制造：\n\n新压力。\n\n但倒退最好有：\n\n因果。\n\n否则像：\n\n作者故意重置。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#五十一倒退后不能简单重复原来的路",
+    "href": "chapter-24.html#五十一倒退后不能简单重复原来的路",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "五十一、倒退后不能简单重复原来的路",
+    "text": "五十一、倒退后不能简单重复原来的路\n例如：\n人物第一次从贫穷到有钱。\n后来又破产。\n如果破产以后：\n\n完全重复第一次赚钱过程，\n\n会无聊。\n因为人物已经：\n\n有经验、关系、认知。\n\n所以同样状态：\n\n人已经不同。\n\n新的目标路径也应该不同。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#五十二目标线的真正连续是目标-人物历史共同向前",
+    "href": "chapter-24.html#五十二目标线的真正连续是目标-人物历史共同向前",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "五十二、目标线的真正连续，是“目标 + 人物历史”共同向前",
+    "text": "五十二、目标线的真正连续，是“目标 + 人物历史”共同向前\n人物不是：\n\n每个阶段重新开始。\n\n他带着：\n\n过去的能力。\n关系。\n债务。\n名声。\n创伤。\n\n进入新阶段。\n所以：\n\n同一个目标在不同时间，会被一个不同的人追求。\n\n这会让长篇有成长感。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#五十三目标可以变成身份的一部分",
+    "href": "chapter-24.html#五十三目标可以变成身份的一部分",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "五十三、目标可以变成“身份的一部分”",
+    "text": "五十三、目标可以变成“身份的一部分”\n一开始：\n\n我想当医生。\n\n后来：\n\n我就是医生。\n\n目标完成。\n但新的问题变成：\n\n什么样的医生？\n\n于是：\n\n外部资格目标\n\n转成：\n\n身份目标。\n\n很多长篇会这样从：\n\n“得到位置”\n\n继续写：\n\n“如何成为配得上这个位置的人”。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#五十四目标也可以从得到变成保住",
+    "href": "chapter-24.html#五十四目标也可以从得到变成保住",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "五十四、目标也可以从“得到”变成“保住”",
+    "text": "五十四、目标也可以从“得到”变成“保住”\n例如：\n\n赢得王位。\n\n然后：\n\n保住王位。\n\n目标变化。\n得到权力时：\n\n竞争结构。\n\n保住权力时：\n\n治理、联盟、合法性。\n\n故事自然换题。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#五十五还可以从保住变成改变",
+    "href": "chapter-24.html#五十五还可以从保住变成改变",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "五十五、还可以从“保住”变成“改变”",
+    "text": "五十五、还可以从“保住”变成“改变”\n例如：\n人物进入组织。\n早期：\n\n活下来。\n\n中期：\n\n往上升。\n\n后期：\n\n改变组织。\n\n这是一条非常自然的目标升级：\n\n适应 → 掌握 → 改变\n\n人物和世界关系不断变化。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#五十六一个完整示范饭馆目标线",
+    "href": "chapter-24.html#五十六一个完整示范饭馆目标线",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "五十六、一个完整示范：饭馆目标线",
+    "text": "五十六、一个完整示范：饭馆目标线\n长期目标：\n\n林薇想保住母亲留下的饭馆。\n\n\n阶段一：撑过眼前现金危机\n当前问题：\n\n欠两个月房租。\n\nScene 目标：\n\n向姐姐借钱。\n向银行贷款。\n争取大订单。\n\n结果：\n\n勉强补上房租。\n\n阶段完成。\n\n\n\n阶段二：解决持续亏损\n她发现：\n\n不是这次缺钱。\n是经营结构长期有问题。\n\n阶段目标变成：\n\n让饭馆现金流稳定。\n\n行动：\n\n改菜单。\n调价格。\n裁掉低利润菜。\n做线上订单。\n\n这时世界也扩大到：\n\n平台、供应商、顾客结构。\n\n\n\n\n阶段三：增长带来的新问题\n饭馆开始赚钱。\n成功带来：\n\n更大客流。\n员工不足。\n品质下降。\n\n新目标：\n\n扩张还是保持小店？\n\n这时目标线开始进入：\n\n人物价值。\n\n因为：\n\n母亲留下的是一家小饭馆。\n如果扩张成连锁，它还是原来的东西吗？\n\n故事从：\n\n生存目标\n\n进入：\n\n身份和价值目标。\n\n这就是目标线的成长。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#五十七一个完整示范成长型目标线",
+    "href": "chapter-24.html#五十七一个完整示范成长型目标线",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "五十七、一个完整示范：成长型目标线",
+    "text": "五十七、一个完整示范：成长型目标线\n人物：\n\n一个极度害怕公开表达的人。\n\n外部目标：\n\n成为优秀教师。\n\n阶段一：\n\n能顺利上完一节课。\n\n阶段二：\n\n能处理学生质疑。\n\n阶段三：\n\n能在公开课堂上讲课。\n\n阶段四：\n\n面对学校不合理要求时敢表达。\n\n目标表面是：\n\n教学能力。\n\n但人物内在线也在同步：\n\n逃避 → 尝试 → 承担 → 发声。\n\n外部目标线和人物线：\n\n互相咬合。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#五十八目标线和人物弧光最好不要完全分开",
+    "href": "chapter-24.html#五十八目标线和人物弧光最好不要完全分开",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "五十八、目标线和人物弧光最好不要完全分开",
+    "text": "五十八、目标线和人物弧光最好不要完全分开\n如果人物追一个目标：\n\n一百章。\n\n但这件事从未改变他：\n\n会有点薄。\n\n更强的是：\n\n目标路径不断要求他面对自己的旧模型。\n\n例如：\n要创业成功。\n但他：\n\n极度不信任别人。\n\n公司越大：\n\n越必须授权。\n\n于是：\n\n外部目标不断逼内部变化。\n\n这会让目标线更厚。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#五十九目标线和关系线也可以互相绑定",
+    "href": "chapter-24.html#五十九目标线和关系线也可以互相绑定",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "五十九、目标线和关系线也可以互相绑定",
+    "text": "五十九、目标线和关系线也可以互相绑定\n人物想：\n\n保住饭馆。\n\n需要姐姐投资。\n姐妹关系：\n\n被迫重新进入前台。\n\n姐姐愿不愿投资：\n\n取决于信任。\n\n于是：\n\n事业目标线\n\n必须通过：\n\n关系线。\n\n这会让不同线真正交叉。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#六十目标线和世界线也可以互相绑定",
+    "href": "chapter-24.html#六十目标线和世界线也可以互相绑定",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "六十、目标线和世界线也可以互相绑定",
+    "text": "六十、目标线和世界线也可以互相绑定\n人物想：\n\n公司增长。\n\n但行业政策变化。\n新规则：\n\n原来的商业模式不能继续。\n\n人物必须：\n\n调整目标路径。\n\n所以目标不是悬浮在世界之外。\n世界会不断：\n\n改变什么目标可行。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#六十一目标线最大的好处作者永远有方向",
+    "href": "chapter-24.html#六十一目标线最大的好处作者永远有方向",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "六十一、目标线最大的好处：作者永远有“方向”",
+    "text": "六十一、目标线最大的好处：作者永远有“方向”\n卡文时：\n\n不知道下一章发生什么。\n\n先看：\n\n当前阶段目标是什么？\n\n再问：\n\n离完成还差什么？\n\n再问：\n\n当前最大阻力是什么？\n\n再问：\n\n人物下一步最可能做什么？\n\n通常：\n\nScene 就出来了。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#六十二一个实用的目标线生成器",
+    "href": "chapter-24.html#六十二一个实用的目标线生成器",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "六十二、一个实用的“目标线生成器”",
+    "text": "六十二、一个实用的“目标线生成器”\n可以按顺序问：\n\n1. 长期目标是什么？\n\n人物最终想做到什么？\n\n\n\n2. 为什么重要？\n\n背后连接什么价值？\n\n\n\n3. 完成条件是什么？\n\n什么时候算真正完成？\n\n\n\n4. 当前最大距离是什么？\n\n缺资源、能力、信息、资格、关系还是别的？\n\n\n\n5. 当前阶段要先解决什么？\n\n找到阶段目标。\n\n\n\n6. 这个阶段的前置条件是什么？\n\n继续向下分解。\n\n\n\n7. 人物下一步能实际做什么？\n\n落成 Scene 目标。\n\n\n\n8. 行动结果怎样改变目标线？\n\n更近、更远、换路、重定义？\n\n\n\n9. 阶段完成以后，人物位置怎样变化？\n\n新权利、新责任、新世界。\n\n\n\n10. 新位置会产生什么新目标？\n\n让目标线继续生长。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#六十三一个实用的目标线检查器",
+    "href": "chapter-24.html#六十三一个实用的目标线检查器",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "六十三、一个实用的“目标线检查器”",
+    "text": "六十三、一个实用的“目标线检查器”\n写了一段以后，可以检查：\n\n当前目标是否清楚？\n\n人物现在到底在追什么？\n\n\n\n当前目标是否可执行？\n\n下一步是什么？\n\n\n\n最近几幕有没有改变距离？\n\n不是一直原地忙。\n\n\n\n阻力有没有变化？\n\n还是永远同一种困难？\n\n\n\n是否有阶段性兑现？\n\n读者有没有得到回报？\n\n\n\n完成以后有没有新局面？\n\n成功是否打开下一层？\n\n\n\n目标有没有和人物价值连接？\n\n为什么不放弃？\n\n\n\n目标有没有和其他线发生交换？\n\n关系、世界、人物是否被影响？\n\n如果这些大多清楚：\n\n目标线通常就比较稳。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#六十四目标线的最小模型",
+    "href": "chapter-24.html#六十四目标线的最小模型",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "六十四、目标线的最小模型",
+    "text": "六十四、目标线的最小模型\n如果全部压缩，可以写成：\n\n长期目标\n↓\n当前阶段目标\n↓\n当前缺口\n↓\n下一步行动\n↓\n结果\n↓\n目标距离变化\n↓\n新阶段 / 新目标\n\n这条链可以一直循环。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#六十五目标线其实是跨-scene-的行动发动机",
+    "href": "chapter-24.html#六十五目标线其实是跨-scene-的行动发动机",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "六十五、目标线其实是“跨 Scene 的行动发动机”",
+    "text": "六十五、目标线其实是“跨 Scene 的行动发动机”\n第5章到第9章，我们研究：\n\n一幕里人物怎么行动。\n\n目标线把这种机制拉长：\n\n今天的行动服务阶段目标。\n阶段目标服务长期目标。\n\n于是很多 Scene 不再是：\n\n各做各的。\n\n它们形成：\n\n长期行动方向。\n\n所以可以说：\n\n目标线，是人物行动在长时间尺度上的组织方式。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-24.html#六十六但长篇不能只有目标线",
+    "href": "chapter-24.html#六十六但长篇不能只有目标线",
+    "title": "目标线：怎样把一个大目标写成几十个 Scene",
+    "section": "六十六、但长篇不能只有目标线",
+    "text": "六十六、但长篇不能只有目标线\n这里也要提前提醒。\n如果整本书只有：\n\n主角一直朝目标前进。\n\n会很像任务流程。\n故事还需要：\n\n问题线。\n关系线。\n人物变化。\n世界变化。\n\n尤其有一种故事，\n人物甚至没有清楚的长期目标。\n但有一个：\n\n持续存在的问题\n\n逼着他不断应对。\n这就是下一章要研究的：\n\n问题线。",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
+    ]
+  },
+  {
     "objectID": "chapter-25.html",
     "href": "chapter-25.html",
     "title": "问题线：一个问题怎样撑起整部长篇",
@@ -10347,676 +11017,6 @@
     "text": "六十八、最终仍然回到“状态变化”\n目标线：\n\n跟踪人物离目标的距离怎样变化。\n\n问题线：\n\n跟踪问题状态怎样变化。\n\n关系线：\n\n跟踪关系怎样变化。\n\n人物线：\n\n跟踪内在模型怎样变化。\n\n所以：\n\n故事线的底层仍然是长期状态轨迹。\n\n我们只是从不同角度给它抓手。",
     "crumbs": [
       "<span class='chapter-number'>26</span>  <span class='chapter-title'>问题线：一个问题怎样撑起整部长篇</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html",
-    "href": "chapter-24.html",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "",
-    "text": "目标线：怎样把一个大目标写成几十个 Scene\n上一章，我们第一次真正进入长篇结构。\n我们提出：\n这意味着：\n但故事线有很多种。\n其中最常见、最稳定、也最容易直接转化成剧情的一种，就是：\n人物想：\n这些都可以成为：\n问题是：\n“我要成为冠军”只是一句话。\n真正写成小说，需要几十个甚至几百个 Scene。\n那么：\n这就是这一章要解决的问题。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#一大目标不是-scene",
-    "href": "chapter-24.html#一大目标不是-scene",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "一、大目标不是 Scene",
-    "text": "一、大目标不是 Scene\n例如：\n\n我要成为冠军。\n\n这不是 Scene。\n因为人物现在没法直接：\n\n“执行成为冠军”。\n\n他只能做下一步：\n\n报名比赛。\n找教练。\n训练。\n赢下一场。\n获得资格。\n\n所以：\n\n大目标只提供方向。\nScene 需要当前可执行目标。\n\n这就是目标线的第一个核心：\n\n把远处的“我要什么”，不断压成眼前的“我现在要做什么”。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#二目标有尺度",
-    "href": "chapter-24.html#二目标有尺度",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "二、目标有尺度",
-    "text": "二、目标有尺度\n一个人物可以同时拥有不同尺度的目标。\n例如：\n长期目标：\n\n保住饭馆。\n\n阶段目标：\n\n撑过这个月。\n\n当前目标：\n\n今天找到两万元。\n\nScene 目标：\n\n说服姐姐借钱。\n\n行动：\n\n去姐姐公司找她。\n\n这样：\n\n大目标 → 阶段目标 → 当前目标 → Scene 行动\n\n逐层落地。\n作者才真正有东西可写。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#三目标线最核心的结构是目标不断具体化",
-    "href": "chapter-24.html#三目标线最核心的结构是目标不断具体化",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "三、目标线最核心的结构是“目标不断具体化”",
-    "text": "三、目标线最核心的结构是“目标不断具体化”\n比如：\n大目标：\n\n我要复仇。\n\n太大。\n先问：\n\n现在离复仇还差什么？\n\n答案：\n\n不知道仇人在哪。\n\n于是阶段目标：\n\n找到仇人。\n\n再问：\n\n怎么找？\n\n\n先找到当年的知情人。\n\n当前目标出现。\n于是：\n\n找知情人\n\n可以写成 Scene。\nScene 结果：\n\n知情人已经死了，但留下一个地址。\n\n目标再具体化：\n\n去查这个地址。\n\n所以：\n\n目标线不是大目标一直重复。\n而是大目标不断生成新的局部目标。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#四一个目标如果不能生成下一步就还不够可写",
-    "href": "chapter-24.html#四一个目标如果不能生成下一步就还不够可写",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "四、一个目标如果不能生成“下一步”，就还不够可写",
-    "text": "四、一个目标如果不能生成“下一步”，就还不够可写\n例如：\n\n“我要成功。”\n\n太抽象。\n下一步是什么？\n不知道。\n如果改成：\n\n我要让公司活过三个月。\n\n继续：\n\n现在最大问题是什么？\n\n\n现金流。\n\n再具体：\n\n两周内拿到一笔订单。\n\n现在：\n\n目标开始进入 Scene。\n\n所以卡文时可以问：\n\n这个目标还能不能继续压下一层？\n\n直到出现：\n\n今天。\n这个人。\n这件事。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#五目标线不是目标清单而是目标的继承",
-    "href": "chapter-24.html#五目标线不是目标清单而是目标的继承",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "五、目标线不是目标清单，而是“目标的继承”",
-    "text": "五、目标线不是目标清单，而是“目标的继承”\n假设：\nScene 1：\n\n借钱。\n\nScene 2：\n\n找工作。\n\nScene 3：\n\n卖车。\n\n如果这三个只是并列办法，\n看起来会像任务列表。\n真正的目标线需要：\n\n上一步的结果改变下一步目标。\n\n例如：\n借钱失败。\n所以：\n\n正常筹钱路径关闭。\n\n人物决定：\n\n卖车。\n\n卖车以后：\n\n只筹到一半。\n\n于是：\n\n必须找临时工作。\n\n这就变成：\n\n目标 → 行动 → 结果 → 新目标\n\n目标开始有继承。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#六目标不是永远不变",
-    "href": "chapter-24.html#六目标不是永远不变",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "六、目标不是永远不变",
-    "text": "六、目标不是永远不变\n人物一开始想：\n\n还债。\n\n后来发现：\n\n债务本身有问题。\n\n目标可能变成：\n\n查清债务来源。\n\n再后来：\n\n保护家人。\n\n所以目标线不是：\n\n从第一章到结尾一直重复一句目标。\n\n它也会：\n\n更新。\n\n重要的是：\n\n更新以后仍然和前面的因果连续。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#七目标线会长大",
-    "href": "chapter-24.html#七目标线会长大",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "七、目标线会“长大”",
-    "text": "七、目标线会“长大”\n比如：\n最初：\n\n保住饭馆。\n\n后来：\n\n发现饭馆真正的问题不是房租，而是经营模式已经撑不住。\n\n目标变成：\n\n让饭馆重新活下来。\n\n再后来：\n\n饭馆不只是生意，还关系到女儿是否愿意接手、自己是否继续母亲留下的生活。\n\n目标逐渐从：\n\n外部任务\n\n进入：\n\n人物价值和身份。\n\n所以：\n\n目标可以随着故事深入被重新理解。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#八表面目标和深层目标可以不同",
-    "href": "chapter-24.html#八表面目标和深层目标可以不同",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "八、表面目标和深层目标可以不同",
-    "text": "八、表面目标和深层目标可以不同\n人物说：\n\n“我要赚一百万。”\n\n表面目标：\n\n钱。\n\n但为什么？\n可能：\n\n想证明父亲错了。\n\n或者：\n\n想获得安全。\n\n或者：\n\n想离开原来的阶层。\n\n所以目标线可以有两层：\n\n外部目标：人物想完成什么。\n内部目标：他真正想通过这件事解决什么。\n\n故事早期可能只看见外部。\n后来：\n\n深层目标逐渐浮出来。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#九长期目标最好连接价值",
-    "href": "chapter-24.html#九长期目标最好连接价值",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "九、长期目标最好连接价值",
-    "text": "九、长期目标最好连接价值\n人物为什么一直不放弃？\n因为：\n\n目标背后有价值。\n\n例如：\n\n保住饭馆\n\n不是只为了：\n\n店。\n\n它可能连接：\n\n母亲。\n身份。\n家庭。\n独立。\n尊严。\n\n所以目标线越长：\n\n越需要价值支撑。\n\n否则人物一次失败就应该：\n\n换目标。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#十目标需要有完成条件",
-    "href": "chapter-24.html#十目标需要有完成条件",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "十、目标需要有“完成条件”",
-    "text": "十、目标需要有“完成条件”\n这是非常重要的一点。\n“我要变强。”\n什么叫完成？\n不清楚。\n“我要成为冠军。”\n明确。\n“我要让公司活下来。”\n也还可以继续具体：\n\n连续六个月现金流为正？\n\n如果目标没有完成条件：\n\n它很容易无限拖。\n\n所以长期目标最好能回答：\n\n什么时候我可以说：这件事完成了？",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#十一有完成条件故事线才知道什么时候结束",
-    "href": "chapter-24.html#十一有完成条件故事线才知道什么时候结束",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "十一、有完成条件，故事线才知道什么时候结束",
-    "text": "十一、有完成条件，故事线才知道什么时候结束\n例如：\n目标：\n\n找到妹妹。\n\n找到：\n\n结束。\n\n但找到以后发现：\n\n妹妹不愿回来。\n\n那就是：\n\n新问题。\n\n旧目标已经完成。\n新目标：\n\n说服她回来？\n\n或者：\n\n搞清她为什么离开。\n\n这样故事线会自然换挡。\n所以：\n\n目标完成，不等于小说必须结束。\n但它应该真正关闭一个阶段。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#十二长期目标需要阶段门槛",
-    "href": "chapter-24.html#十二长期目标需要阶段门槛",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "十二、长期目标需要“阶段门槛”",
-    "text": "十二、长期目标需要“阶段门槛”\n如果人物想：\n\n成为冠军。\n\n不是每一章都写：\n\n“离冠军更近一点”。\n\n更自然的是：\n阶段 1：\n\n获得参赛资格。\n\n阶段 2：\n\n进入正式赛。\n\n阶段 3：\n\n打进淘汰赛。\n\n阶段 4：\n\n进入决赛。\n\n阶段 5：\n\n冠军战。\n\n每个阶段：\n\n有自己的局面、对手、目标。\n\n这就是：\n\n阶段目标。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#十三阶段目标是长篇最重要的中间层之一",
-    "href": "chapter-24.html#十三阶段目标是长篇最重要的中间层之一",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "十三、阶段目标是长篇最重要的中间层之一",
-    "text": "十三、阶段目标是长篇最重要的中间层之一\n大目标太远。\nScene 目标太近。\n中间缺一个东西：\n\n阶段目标。\n\n例如创业线：\n长期目标：\n\n公司活下来并稳定增长。\n\n阶段 1：\n\n做出产品。\n\n阶段 2：\n\n找到第一批客户。\n\n阶段 3：\n\n现金流转正。\n\n阶段 4：\n\n扩张团队。\n\n阶段 5：\n\n应对竞争。\n\n这样作者不需要同时想完：\n\n整本书。\n\n只需要先知道：\n\n当前阶段解决什么。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#十四一个阶段解决一种当前主要限制",
-    "href": "chapter-24.html#十四一个阶段解决一种当前主要限制",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "十四、一个阶段解决一种“当前主要限制”",
-    "text": "十四、一个阶段解决一种“当前主要限制”\n例如：\n主角想成为职业拳手。\n早期主要限制：\n\n不够强。\n\n阶段目标：\n\n训练。\n\n后来：\n\n已经够强，但没有资格。\n\n新阶段：\n\n获得比赛资格。\n\n再后来：\n\n有资格，但缺比赛经验。\n\n新阶段：\n\n连胜。\n\n所以：\n\n阶段往往围绕当前最大瓶颈组织。\n\n一旦瓶颈解决：\n\n目标线进入下一层。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#十五目标线真正好写是因为每个阶段都有新问题",
-    "href": "chapter-24.html#十五目标线真正好写是因为每个阶段都有新问题",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "十五、目标线真正好写，是因为“每个阶段都有新问题”",
-    "text": "十五、目标线真正好写，是因为“每个阶段都有新问题”\n如果大目标只是：\n\n不断重复同一个动作，\n\n会变成刷任务。\n例如：\n\n打怪。\n再打怪。\n再打更强怪。\n\n更好的目标线是：\n\n每次前进以后，\n问题性质发生变化。\n\n比如：\n早期：\n\n能不能打赢。\n\n中期：\n\n有没有资格参赛。\n\n再后来：\n\n如何面对媒体和名声。\n\n再后来：\n\n是否愿意牺牲健康继续比赛。\n\n目标仍然是：\n\n冠军。\n\n但故事内容在变化。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#十六大目标会不断产生前置条件",
-    "href": "chapter-24.html#十六大目标会不断产生前置条件",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "十六、大目标会不断产生“前置条件”",
-    "text": "十六、大目标会不断产生“前置条件”\n人物想：\n\n拿下项目。\n\n需要：\n\n先见到客户。\n\n要见客户：\n\n需要有人介绍。\n\n要找介绍人：\n\n先修复一段旧关系。\n\n于是：\n\n一个大目标不断产生前置目标。\n\n这就是非常实用的生成方式：\n\n我想做到 X。\n在做到 X 之前，必须先有什么？",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#十七前置条件是-scene-生成器",
-    "href": "chapter-24.html#十七前置条件是-scene-生成器",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "十七、前置条件是 Scene 生成器",
-    "text": "十七、前置条件是 Scene 生成器\n例如：\n目标：\n\n偷到档案。\n\n需要：\n\n进入办公室。\n\n进入办公室：\n\n需要门卡。\n\n拿门卡：\n\n需要接近某个员工。\n\n接近员工：\n\n需要制造一个理由。\n\n你已经获得：\n\n多个 Scene。\n\n所以：\n\n目标线可以通过不断寻找前置条件向下生长。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#十八但不能无限套娃",
-    "href": "chapter-24.html#十八但不能无限套娃",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "十八、但不能无限“套娃”",
-    "text": "十八、但不能无限“套娃”\n如果每个目标都：\n\n先做 A。\nA 又要先做 B。\nB 又要先做 C。\n\n无限下去，\n故事会拖。\n所以前置目标最好：\n\n真正产生变化、代价或新信息。\n\n而不是单纯延迟。\n例如：\n\n为了门卡去接近员工。\n\n如果这个员工之后：\n\n变成重要关系。\n\n或者：\n\n发现主角身份。\n\n这个前置 Scene 就有后果。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#十九目标路径最好会留下痕迹",
-    "href": "chapter-24.html#十九目标路径最好会留下痕迹",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "十九、目标路径最好会留下痕迹",
-    "text": "十九、目标路径最好会留下痕迹\n人物为了达到目标：\n\n求过谁。\n骗过谁。\n得罪谁。\n欠过谁。\n\n这些都应该留下：\n\n人情债。\n关系变化。\n风险。\n\n这样目标线不是：\n\n一条无痕任务路线。\n\n而是：\n\n越走，历史越厚。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#二十人物到达目标的方式会改变目标完成后的世界",
-    "href": "chapter-24.html#二十人物到达目标的方式会改变目标完成后的世界",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "二十、人物到达目标的方式，会改变“目标完成后的世界”",
-    "text": "二十、人物到达目标的方式，会改变“目标完成后的世界”\n例如：\n两个人都成功开公司。\nA：\n\n靠朋友支持。\n\nB：\n\n靠背叛合伙人。\n\n结果都是：\n\n公司成功。\n\n但完成目标后的关系、人格、风险：\n\n完全不同。\n\n所以：\n\n故事不只关心是否达到目标。\n还关心人物怎样到达。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#二十一目标线最重要的不是完成率而是路径质量",
-    "href": "chapter-24.html#二十一目标线最重要的不是完成率而是路径质量",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "二十一、目标线最重要的不是“完成率”，而是“路径质量”",
-    "text": "二十一、目标线最重要的不是“完成率”，而是“路径质量”\n一个角色每次：\n\n想做什么就成功。\n\n目标线很快会无聊。\n如果每次：\n\n都失败。\n\n也会疲劳。\n更有力量的是：\n\n成功，但留下代价。\n失败，但获得新信息。\n部分成功。\n达成一个目标，却改变大目标。\n\n这和第9章的结果结构直接连接。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#二十二阶段目标最好能够改变行动空间",
-    "href": "chapter-24.html#二十二阶段目标最好能够改变行动空间",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "二十二、阶段目标最好能够“改变行动空间”",
-    "text": "二十二、阶段目标最好能够“改变行动空间”\n例如：\n目标：\n\n获得律师资格。\n\n一旦完成：\n\n人物可以接触以前不能碰的案件。\n\n新的故事空间打开。\n又比如：\n\n加入宗门。\n\n完成以后：\n\n获得修炼资源。\n也进入派系争斗。\n\n所以好的阶段目标：\n\n不是只打一勾。\n完成后应当改变人物的位置。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#二十三目标完成以后最好出现新权利-新责任",
-    "href": "chapter-24.html#二十三目标完成以后最好出现新权利-新责任",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "二十三、目标完成以后，最好出现“新权利 + 新责任”",
-    "text": "二十三、目标完成以后，最好出现“新权利 + 新责任”\n例如：\n升职。\n权利：\n\n能调资源。\n\n责任：\n\n要管理团队。\n\n进入内门。\n权利：\n\n获得功法。\n\n责任：\n\n完成更危险任务。\n\n结婚。\n获得：\n\n亲密关系。\n\n同时：\n\n新义务出现。\n\n所以：\n\n目标完成最好打开新局面，而不是只给奖励。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#二十四这就是成功也能制造下一阶段",
-    "href": "chapter-24.html#二十四这就是成功也能制造下一阶段",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "二十四、这就是“成功也能制造下一阶段”",
-    "text": "二十四、这就是“成功也能制造下一阶段”\n人物成功：\n\n进入公司。\n\n下一阶段：\n\n如何留下。\n\n成功：\n\n成为经理。\n\n下一阶段：\n\n如何带团队。\n\n成功：\n\n赢得战争。\n\n下一阶段：\n\n如何治理。\n\n目标线因此可以不断：\n\n成功 → 新位置 → 新目标\n\n自然延长。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#二十五失败也会改变目标线",
-    "href": "chapter-24.html#二十五失败也会改变目标线",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "二十五、失败也会改变目标线",
-    "text": "二十五、失败也会改变目标线\n人物目标：\n\n借到钱。\n\n银行拒绝。\n如果：\n\n失败什么都没留下，\n\n只能换一家。\n但如果失败原因是：\n\n信用记录有问题。\n\n人物新目标：\n\n搞清信用问题。\n\n再发现：\n\n是父亲以前的担保。\n\n目标线开始转向。\n所以：\n\n失败不只是目标没完成。\n失败可以重新定义目标。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#二十六一个目标可以被放弃",
-    "href": "chapter-24.html#二十六一个目标可以被放弃",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "二十六、一个目标可以被放弃",
-    "text": "二十六、一个目标可以被放弃\n不是所有目标都必须坚持到底。\n人物可能发现：\n\n原来这不是自己真正想要的。\n\n例如：\n\n一直想得到父亲认可。\n\n后来：\n\n放弃。\n\n这本身也可以是：\n\n目标线的完成。\n\n因为人物从：\n\n追逐\n\n变成：\n\n不再需要。\n\n所以：\n\n放弃也可能是一种状态变化。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#二十七但放弃必须是有原因的变化",
-    "href": "chapter-24.html#二十七但放弃必须是有原因的变化",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "二十七、但放弃必须是“有原因的变化”",
-    "text": "二十七、但放弃必须是“有原因的变化”\n如果人物追了五十章。\n突然说：\n\n算了。\n\n读者会失望。\n除非前面已经发生：\n\n价值变化。\n信息变化。\n人物变化。\n\n让放弃成为：\n\n新的选择。\n\n所以目标可以改变。\n但必须进入：\n\n因果链。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#二十八目标之间会发生冲突",
-    "href": "chapter-24.html#二十八目标之间会发生冲突",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "二十八、目标之间会发生冲突",
-    "text": "二十八、目标之间会发生冲突\n人物同时想：\n\n保住工作。\n\n又想：\n\n陪伴家人。\n\n两者可能同时成立。\n当时间冲突：\n\n目标线就碰撞。\n\n这会制造：\n\n高价值 Scene。\n\n所以长篇里多目标并存很正常。\n关键是：\n\n什么时候它们互相支持，什么时候互相排斥。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#二十九多条目标线可以共享一个-scene",
-    "href": "chapter-24.html#二十九多条目标线可以共享一个-scene",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "二十九、多条目标线可以共享一个 Scene",
-    "text": "二十九、多条目标线可以共享一个 Scene\n例如：\n人物去参加商务晚宴。\n目标 A：\n\n拿到客户。\n\n目标 B：\n\n修复和姐姐关系。\n\n因为：\n\n姐姐也在那里。\n\n目标 C：\n\n隐瞒自己欠债。\n\n一个 Scene：\n\n三条目标线同时作用。\n\n人物每一句话：\n\n都可能同时服务或伤害几个目标。\n\n这会很有密度。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#三十目标冲突会逼出人物价值排序",
-    "href": "chapter-24.html#三十目标冲突会逼出人物价值排序",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "三十、目标冲突会逼出人物价值排序",
-    "text": "三十、目标冲突会逼出人物价值排序\n如果两个目标都能完成：\n\n没有真正选择。\n\n真正有力的是：\n\n完成 A 会损害 B。\n\n例如：\n\n公开真相\n\n可以：\n\n保住职业清白。\n\n但：\n\n会伤害朋友。\n\n现在：\n\n目标线变成人物价值测试。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#三十一目标线还会形成优先级",
-    "href": "chapter-24.html#三十一目标线还会形成优先级",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "三十一、目标线还会形成“优先级”",
-    "text": "三十一、目标线还会形成“优先级”\n人物有很多目标。\n但当前时刻：\n\n哪一个最紧？\n\n比如：\n长期：\n\n公司发展。\n\n中期：\n\n拿下投资。\n\n今天：\n\n母亲住院。\n\n当前 Scene：\n\n先去医院。\n\n这不意味着事业线消失。\n而是：\n\n优先级暂时改变。\n\n所以长篇人物的目标应该像：\n\n一个动态队列。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#三十二时间限制会提升目标优先级",
-    "href": "chapter-24.html#三十二时间限制会提升目标优先级",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "三十二、时间限制会提升目标优先级",
-    "text": "三十二、时间限制会提升目标优先级\n例如：\n目标 A：\n\n三个月后融资。\n\n目标 B：\n\n今天晚上前交手术费。\n\n显然：\n\nB 进入前台。\n\n所以期限不仅制造压力。\n还决定：\n\n哪条目标线当前应该被写。\n\n这可以帮助作者安排章节。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#三十三后果也会重排优先级",
-    "href": "chapter-24.html#三十三后果也会重排优先级",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "三十三、后果也会重排优先级",
-    "text": "三十三、后果也会重排优先级\n人物原本最重要：\n\n工作。\n\n突然：\n\n孩子失踪。\n\n目标系统瞬间重排。\n所以目标线并不是：\n\n作者预先排好以后不动。\n\n现实会持续：\n\n重新排序人物的目标。\n\n这会让故事更像生活。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#三十四一个强目标必须有阻力",
-    "href": "chapter-24.html#三十四一个强目标必须有阻力",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "三十四、一个强目标必须有阻力",
-    "text": "三十四、一个强目标必须有阻力\n如果人物目标：\n\n拿一杯水。\n\n伸手：\n\n拿到。\n\n没有线。\n要形成长期目标线：\n\n目标和完成之间必须有距离。\n\n这个距离来自：\n\n资源不足。\n能力不足。\n信息不足。\n对手。\n制度。\n人物自身。\n\n所以：\n\n目标 + 距离 = 可展开空间。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#三十五目标线的长度取决于目标距离",
-    "href": "chapter-24.html#三十五目标线的长度取决于目标距离",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "三十五、目标线的长度，取决于“目标距离”",
-    "text": "三十五、目标线的长度，取决于“目标距离”\n一个目标：\n\n五分钟能完成。\n\n适合 Scene。\n一个目标：\n\n一周。\n\n可能适合短线。\n一个目标：\n\n五年。\n\n可以成为长期主线。\n所以写长篇时：\n\n目标尺度和篇幅应该匹配。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#三十六不能靠人为拖延制造目标距离",
-    "href": "chapter-24.html#三十六不能靠人为拖延制造目标距离",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "三十六、不能靠“人为拖延”制造目标距离",
-    "text": "三十六、不能靠“人为拖延”制造目标距离\n例如：\n男女主明明一句话就能解决误会。\n作者偏偏让：\n\n手机坏。\n进门被打断。\n每次刚要说就有人来。\n\n拖五十章。\n这不是有效目标距离。\n真正的距离应该来自：\n\n人物、关系或现实结构。\n\n比如：\n\n即使说清误会，\n两人的价值冲突仍然存在。\n\n这样线才能长期成立。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#三十七目标线越长越需要多层阻力",
-    "href": "chapter-24.html#三十七目标线越长越需要多层阻力",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "三十七、目标线越长，越需要“多层阻力”",
-    "text": "三十七、目标线越长，越需要“多层阻力”\n例如：\n主角要成为皇帝。\n不能只是：\n\n最后打败一个敌人。\n\n中间可能有：\n\n身份。\n资源。\n联盟。\n军事。\n合法性。\n内部信任。\n治理能力。\n\n不同阶段遇到不同阻力。\n长篇才不会重复。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#三十八阻力应该随着人物能力变化",
-    "href": "chapter-24.html#三十八阻力应该随着人物能力变化",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "三十八、阻力应该随着人物能力变化",
-    "text": "三十八、阻力应该随着人物能力变化\n早期：\n\n缺钱。\n\n后来人物有钱了。\n如果故事还一直：\n\n缺一点钱\n\n就会疲劳。\n此时阻力应该进入：\n\n更高层。\n\n比如：\n\n有钱买不到合法性。\n有权解决不了信任。\n有实力解决不了政治联盟。\n\n这就是目标线和升级结合。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#三十九目标线必须有进展指标",
-    "href": "chapter-24.html#三十九目标线必须有进展指标",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "三十九、目标线必须有“进展指标”",
-    "text": "三十九、目标线必须有“进展指标”\n人物想成为：\n\n最强的人。\n\n太模糊。\n读者需要看到：\n\n离目标近了多少。\n\n例如：\n\n资格。\n排名。\n资源。\n对手。\n位置。\n\n创业线：\n\n产品完成。\n第一批客户。\n收入。\n融资。\n\n调查线：\n\n线索。\n嫌疑人。\n证据。\n\n这些都可以提供：\n\n进展感。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#四十但不要把进展完全变成数字",
-    "href": "chapter-24.html#四十但不要把进展完全变成数字",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "四十、但不要把进展完全变成数字",
-    "text": "四十、但不要把进展完全变成数字\n数字可以用。\n比如：\n\n排名从 100 到 20。\n\n但真正有故事感的是：\n\n位置和能力怎样改变人物的现实。\n\n排名提高以后：\n\n谁开始注意他？\n他能进入什么地方？\n谁把他当威胁？\n\n这样：\n\n进展进入世界。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#四十一目标线需要阶段性兑现",
-    "href": "chapter-24.html#四十一目标线需要阶段性兑现",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "四十一、目标线需要“阶段性兑现”",
-    "text": "四十一、目标线需要“阶段性兑现”\n如果终极目标：\n\n一百章以后才能完成。\n\n中间必须给：\n\n小成功。\n\n例如：\n想成为冠军。\n先：\n\n赢第一次正式比赛。\n\n再：\n\n击败曾经打不过的人。\n\n再：\n\n进入全国赛。\n\n这些都是：\n\n期待兑现。\n\n否则读者一直只看：\n\n“还没冠军”。\n\n会疲劳。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#四十二小目标是长期目标的支付点",
-    "href": "chapter-24.html#四十二小目标是长期目标的支付点",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "四十二、小目标是长期目标的“支付点”",
-    "text": "四十二、小目标是长期目标的“支付点”\n可以这样理解：\n大目标建立：\n\n长期期待。\n\n阶段目标完成：\n\n给读者支付一部分回报。\n\n然后：\n\n新阶段出现。\n\n所以目标线要有：\n\n阶段性支付。\n\n这和第13章期待的“建立—推进—兑现”完全一致。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#四十三目标线最好不断改变问题性质",
-    "href": "chapter-24.html#四十三目标线最好不断改变问题性质",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "四十三、目标线最好不断改变“问题性质”",
-    "text": "四十三、目标线最好不断改变“问题性质”\n例如：\n创业线。\n阶段一：\n\n做得出产品吗？\n\n阶段二：\n\n有人买吗？\n\n阶段三：\n\n赚得到钱吗？\n\n阶段四：\n\n扩得起来吗？\n\n阶段五：\n\n竞争对手来了怎么办？\n\n阶段六：\n\n公司变大以后，自己还能控制吗？\n\n目标始终围绕：\n\n公司成功。\n\n但问题不断变。\n这就是长篇的耐久性。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#四十四目标线最危险的写法永远做同一件事",
-    "href": "chapter-24.html#四十四目标线最危险的写法永远做同一件事",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "四十四、目标线最危险的写法：永远做同一件事",
-    "text": "四十四、目标线最危险的写法：永远做同一件事\n例如：\n\n接任务。\n完成。\n升级。\n接更大的任务。\n完成。\n升级。\n\n如果任务内容和人物状态没有本质变化：\n\n只是重复。\n\n所以每个阶段最好至少有一项改变：\n\n规则。\n责任。\n对手。\n代价。\n关系。\n人物内部问题。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#四十五目标线可以不断引入新世界",
-    "href": "chapter-24.html#四十五目标线可以不断引入新世界",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "四十五、目标线可以不断引入新世界",
-    "text": "四十五、目标线可以不断引入新世界\n人物目标扩大：\n\n世界也扩大。\n\n例如：\n想开好一个饭馆。\n先处理：\n\n店内经营。\n\n后来：\n\n供应商。\n\n再后来：\n\n城市商业圈。\n\n再后来：\n\n连锁扩张。\n\n每一个目标阶段：\n\n召唤新的世界机制。\n\n所以目标线也能：\n\n驱动世界构建。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#四十六目标线可以不断引入新人物",
-    "href": "chapter-24.html#四十六目标线可以不断引入新人物",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "四十六、目标线可以不断引入新人物",
-    "text": "四十六、目标线可以不断引入新人物\n人物要达成目标：\n\n需要谁？\n\n教练。\n竞争者。\n投资人。\n官员。\n客户。\n盟友。\n敌人。\n这些人物不是：\n\n为了增加角色数量。\n\n而是：\n\n目标路径上的功能位置。\n\n这会让人物引入更自然。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#四十七一个新人物最好和目标发生关系",
-    "href": "chapter-24.html#四十七一个新人物最好和目标发生关系",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "四十七、一个新人物最好和目标发生关系",
-    "text": "四十七、一个新人物最好和目标发生关系\n例如：\n新角色出现。\n问：\n\n他对主角当前目标意味着什么？\n\n可能：\n\n资源。\n\n\n阻力。\n\n\n信息。\n\n\n替代路径。\n\n\n新目标。\n\n如果毫无关系：\n\n他进入故事的理由会弱。\n\n当然后面可以发展出独立关系线。\n但最初：\n\n最好有清楚接口。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#四十八目标线还能帮助作者筛-scene",
-    "href": "chapter-24.html#四十八目标线还能帮助作者筛-scene",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "四十八、目标线还能帮助作者筛 Scene",
-    "text": "四十八、目标线还能帮助作者筛 Scene\n想写一个 Scene。\n问：\n\n它是否改变人物离目标的距离？\n\n可能是：\n\n更近。\n\n\n更远。\n\n\n换了一条路。\n\n\n发现目标本身错了。\n\n\n代价变大。\n\n只要有一种：\n\n它就在推进目标线。\n\n如果完全没影响：\n\n需要确认它是不是在推进别的故事线。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#四十九不是只有更近才叫推进",
-    "href": "chapter-24.html#四十九不是只有更近才叫推进",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "四十九、不是只有“更近”才叫推进",
-    "text": "四十九、不是只有“更近”才叫推进\n人物努力以后：\n\n离目标更远。\n\n也是推进。\n例如：\n想修复关系。\n结果：\n\n说错话，关系更坏。\n\n线仍然变化。\n所以：\n\n推进 = 状态改变。\n不等于进度增加。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#五十目标线也可以出现倒退",
-    "href": "chapter-24.html#五十目标线也可以出现倒退",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "五十、目标线也可以出现“倒退”",
-    "text": "五十、目标线也可以出现“倒退”\n事业：\n\n从盈利重新亏损。\n\n关系：\n\n从接近重新疏远。\n\n比赛：\n\n从主力变替补。\n\n倒退会制造：\n\n新压力。\n\n但倒退最好有：\n\n因果。\n\n否则像：\n\n作者故意重置。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#五十一倒退后不能简单重复原来的路",
-    "href": "chapter-24.html#五十一倒退后不能简单重复原来的路",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "五十一、倒退后不能简单重复原来的路",
-    "text": "五十一、倒退后不能简单重复原来的路\n例如：\n人物第一次从贫穷到有钱。\n后来又破产。\n如果破产以后：\n\n完全重复第一次赚钱过程，\n\n会无聊。\n因为人物已经：\n\n有经验、关系、认知。\n\n所以同样状态：\n\n人已经不同。\n\n新的目标路径也应该不同。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#五十二目标线的真正连续是目标-人物历史共同向前",
-    "href": "chapter-24.html#五十二目标线的真正连续是目标-人物历史共同向前",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "五十二、目标线的真正连续，是“目标 + 人物历史”共同向前",
-    "text": "五十二、目标线的真正连续，是“目标 + 人物历史”共同向前\n人物不是：\n\n每个阶段重新开始。\n\n他带着：\n\n过去的能力。\n关系。\n债务。\n名声。\n创伤。\n\n进入新阶段。\n所以：\n\n同一个目标在不同时间，会被一个不同的人追求。\n\n这会让长篇有成长感。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#五十三目标可以变成身份的一部分",
-    "href": "chapter-24.html#五十三目标可以变成身份的一部分",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "五十三、目标可以变成“身份的一部分”",
-    "text": "五十三、目标可以变成“身份的一部分”\n一开始：\n\n我想当医生。\n\n后来：\n\n我就是医生。\n\n目标完成。\n但新的问题变成：\n\n什么样的医生？\n\n于是：\n\n外部资格目标\n\n转成：\n\n身份目标。\n\n很多长篇会这样从：\n\n“得到位置”\n\n继续写：\n\n“如何成为配得上这个位置的人”。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#五十四目标也可以从得到变成保住",
-    "href": "chapter-24.html#五十四目标也可以从得到变成保住",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "五十四、目标也可以从“得到”变成“保住”",
-    "text": "五十四、目标也可以从“得到”变成“保住”\n例如：\n\n赢得王位。\n\n然后：\n\n保住王位。\n\n目标变化。\n得到权力时：\n\n竞争结构。\n\n保住权力时：\n\n治理、联盟、合法性。\n\n故事自然换题。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#五十五还可以从保住变成改变",
-    "href": "chapter-24.html#五十五还可以从保住变成改变",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "五十五、还可以从“保住”变成“改变”",
-    "text": "五十五、还可以从“保住”变成“改变”\n例如：\n人物进入组织。\n早期：\n\n活下来。\n\n中期：\n\n往上升。\n\n后期：\n\n改变组织。\n\n这是一条非常自然的目标升级：\n\n适应 → 掌握 → 改变\n\n人物和世界关系不断变化。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#五十六一个完整示范饭馆目标线",
-    "href": "chapter-24.html#五十六一个完整示范饭馆目标线",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "五十六、一个完整示范：饭馆目标线",
-    "text": "五十六、一个完整示范：饭馆目标线\n长期目标：\n\n林薇想保住母亲留下的饭馆。\n\n\n阶段一：撑过眼前现金危机\n当前问题：\n\n欠两个月房租。\n\nScene 目标：\n\n向姐姐借钱。\n向银行贷款。\n争取大订单。\n\n结果：\n\n勉强补上房租。\n\n阶段完成。\n\n\n\n阶段二：解决持续亏损\n她发现：\n\n不是这次缺钱。\n是经营结构长期有问题。\n\n阶段目标变成：\n\n让饭馆现金流稳定。\n\n行动：\n\n改菜单。\n调价格。\n裁掉低利润菜。\n做线上订单。\n\n这时世界也扩大到：\n\n平台、供应商、顾客结构。\n\n\n\n\n阶段三：增长带来的新问题\n饭馆开始赚钱。\n成功带来：\n\n更大客流。\n员工不足。\n品质下降。\n\n新目标：\n\n扩张还是保持小店？\n\n这时目标线开始进入：\n\n人物价值。\n\n因为：\n\n母亲留下的是一家小饭馆。\n如果扩张成连锁，它还是原来的东西吗？\n\n故事从：\n\n生存目标\n\n进入：\n\n身份和价值目标。\n\n这就是目标线的成长。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#五十七一个完整示范成长型目标线",
-    "href": "chapter-24.html#五十七一个完整示范成长型目标线",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "五十七、一个完整示范：成长型目标线",
-    "text": "五十七、一个完整示范：成长型目标线\n人物：\n\n一个极度害怕公开表达的人。\n\n外部目标：\n\n成为优秀教师。\n\n阶段一：\n\n能顺利上完一节课。\n\n阶段二：\n\n能处理学生质疑。\n\n阶段三：\n\n能在公开课堂上讲课。\n\n阶段四：\n\n面对学校不合理要求时敢表达。\n\n目标表面是：\n\n教学能力。\n\n但人物内在线也在同步：\n\n逃避 → 尝试 → 承担 → 发声。\n\n外部目标线和人物线：\n\n互相咬合。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#五十八目标线和人物弧光最好不要完全分开",
-    "href": "chapter-24.html#五十八目标线和人物弧光最好不要完全分开",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "五十八、目标线和人物弧光最好不要完全分开",
-    "text": "五十八、目标线和人物弧光最好不要完全分开\n如果人物追一个目标：\n\n一百章。\n\n但这件事从未改变他：\n\n会有点薄。\n\n更强的是：\n\n目标路径不断要求他面对自己的旧模型。\n\n例如：\n要创业成功。\n但他：\n\n极度不信任别人。\n\n公司越大：\n\n越必须授权。\n\n于是：\n\n外部目标不断逼内部变化。\n\n这会让目标线更厚。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#五十九目标线和关系线也可以互相绑定",
-    "href": "chapter-24.html#五十九目标线和关系线也可以互相绑定",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "五十九、目标线和关系线也可以互相绑定",
-    "text": "五十九、目标线和关系线也可以互相绑定\n人物想：\n\n保住饭馆。\n\n需要姐姐投资。\n姐妹关系：\n\n被迫重新进入前台。\n\n姐姐愿不愿投资：\n\n取决于信任。\n\n于是：\n\n事业目标线\n\n必须通过：\n\n关系线。\n\n这会让不同线真正交叉。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#六十目标线和世界线也可以互相绑定",
-    "href": "chapter-24.html#六十目标线和世界线也可以互相绑定",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "六十、目标线和世界线也可以互相绑定",
-    "text": "六十、目标线和世界线也可以互相绑定\n人物想：\n\n公司增长。\n\n但行业政策变化。\n新规则：\n\n原来的商业模式不能继续。\n\n人物必须：\n\n调整目标路径。\n\n所以目标不是悬浮在世界之外。\n世界会不断：\n\n改变什么目标可行。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#六十一目标线最大的好处作者永远有方向",
-    "href": "chapter-24.html#六十一目标线最大的好处作者永远有方向",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "六十一、目标线最大的好处：作者永远有“方向”",
-    "text": "六十一、目标线最大的好处：作者永远有“方向”\n卡文时：\n\n不知道下一章发生什么。\n\n先看：\n\n当前阶段目标是什么？\n\n再问：\n\n离完成还差什么？\n\n再问：\n\n当前最大阻力是什么？\n\n再问：\n\n人物下一步最可能做什么？\n\n通常：\n\nScene 就出来了。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#六十二一个实用的目标线生成器",
-    "href": "chapter-24.html#六十二一个实用的目标线生成器",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "六十二、一个实用的“目标线生成器”",
-    "text": "六十二、一个实用的“目标线生成器”\n可以按顺序问：\n\n1. 长期目标是什么？\n\n人物最终想做到什么？\n\n\n\n2. 为什么重要？\n\n背后连接什么价值？\n\n\n\n3. 完成条件是什么？\n\n什么时候算真正完成？\n\n\n\n4. 当前最大距离是什么？\n\n缺资源、能力、信息、资格、关系还是别的？\n\n\n\n5. 当前阶段要先解决什么？\n\n找到阶段目标。\n\n\n\n6. 这个阶段的前置条件是什么？\n\n继续向下分解。\n\n\n\n7. 人物下一步能实际做什么？\n\n落成 Scene 目标。\n\n\n\n8. 行动结果怎样改变目标线？\n\n更近、更远、换路、重定义？\n\n\n\n9. 阶段完成以后，人物位置怎样变化？\n\n新权利、新责任、新世界。\n\n\n\n10. 新位置会产生什么新目标？\n\n让目标线继续生长。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#六十三一个实用的目标线检查器",
-    "href": "chapter-24.html#六十三一个实用的目标线检查器",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "六十三、一个实用的“目标线检查器”",
-    "text": "六十三、一个实用的“目标线检查器”\n写了一段以后，可以检查：\n\n当前目标是否清楚？\n\n人物现在到底在追什么？\n\n\n\n当前目标是否可执行？\n\n下一步是什么？\n\n\n\n最近几幕有没有改变距离？\n\n不是一直原地忙。\n\n\n\n阻力有没有变化？\n\n还是永远同一种困难？\n\n\n\n是否有阶段性兑现？\n\n读者有没有得到回报？\n\n\n\n完成以后有没有新局面？\n\n成功是否打开下一层？\n\n\n\n目标有没有和人物价值连接？\n\n为什么不放弃？\n\n\n\n目标有没有和其他线发生交换？\n\n关系、世界、人物是否被影响？\n\n如果这些大多清楚：\n\n目标线通常就比较稳。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#六十四目标线的最小模型",
-    "href": "chapter-24.html#六十四目标线的最小模型",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "六十四、目标线的最小模型",
-    "text": "六十四、目标线的最小模型\n如果全部压缩，可以写成：\n\n长期目标\n↓\n当前阶段目标\n↓\n当前缺口\n↓\n下一步行动\n↓\n结果\n↓\n目标距离变化\n↓\n新阶段 / 新目标\n\n这条链可以一直循环。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#六十五目标线其实是跨-scene-的行动发动机",
-    "href": "chapter-24.html#六十五目标线其实是跨-scene-的行动发动机",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "六十五、目标线其实是“跨 Scene 的行动发动机”",
-    "text": "六十五、目标线其实是“跨 Scene 的行动发动机”\n第5章到第9章，我们研究：\n\n一幕里人物怎么行动。\n\n目标线把这种机制拉长：\n\n今天的行动服务阶段目标。\n阶段目标服务长期目标。\n\n于是很多 Scene 不再是：\n\n各做各的。\n\n它们形成：\n\n长期行动方向。\n\n所以可以说：\n\n目标线，是人物行动在长时间尺度上的组织方式。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-24.html#六十六但长篇不能只有目标线",
-    "href": "chapter-24.html#六十六但长篇不能只有目标线",
-    "title": "目标线：怎样把一个大目标写成几十个 Scene",
-    "section": "六十六、但长篇不能只有目标线",
-    "text": "六十六、但长篇不能只有目标线\n这里也要提前提醒。\n如果整本书只有：\n\n主角一直朝目标前进。\n\n会很像任务流程。\n故事还需要：\n\n问题线。\n关系线。\n人物变化。\n世界变化。\n\n尤其有一种故事，\n人物甚至没有清楚的长期目标。\n但有一个：\n\n持续存在的问题\n\n逼着他不断应对。\n这就是下一章要研究的：\n\n问题线。",
-    "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>目标线：怎样把一个大目标写成几十个 Scene</span>"
     ]
   },
   {
@@ -19986,234 +19986,135 @@
     ]
   },
   {
-    "objectID": "appendix-template.html",
-    "href": "appendix-template.html",
-    "title": "附录 B — 附录 D：问题空间",
-    "section": "",
-    "text": "附录D　问题空间（Problem Space）：故事的燃料从哪里来\n小说最常见的一句建议是：\n这句话没有错。\n但它很容易留下一个更困难的问题：\n比如：\n这个局面当然可以推动故事。\n但如果作者站在空白页前，\n真正困难的往往不是：\n而是：\n这就是本附录要解决的东西：\n正文主要讨论：\n本附录则向下再走一层：",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>附录 D：问题空间</span>"
-    ]
-  },
-  {
-    "objectID": "appendix-template.html#章节模板",
-    "href": "appendix-template.html#章节模板",
-    "title": "附录 B — 附录 D：问题空间",
-    "section": "章节模板",
-    "text": "章节模板\n\n基本信息\n\n章节标题：\n本章视角人物：\n时间与地点：\n本章承接的上一个结果：\n\n\n\n核心动力\n\n视角人物当前想要什么：\n他为什么现在必须行动：\n谁或什么构成主要阻力：\n他最害怕失去什么：\n\n\n\n事件推进\n\n起点：人物处于什么状态？\n刺激：什么事情迫使人物回应？\n行动：人物采取了什么具体行动？\n反作用：阻力如何回应？\n选择：人物必须在什么选项之间做决定？\n结果：选择造成了什么即时后果？\n结尾：下一章的行动动力是什么？",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>附录 D：问题空间</span>"
-    ]
-  },
-  {
-    "objectID": "appendix-template.html#场景模板",
-    "href": "appendix-template.html#场景模板",
-    "title": "附录 B — 附录 D：问题空间",
-    "section": "场景模板",
-    "text": "场景模板\n\n场景标题：\n视角人物：\n场景地点：\n场景开始时的人物状态：\n人物进入场景时想要什么：\n具体阻力：\n对方想要什么：\n场景中的关键动作：\n人物获得的新信息：\n人物做出的选择：\n场景结束时改变了什么：\n留下的后果或悬念：",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>附录 D：问题空间</span>"
-    ]
-  },
-  {
-    "objectID": "appendix-template.html#人物模板",
-    "href": "appendix-template.html#人物模板",
-    "title": "附录 B — 附录 D：问题空间",
-    "section": "人物模板",
-    "text": "人物模板\n\n基本信息\n\n姓名：\n身份：\n与主角的关系：\n当前处境：\n\n\n\n行动逻辑\n\n最想得到什么：\n最不愿面对什么：\n过去形成了什么信念：\n这个信念在哪种情况下会失效：\n面对压力时通常会怎么做：\n什么事情会迫使他改变：\n\n\n\n变化轨迹\n\n故事开始时的状态：\n第一个关键选择：\n选择带来的代价：\n故事中段的变化：\n最终必须面对的问题：\n故事结束时的状态：",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>附录 D：问题空间</span>"
-    ]
-  },
-  {
-    "objectID": "appendix-template.html#关系模板",
-    "href": "appendix-template.html#关系模板",
-    "title": "附录 B — 附录 D：问题空间",
-    "section": "关系模板",
-    "text": "关系模板\n\n关系双方：\n表面关系：\n实际关系：\n双方共同需要什么：\n双方分别隐瞒什么：\n关系中的主要不对等：\n哪件事会让关系发生变化：\n关系变化留下什么后果：",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>附录 D：问题空间</span>"
-    ]
-  },
-  {
     "objectID": "appendix-glossary.html",
     "href": "appendix-glossary.html",
-    "title": "附录 C — 附录 C：小说写作术语表",
+    "title": "附录 B — 附录 C：小说写作术语表",
     "section": "",
     "text": "小说写作术语表\n本术语表用于统一本书中的概念。术语的价值不在于记住名称，而在于帮助作者准确判断文本正在发生什么。",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 C：小说写作术语表</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>附录 C：小说写作术语表</span>"
     ]
   },
   {
     "objectID": "appendix-glossary.html#人物与视角",
     "href": "appendix-glossary.html#人物与视角",
-    "title": "附录 C — 附录 C：小说写作术语表",
+    "title": "附录 B — 附录 C：小说写作术语表",
     "section": "人物与视角",
     "text": "人物与视角\n\n视角人物\n读者在当前段落或场景中主要跟随其感知、判断和行动的人物。视角人物不一定是故事主角，但场景中的信息通常应受到他的注意力和认知限制。\n\n\n欲望\n人物希望得到的具体东西。欲望应尽量能够转化成行动，例如取得某件物品、说服某个人或离开某个地方。\n\n\n状态\n人物进入场景时携带的情绪、信息、关系、伤势、承诺和未解决问题。状态会影响人物对新事件的理解与反应。\n\n\n人物弧线\n人物在故事过程中经历的一系列选择和后果，以及这些经历如何改变他的信念、关系或行动方式。",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 C：小说写作术语表</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>附录 C：小说写作术语表</span>"
     ]
   },
   {
     "objectID": "appendix-glossary.html#情节与冲突",
     "href": "appendix-glossary.html#情节与冲突",
-    "title": "附录 C — 附录 C：小说写作术语表",
+    "title": "附录 B — 附录 C：小说写作术语表",
     "section": "情节与冲突",
     "text": "情节与冲突\n\n刺激事件\n打破人物原有平衡、迫使人物回应的事件。刺激事件不必宏大，但必须对当前人物产生实际影响。\n\n\n冲突\n两个或多个相互不兼容的欲望、目标或行动之间的阻力。冲突应当推动人物做出选择，而不只是制造口头争执。\n\n\n选择\n人物在压力下采取的一个行动或决定。真正的选择通常伴随代价，并会改变后续局面。\n\n\n后果\n行动或选择在人物、关系、资源和局势上留下的变化。后果可以立即出现，也可以在之后的情节中显现。\n\n\n悬念\n读者对尚未揭晓的结果、信息或危险产生的持续期待。悬念来自具体问题，而不是单纯隐藏信息。",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 C：小说写作术语表</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>附录 C：小说写作术语表</span>"
     ]
   },
   {
     "objectID": "appendix-glossary.html#场景与结构",
     "href": "appendix-glossary.html#场景与结构",
-    "title": "附录 C — 附录 C：小说写作术语表",
+    "title": "附录 B — 附录 C：小说写作术语表",
     "section": "场景与结构",
     "text": "场景与结构\n\n场景\n发生在相对连续的时间和空间中的行动单元。一个有效场景通常会让人物的处境在结束时发生变化。\n\n\n叙事节奏\n信息、行动、反应和停顿交替出现的速度与分布。节奏不是单纯让文字变快，而是控制读者何时等待、何时理解、何时受到冲击。\n\n\n伏笔\n在结果出现之前埋下、事后能够获得新解释的线索。伏笔应当在当下有合理用途，不能只为未来解释而强行存在。\n\n\n信息差\n人物与读者、不同人物之间掌握的信息不完全相同。信息差可以制造悬念、误解、戏剧性反讽和策略博弈。\n\n\n高潮\n主要矛盾集中爆发并迫使关键人物做出重要选择的阶段。高潮的作用不是声音最大，而是代价和不可逆性最高。",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 C：小说写作术语表</span>"
-    ]
-  },
-  {
-    "objectID": "appendix-template.html#家庭系统",
-    "href": "appendix-template.html#家庭系统",
-    "title": "附录 B — 附录 D：问题空间",
-    "section": "家庭系统",
-    "text": "家庭系统\n可能持续产生：\n\n抚养。\n赡养。\n婚姻。\n财产。\n继承。\n控制。\n期待。\n情感债。\n身份。",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>附录 D：问题空间</span>"
-    ]
-  },
-  {
-    "objectID": "appendix-template.html#公司系统",
-    "href": "appendix-template.html#公司系统",
-    "title": "附录 B — 附录 D：问题空间",
-    "section": "公司系统",
-    "text": "公司系统\n可能产生：\n\n薪资。\n晋升。\n裁员。\n权限。\n项目。\n绩效。\n资源争夺。\n责任。\n派系。",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>附录 D：问题空间</span>"
-    ]
-  },
-  {
-    "objectID": "appendix-template.html#学校系统",
-    "href": "appendix-template.html#学校系统",
-    "title": "附录 B — 附录 D：问题空间",
-    "section": "学校系统",
-    "text": "学校系统\n可能产生：\n\n排名。\n考试。\n名额。\n纪律。\n同伴关系。\n师生权力。\n资格。",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>附录 D：问题空间</span>"
-    ]
-  },
-  {
-    "objectID": "appendix-template.html#官僚系统",
-    "href": "appendix-template.html#官僚系统",
-    "title": "附录 B — 附录 D：问题空间",
-    "section": "官僚系统",
-    "text": "官僚系统\n可能产生：\n\n审批。\n征税。\n征役。\n权限。\n记录。\n执法。\n身份认证。\n寻租。",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>附录 D：问题空间</span>"
-    ]
-  },
-  {
-    "objectID": "appendix-template.html#市场系统",
-    "href": "appendix-template.html#市场系统",
-    "title": "附录 B — 附录 D：问题空间",
-    "section": "市场系统",
-    "text": "市场系统\n可能产生：\n\n价格。\n竞争。\n供需。\n信用。\n合同。\n垄断。\n欺诈。\n\n于是：\n\n系统就是问题生成器。",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>附录 D：问题空间</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>附录 C：小说写作术语表</span>"
     ]
   },
   {
     "objectID": "appendix-problem-space.html",
     "href": "appendix-problem-space.html",
-    "title": "附录 C — 附录 D：问题空间",
+    "title": "附录 C — 附录 C：问题空间",
     "section": "",
-    "text": "附录D　问题空间（Problem Space）：故事的燃料从哪里来\n小说最常见的一句建议是：\n这句话没有错。\n但它很容易留下一个更困难的问题：\n比如：\n这个局面当然可以推动故事。\n但如果作者站在空白页前，\n真正困难的往往不是：\n而是：\n这就是本附录要解决的东西：\n正文主要讨论：\n本附录则向下再走一层：",
+    "text": "附录C　问题空间（Problem Space）：故事的燃料从哪里来\n小说最常见的一句建议是：\n这句话没有错。\n但它很容易留下一个更困难的问题：\n比如：\n这个局面当然可以推动故事。\n但如果作者站在空白页前，\n真正困难的往往不是：\n而是：\n这就是本附录要解决的东西：\n正文主要讨论：\n本附录则向下再走一层：",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 D：问题空间</span>"
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 C：问题空间</span>"
     ]
   },
   {
     "objectID": "appendix-problem-space.html#家庭系统",
     "href": "appendix-problem-space.html#家庭系统",
-    "title": "附录 C — 附录 D：问题空间",
+    "title": "附录 C — 附录 C：问题空间",
     "section": "家庭系统",
     "text": "家庭系统\n可能持续产生：\n\n抚养。\n赡养。\n婚姻。\n财产。\n继承。\n控制。\n期待。\n情感债。\n身份。",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 D：问题空间</span>"
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 C：问题空间</span>"
     ]
   },
   {
     "objectID": "appendix-problem-space.html#公司系统",
     "href": "appendix-problem-space.html#公司系统",
-    "title": "附录 C — 附录 D：问题空间",
+    "title": "附录 C — 附录 C：问题空间",
     "section": "公司系统",
     "text": "公司系统\n可能产生：\n\n薪资。\n晋升。\n裁员。\n权限。\n项目。\n绩效。\n资源争夺。\n责任。\n派系。",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 D：问题空间</span>"
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 C：问题空间</span>"
     ]
   },
   {
     "objectID": "appendix-problem-space.html#学校系统",
     "href": "appendix-problem-space.html#学校系统",
-    "title": "附录 C — 附录 D：问题空间",
+    "title": "附录 C — 附录 C：问题空间",
     "section": "学校系统",
     "text": "学校系统\n可能产生：\n\n排名。\n考试。\n名额。\n纪律。\n同伴关系。\n师生权力。\n资格。",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 D：问题空间</span>"
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 C：问题空间</span>"
     ]
   },
   {
     "objectID": "appendix-problem-space.html#官僚系统",
     "href": "appendix-problem-space.html#官僚系统",
-    "title": "附录 C — 附录 D：问题空间",
+    "title": "附录 C — 附录 C：问题空间",
     "section": "官僚系统",
     "text": "官僚系统\n可能产生：\n\n审批。\n征税。\n征役。\n权限。\n记录。\n执法。\n身份认证。\n寻租。",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 D：问题空间</span>"
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 C：问题空间</span>"
     ]
   },
   {
     "objectID": "appendix-problem-space.html#市场系统",
     "href": "appendix-problem-space.html#市场系统",
-    "title": "附录 C — 附录 D：问题空间",
+    "title": "附录 C — 附录 C：问题空间",
     "section": "市场系统",
     "text": "市场系统\n可能产生：\n\n价格。\n竞争。\n供需。\n信用。\n合同。\n垄断。\n欺诈。\n\n于是：\n\n系统就是问题生成器。",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 D：问题空间</span>"
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 C：问题空间</span>"
     ]
   },
   {
     "objectID": "appendix-problem-space.html#一些题外话",
     "href": "appendix-problem-space.html#一些题外话",
-    "title": "附录 C — 附录 D：问题空间",
+    "title": "附录 C — 附录 C：问题空间",
     "section": "一些题外话",
     "text": "一些题外话\n金手指其实和 Problem Space 是一对东西。问题空间告诉你世界能够提出什么问题。金手指告诉你主角有什么非常规办法处理这些问题。\n金手指扩大主角的“可选行动空间”，而不总是直接替主角消灭问题。\n所以网文真正的循环可能是：Problem → Advantage → Action → Payoff → Expansion → New Problem。\n问题给主角行动理由。金手指让主角拥有特殊解决路径。行动让主角真正使用优势，而不是系统代打。回报提供爽感：钱、力量、身份、关系、认可、资源。扩张最重要——主角的位置发生变化。于是原本接触不到的问题，现在开始接触到了。最后进入新的问题空间。",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 D：问题空间</span>"
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>附录 C：问题空间</span>"
+    ]
+  },
+  {
+    "objectID": "appendix-state-stream.html",
+    "href": "appendix-state-stream.html",
+    "title": "附录 D — 附录 D: 状态流（State Stream）",
+    "section": "",
+    "text": "附录D　状态流（State Stream）：为什么小说世界会显得真实\n很多 AI 写出来的小说，有一个很明显的问题。\n它不一定完全不好看。\n人物也会说话。\n事情也会发生。\n甚至：\n\n有冲突。\n有反转。\n有节奏。\n有结果。\n\n但是读起来就是：\n\n薄。\n\n人物像站在一个白房间里说话。\n一句接一句。\n做一个动作。\n再说一句话。\n然后再做一个动作。\n事情确实在发生，\n但你总觉得：\n\n这个世界不像真的存在。\n\n这类问题非常常见。\n而且它很难描述。\n你可能会说：\n\n“信息量不够。”\n\n\n“细节太少。”\n\n\n“太白描了。”\n\n\n“不像真人写的。”\n\n这些感觉都对。\n但如果只有这些词，\n你还是很难：\n\n定位。\n\n因为你不知道：\n\n到底缺的是哪种信息。\n\n这一篇附录就专门解决这个问题。\n我把它暂时称为：\n\n状态流（State Stream）。\n\n\n\n\n一、什么叫“状态流”\n先说最简单的。\n小说里不只有：\n\n发生了什么。\n\n还应该让读者知道：\n\n现在是什么样。\n\n这两个不是一回事。\n比如：\n\n王海来找李成要钱。\n\n这是：\n\n事件。\n\n但同时还有很多东西正在存在：\n\n李成现在有没有钱？\n王海和他以前是什么关系？\n两个人谁知道什么？\n欠款到底怎么来的？\n还有几天到期？\n李成现在站在哪里？\n王海身后有没有别人？\n李成现在最怕什么？\n这笔钱如果还不上会发生什么？\n\n这些不是新事件。\n它们是：\n\n当前状态。\n\n所以可以先非常简单地理解：\n\n事件流 = 正在发生什么。\n状态流 = 现在已经是什么样。\n\n小说真实不真实，\n很多时候就取决于：\n\n这两条东西有没有一起存在。\n\n\n\n\n二、AI 最常见的问题：只有事件流\n比如 AI 很容易写成这样：\n\n“你怎么来了？”李成问。\n“来看看你。”王海说道。\n“我没什么好看的。”\n“钱呢？”\n李成脸色一变。\n“再给我几天。”\n“三天。”\n“三天不够。”\n“那是你的事。”\n王海说完，转身离开。\n\n这段并不是完全不能看。\n它有：\n\n人物。\n对话。\n压力。\n截止时间。\n\n但是它非常像：\n\n骨架。\n\n你知道：\n\n两个人说了什么。\n\n但你不知道：\n\n这个世界为什么会走到今天。\n\n你也不知道：\n\n两个人此刻到底处在什么状态。\n\n所以读者脑子里很难形成：\n\n一个完整现实。\n\n\n\n\n三、真人小说通常会做一件事：不停补当前状态\n还是同一场戏。\n稍微加一点状态：\n\n“你怎么来了？”\n李成没让开门。\n楼道里的声控灯刚灭，王海站在暗处，只能看见烟头一明一暗。楼下麻将馆还没散，洗牌声隔着两层楼都听得见。\n“来看看你。”\n王海笑了一下。\n李成盯着他手里的烟。两人以前一起跑工地那几年，王海从来不抽烟。\n“我没什么好看的。”\n“钱呢？”\n李成没说话。\n那一百万本来是材料款。去年项目停工以后，他先拿三十万给工人补了工资，剩下的后来又陆陆续续垫进了母亲住院的费用里。王海知道前一件事，不知道后一件。\n“再给我几天。”\n“三天。”\n王海把烟头按在墙上。\n“周五下午，我带人过来。”\n\n你会发现：\n\n事件并没有增加多少。\n\n王海还是：\n\n来催债。\n\n两个人还是：\n\n谈三天。\n\n但文本突然：\n\n厚了。\n\n为什么？\n因为读者开始知道：\n\n现在到底是什么样。\n\n\n\n\n四、所以真实感不是“多写细节”\n这一点特别重要。\n很多人发现 AI 写得薄，\n第一反应是：\n\n“多加描写。”\n\n于是变成：\n\n窗帘是蓝色的。\n桌子是木头的。\n灯光很昏黄。\n她有一双漂亮的眼睛。\n风吹过窗户。\n\n这些东西可能有用。\n但也可能完全没用。\n因为真正缺的不是：\n\n细节数量。\n\n而是：\n\n和当前局面有关的状态信息。\n\n这两个差很多。\n\n\n\n五、什么叫“和当前局面有关”\n催债 Scene 里，\n有价值的信息可能是：\n\n李成银行卡里只剩三千块。\n\n有价值：\n\n王海知道他还有一套房。\n\n有价值：\n\n李成母亲刚出院。\n\n有价值：\n\n王海以前和他一起做过工程。\n\n有价值：\n\n三天后是材料商统一结账日。\n\n这些信息都会改变：\n\n人物怎么说。\n人物怎么判断。\n人物接下来能做什么。\n\n这就叫：\n\n相关状态信息。\n\n反过来：\n\n沙发是什么颜色。\n\n如果和当前局面完全没关系，\n那它就只是：\n\n装饰信息。\n\n\n\n\n六、我更愿意把“真实感”理解成：世界一直在\n现实世界有一个特点：\n\n你不看它，它也还在。\n\n你不看银行卡，\n余额不会消失。\n你不去医院，\n医院还是有自己的流程。\n你不想债务，\n三天还是会过去。\n你不和姐姐联系，\n两人的关系历史也不会自动清零。\n所以小说有真实感，\n其实就是让读者感觉：\n\n人物没有看到的东西，也在继续存在。\n\n这非常重要。\n\n\n\n七、状态流的第一类：空间状态\n最基础的一类：\n\n人现在在哪。\n\n不是只写：\n\n“他们在客厅。”\n\n而是要知道：\n\n谁离谁近。\n谁站着。\n谁坐着。\n门开没开。\n谁挡住路。\n谁已经准备走。\n谁坐在主位。\n\n这些空间信息很多时候其实同时是：\n\n关系信息。\n\n比如：\n\n李成没有让开门。\n\n这不只是动作。\n它意味着：\n\n他不愿意让王海进入自己的私人空间。\n\n如果王海自己推门进来，\n关系又变了。\n所以空间状态经常在告诉读者：\n\n谁控制这个场面。\n\n\n\n\n八、状态流的第二类：身体状态\n人物不是一颗会说话的脑袋。\n他还有身体。\n比如：\n\n饿。\n困。\n发烧。\n手抖。\n喝醉。\n受伤。\n几天没睡。\n刚跑完一段路。\n穿着不合适。\n\n这些都会影响：\n\n判断。\n语气。\n行动。\n\n比如一个人刚熬了两夜，\n他和别人谈判的方式就不应该：\n\n和精神饱满时完全一样。\n\n所以身体状态能让人物：\n\n落地。\n\n\n\n\n九、状态流的第三类：资源状态\n这一类特别重要。\n人物现在：\n\n有多少钱。\n有多少时间。\n有多少人手。\n有多少信用。\n有多少粮食。\n有多少体力。\n手里还有什么工具。\n\n如果小说里资源没有状态，\n人物就会像：\n\n随时都能掏出需要的东西。\n\n这也是 AI 文很常见的问题。\n上一章说：\n\n主角没钱。\n\n下一章又：\n\n随手打车、住酒店、买设备。\n\n读者不一定立刻指出来。\n但会感觉：\n\n假。\n\n因为资源状态没有被持续维护。\n\n\n\n十、状态流的第四类：时间状态\n时间不是：\n\n“三天后”写一次就结束。\n\n它应该持续存在。\n比如：\n第一天：\n\n还剩三天。\n\n第二天：\n\n还剩两天。\n\n晚上：\n\n银行已经下班。\n\n周末：\n\n某些机构不开门。\n\n这些都会改变：\n\n可选行动空间。\n\n所以时间状态不是装饰。\n它会真正参与：\n\n因果。\n\n\n\n\n十一、状态流的第五类：信息状态\n这一类非常容易被忽略。\n每个人现在到底：\n\n知道什么？\n\n不知道什么？\n误以为什么？\n怀疑什么？\n这是小说里非常重要的一层。\n例如：\n\n王海知道项目停工。\n但不知道李成母亲住院。\n\n李成知道：\n\n王海来要钱。\n\n但不知道：\n\n王海是不是已经知道房产的事。\n\n这就形成：\n\n信息差。\n\n于是每一句对话都不再只是：\n\n字面意思。\n\n人物还在：\n\n试探。\n隐瞒。\n判断。\n\n这就是很多真人对话看起来更“活”的原因之一。\n\n\n\n十二、状态流的第六类：关系状态\n关系不是：\n\n“他们是兄弟。”\n\n这么简单。\n真正有用的是：\n\n现在这段关系处在什么状态。\n\n比如：\n\n以前亲近，现在疏远。\n\n\n表面合作，实际互不信任。\n\n\nA 欠 B 人情。\n\n\nB 觉得 A 背叛过自己。\n\n\n两个人刚刚吵过架。\n\n\n一方正在试着恢复关系。\n\n这些关系状态会直接改变：\n\n一句普通话意味着什么。\n\n比如：\n\n“吃饭了吗？”\n\n陌生人说：\n\n很普通。\n\n五年没联系的母亲说：\n\n可能就完全不是普通问候。\n\n\n\n\n十三、状态流的第七类：情绪状态\n这里要特别注意。\n情绪状态不是：\n\n每隔两句写“他很愤怒”“她很紧张”。\n\n真正有用的是：\n\n人物此刻怎样理解这个局面。\n\n比如：\n\n李成看见王海抽烟。\n\n他想到：\n\n王海以前不抽。\n\n于是他判断：\n\n对方今天不是随便来问一句。\n\n这比直接写：\n\n“李成顿时紧张起来。”\n\n信息量更高。\n因为它同时给了：\n\n观察。\n历史。\n判断。\n情绪。\n\n\n\n\n十四、状态流的第八类：目标状态\n人物的目标也不是固定一句：\n\n“我要赚钱。”\n\n目标本身会更新。\n例如：\n开始：\n\n想借到一百万。\n\n发现银行不贷以后：\n\n改成找担保人。\n\n担保人拒绝以后：\n\n改成卖房。\n\n如果目标状态没有更新，\n人物就会一直重复：\n\n同一句愿望。\n\n所以目标也属于：\n\n当前状态。\n\n\n\n\n十五、状态流的第九类：问题状态\n一个问题不是：\n\n出现以后一直长一样。\n\n比如：\n\n缺钱。\n\n开始：\n\n缺一百万。\n\n后来：\n\n银行拒贷。\n\n问题变成：\n\n没有正常融资渠道。\n\n再后来：\n\n姐姐愿意给钱但要入股。\n\n问题变成：\n\n钱和控制权冲突。\n\n所以小说不是：\n\n只有“问题”。\n\n还要维护：\n\n问题现在发展到哪一步。\n\n\n\n\n十六、状态流的第十类：世界状态\n这一类最容易让小说突然变厚。\n人物之外，\n世界也在动。\n比如：\n\n工程项目停工。\n\n\n粮价上涨。\n\n\n公司正在裁员。\n\n\n城里开始封路。\n\n\n宗门正在选新掌门。\n\n这些不是主角此刻做出来的。\n但它们会：\n\n改变主角能做什么。\n\n真正有世界感的小说，\n往往让你感觉：\n\n主角不行动，世界也会自己继续走。\n\n\n\n\n十七、还有一类非常重要：知识状态\n你前面说：\n\n真人小说会时不时解释一个东西是什么。\n\n这个观察很准。\n比如小说写：\n\n“材料款。”\n\n真人作者可能顺手补一句：\n\n工地上的材料款和普通欠账不太一样。甲方一旦压住工程款，下面供应商的钱就会一层层跟着拖，最后谁手里现金多，谁才能撑过那几个月。\n\n这段不是事件。\n也不是人物动作。\n它在做的是：\n\n让读者理解这个世界怎样运转。\n\n我把它叫：\n\n模型信息（Model Information）。\n\n\n\n\n十八、为什么需要“模型信息”\n因为读者不是这个世界里的人。\n很多东西作者知道，\n人物知道，\n但读者：\n\n不知道。\n\n如果不解释，\n读者只看到：\n\n“材料款没结。”\n\n却不知道：\n\n为什么严重。\n\n所以有时作者需要补：\n\n这个东西是什么。\n一般怎么运作。\n为什么现在重要。\n违反以后会怎样。\n\n这就是：\n\n世界模型。\n\n\n\n\n十九、所以小说文本其实有三种东西\n可以先记一个很实用的三分法：\n\n事件（Event）\n状态（State）\n模型（Model）\n\n\n事件\n\n现在发生了什么？\n\n\n\n状态\n\n现在是什么样？\n\n\n\n模型\n\n为什么这些东西会这样运作？\n\n这三个一起存在，\n小说才容易：\n\n又动，又厚，又真实。\n\n\n\n\n\n二十、AI 文最常见的失衡：Event 太多，State 和 Model 太少\n很多 AI 小说大概是：\n\n70% 对话和动作。\n20% 简单情绪。\n10% 环境装饰。\n\n但缺：\n\n资源状态。\n关系历史。\n信息差。\n当前问题状态。\n世界运行。\n背景机制。\n\n所以读起来像：\n\n一条纯剧情轨道。\n\n人物只为下一句而存在。\n世界只为当前 Scene 临时生成。\n\n\n\n二十一、这就是为什么 AI 人物经常没有“生活感”\n真人角色往往同时有：\n\n钱的问题。\n工作状态。\n家庭状态。\n身体状态。\n过去历史。\n今天心情。\n明天安排。\n\n他说一句话时，\n这些东西都在背后。\n而 AI 经常只有：\n\n当前剧情任务。\n\n例如：\n\n“这一幕要让他和姐姐吵架。”\n\n于是所有句子都围绕：\n\n吵架。\n\n人物就像：\n\n只为这一幕被加载出来。\n\n所以不真实。\n\n\n\n二十二、真实人物不是“围绕剧情存在”\n而是：\n\n他本来就在生活，剧情只是撞进了他的生活。\n\n比如债主上门之前，\n李成可能正在：\n\n给母亲算药费。\n处理工人消息。\n吃昨天剩下的饭。\n看银行短信。\n\n然后：\n\n王海来了。\n\n这时候“催债”才像：\n\n撞进一个真实存在的生活。\n\n而不是：\n\n场景一开始，世界才突然生成。\n\n\n\n\n二十三、所以写 Scene 时可以先做一件事：写“场前状态”\n不要急着写第一句对白。\n先用几行回答：\n\n人物刚才在干什么？\n他今天已经经历了什么？\n手头有什么未完成？\n身体怎么样？\n钱怎么样？\n时间怎么样？\n关系怎么样？\n他现在最担心什么？\n\n不一定全部写进正文。\n但作者自己要知道。\n这会明显提高：\n\nScene 的真实感。\n\n\n\n\n二十四、状态流不是“全部告诉读者”\n这一点也很重要。\n作者知道：\n\n20 个状态。\n\n正文可能只放：\n\n3 个。\n\n因为小说不是：\n\n数据库导出。\n\n真正的技巧是：\n\n在对的时刻，露出对当前 Scene 有作用的状态。\n\n比如王海问：\n\n“钱呢？”\n\n这时候补：\n\n李成银行卡余额。\n\n很自然。\n如果在两个人刚见面时突然介绍：\n\n李成小学成绩。\n\n就完全无关。\n所以状态流的核心不是：\n\n多。\n\n而是：\n\n相关 + 及时。\n\n\n\n\n二十五、怎么判断一个状态该不该写\n可以问：\n\n它会不会改变读者对当前局面的理解？\n\n如果会：\n\n值得。\n\n或者：\n\n它会不会改变人物接下来的选择？\n\n如果会：\n\n很值得。\n\n或者：\n\n它会不会让当前一句话产生更深含义？\n\n如果会：\n\n值得。\n\n这三个判断已经很实用。\n\n\n\n二十六、对话后面为什么经常要跟状态\n你前面观察到：\n\n真人小说的对话后面经常跟当前状态。\n\n这是因为纯对白只告诉读者：\n\n说了什么。\n\n但人物说完一句话以后，\n场面其实已经：\n\n变了。\n\n比如：\n\n“三天。”\n\n说完这句话以后，\n变化的是：\n\n时间压力。\n\n人物可能：\n\n看向日历。\n想到周五银行几点下班。\n想到一笔钱星期六才能到账。\n\n这就把一句台词：\n\n接到世界状态上。\n\n于是对白不再飘。\n\n\n\n二十七、一个非常实用的写法：对白—状态—对白\n比如：\n\n“三天。”\n李成看了一眼手机。今天已经周二晚上九点，真正能办事的时间只剩两个白天。银行那边上午刚拒了他的贷款。\n“三天不够。”\n“那是你的事。”\n\n这里状态信息不是：\n\n插科打诨。\n\n它直接解释：\n\n为什么三天不够。\n\n这就是好状态。\n\n\n\n二十八、还可以：对白—历史—对白\n例如：\n\n“你去找你姐。”\n李成没说话。\n他上一次给姐姐打电话还是五年前父亲葬礼那天。那次两个人只说了不到三分钟，最后还是姐姐先挂的。\n“我不找她。”\n\n一句：\n\n“我不找她”\n\n因为有了历史，\n重量完全不同。\n\n\n\n二十九、还可以：对白—知识—对白\n例如：\n\n“项目停了，钱就没了？”\n“不是这么算。”\n工程停工最麻烦的地方不是完全没钱，而是账全悬在半空里。甲方不确认结算，施工方就拿不到款，下面材料商和工人的钱却照样要付。\n李成抬头看他。\n“所以我现在不是没工程，是钱出不来。”\n\n知识信息直接帮助读者：\n\n理解问题。\n\n这就是模型流。\n\n\n\n三十、还可以：对白—环境变化—对白\n\n“你再说一遍。”\n门外电梯“叮”了一声。\n两个人同时停下来。\n一个老太太拎着菜从电梯里出来，看了他们一眼。\n王海等人走远，才重新开口。\n“我说，周五我带人来。”\n\n环境不是装饰。\n它改变了：\n\n说话节奏。\n公开程度。\n人物行为。\n\n这就是环境进入状态流。\n\n\n\n三十一、状态流最重要的效果之一：让场面有“余量”\n纯事件流的文本像：\n\nA → B → C → D\n\n非常直。\n状态流加入以后，\n变成：\n\nA\n旁边还有 X\nB\n人物还记得 Y\n世界正在发生 Z\nC\n\n于是读者感觉：\n\n这个场面不只是为了完成剧情。\n\n它有：\n\n余量。\n\n这种余量就是：\n\n生活感。\n\n\n\n\n三十二、但状态流也会写坏\n最常见的问题是：\n\n什么都写。\n\n人物喝水。\n就写杯子。\n看窗外。\n就写天气。\n坐下。\n就写椅子。\n最后事件走不动。\n所以状态流不是：\n\n每句都加说明。\n\n而是：\n\n持续维护，但选择性呈现。\n\n作者脑中状态很多。\n文本里：\n\n只露最有用的。\n\n\n\n\n三十三、另一个问题：状态信息只出现一次，不再影响后面\n比如作者写：\n\n主角腿受伤。\n\n下一章：\n\n跑五公里。\n\n那伤就只是：\n\n一次性装饰。\n\n真正的状态应该：\n\n被继承。\n\n受伤以后：\n\n行动速度变。\n选择变。\n别人反应变。\n\n所以“状态流”之所以叫流，\n关键就在：\n\n状态会往后流。\n\n\n\n\n三十四、什么叫“状态继承”\nScene 1 结束：\n\n李成只剩三千块。\n姐姐知道他欠债。\n王海给三天期限。\n\nScene 2 开始时：\n这些都还应该存在。\n不能：\n\n钱突然没限制。\n姐姐又像不知道。\n时间又无限。\n\n这就叫：\n\n状态继承。\n\nAI 文非常容易：\n\n每个 Scene 重新开始。\n\n所以状态继承尤其值得专门检查。\n\n\n\n三十五、状态流和前面的“问题空间”怎么接\n问题空间回答：\n\n世界能产生什么问题。\n\n状态流回答：\n\n这些问题现在发展到什么状态。\n\n比如：\n\n债务\n\n属于问题空间。\n但具体到当前小说里：\n\n欠多少？\n欠谁？\n什么时候到期？\n对方知道什么？\n人物有没有别的资产？\n\n这些就是：\n\n当前状态。\n\n所以：\n\nProblem Space 是可能性。\nState Stream 是当前值。\n\n这个区分非常重要。\n\n\n\n三十六、状态流和 Scene 怎么接\n我们前面一直说：\n\nScene = 把一个局面写到发生变化。\n\n现在可以更精确一点：\n\nScene 就是一组状态被事件改变的过程。\n\n开头：\n\nState A\n\n经过：\n\nAction / Event\n\n最后：\n\nState B\n\n比如：\n开头：\n\n王海还没正式给期限。\n\n结尾：\n\n三天。\n\n这就是：\n\n时间状态改变。\n\n同时：\n\n关系状态恶化。\n风险状态上升。\n李成目标被迫具体化。\n\n所以一个 Scene 往往不是只改一个状态。\n而是：\n\n一组状态一起更新。\n\n\n\n\n三十七、所以 Scene 可以看成“状态更新器”\n这个视角特别适合诊断。\n写完一幕问：\n\n这幕到底更新了什么状态？\n\n如果答案：\n\n什么都没有。\n\n那这幕很可能：\n\n没有推进。\n\n如果只是：\n\n增加一个事实\n\n但人物、关系、问题、资源全没变化，\n它可能更像：\n\n信息展示。\n\n\n\n\n三十八、状态流和人物真实感怎么接\n真实人物不是：\n\n有很多性格形容词。\n\n而是：\n\n身上同时挂着很多状态。\n\n例如一个普通人此刻可能同时：\n\n缺钱。\n和妻子冷战。\n昨晚没睡。\n明天要开会。\n父亲刚住院。\n还没回复老板消息。\n\n这就是现实的人。\n而 AI 人物常常只有：\n\n当前主线状态。\n\n所以人物显得：\n\n单薄。\n\n\n\n\n三十九、状态流和世界真实感怎么接\n真实世界也同时存在很多状态：\n\n天气。\n价格。\n交通。\n政策。\n社会秩序。\n组织运行。\n资源供给。\n人物之间的历史。\n\n作者不需要全写。\n但要让读者偶尔感觉到：\n\n主角之外还有东西在动。\n\n比如：\n\n菜价涨了。\n\n\n工厂最近开始裁员。\n\n\n城里这几天旅馆都满。\n\n一句就可能：\n\n打开一个更大的世界。\n\n\n\n\n四十、知识性信息为什么让小说显得真实\n因为真实的人：\n\n会知道自己所在领域的一些常识。\n\n厨师看后厨，\n不会只看到：\n\n锅。\n\n他会看到：\n\n火候。\n出菜速度。\n菜品损耗。\n冰箱温度。\n备料。\n\n程序员看项目，\n会看到：\n\n依赖。\n服务。\n日志。\n发布流程。\n\n所以专业知识会让人物和世界：\n\n有具体结构。\n\n这也是 AI 泛化小说经常缺的。\n\n\n\n四十一、AI 为什么容易写成“泛化名词”\n比如：\n\n公司。\n项目。\n文件。\n老板。\n任务。\n\n这些词本身：\n\n太宽。\n\n真人作者如果熟悉领域，\n会更具体：\n\n回款。\n投标。\n施工日志。\n周转率。\n对账单。\n供应商账期。\n\n一具体，\n世界就开始：\n\n有机制。\n\n所以提高真实感的一个非常简单的方法是：\n\n把泛化名词换成真正属于这个领域的名词。\n\n\n\n\n四十二、但专业知识不要变成百科解释\n还是那个原则：\n\n当前局面需要多少，就解释多少。\n\n比如：\n人物正在：\n\n为回款焦虑。\n\n那就解释：\n\n回款相关。\n\n不用突然讲：\n\n整个建筑行业历史。\n\n知识信息要服务：\n\n当前理解。\n\n\n\n\n四十三、状态信息真正好的形式：顺着当前注意力进入\n人物看到银行卡：\n\n资源状态进入。\n\n人物看到旧照片：\n\n关系历史进入。\n\n人物听见“停工”：\n\n行业知识进入。\n\n人物看时间：\n\nDeadline 进入。\n\n这样读者不会觉得：\n\n作者停下来讲课。\n\n信息像：\n\n从 Scene 自己长出来。\n\n\n\n\n四十四、一个很实用的“状态插入点”\n通常以下时刻很适合补状态：\n\n人物刚进入场景时。\n一句重要对白以后。\n人物准备做决定时。\n行动失败以后。\n人物注意到异常时。\n场景准备结束时。\n\n因为这些地方：\n\n读者本来就需要重新判断局面。\n\n\n\n\n四十五、写对话时，可以避免“对话连打”\n如果连续出现：\n\nA 说。\nB 说。\nA 说。\nB 说。\nA 说。\n\n可以停一下问：\n\n现在有什么状态值得更新或提醒？\n\n可能是：\n\n谁开始不耐烦。\n时间过去多久。\n谁发现了什么。\n房间里谁进来了。\n某句话触发了什么历史。\n谁的目标变了。\n\n放一项进去。\n对话就会：\n\n落地。\n\n\n\n\n四十六、状态流不等于“慢”\n这是另一个误区。\n状态信息可以非常短。\n例如：\n\n“三天。”\n李成看了眼手机。周二，晚上九点十三分。\n“不够。”\n\n只有一句。\n但：\n\n时间突然具体。\n\n所以状态流不是：\n\n把节奏拖慢。\n\n而是：\n\n提高单位文字的信息密度。\n\n\n\n\n四十七、真正的信息密度不是“字多”\n同样 100 字，\n一种写法：\n\n描写很多颜色、表情、动作。\n\n另一种写法：\n\n同时交代资源、关系、时间、信息差。\n\n后者：\n\n信息密度更高。\n\n所以以后不要笼统说：\n\n“AI 信息量低。”\n\n可以更精确地问：\n\n是哪一种状态信息太少？\n\n\n\n\n四十八、我们可以建立一个非常实用的诊断表\n如果一段 AI 小说读起来：\n\n薄。\n\n就查下面这些：\n\n空间\n\n我知道人在哪里、怎么站、谁控制空间吗？\n\n\n\n身体\n\n人物现在的身体状态存在吗？\n\n\n\n资源\n\n钱、时间、工具、人手有没有明确状态？\n\n\n\n信息\n\n谁知道什么、谁不知道什么？\n\n\n\n关系\n\n两个人当前关系到底是什么状态？\n\n\n\n目标\n\n当前目标有没有变化？\n\n\n\n问题\n\n问题现在发展到哪一步？\n\n\n\n世界\n\n主角之外的世界是否在运行？\n\n\n\n历史\n\n过去有没有继续影响现在？\n\n\n\n模型\n\n读者是否知道关键事物为什么重要、怎么运作？\n\n哪几项长期空白，\n文本就会：\n\n往那个方向发薄。\n\n\n\n\n\n四十九、AI 写作最值得加的不是“更多文学性”，而是“状态管理”\n如果你以后让 AI 辅助写小说，\n与其只告诉它：\n\n“写得细腻一点。”\n\n不如要求它：\n\n持续维护人物、资源、关系、信息、时间和世界状态。\n\n这个指令更具体。\n甚至可以让 AI 在写 Scene 前先内部列：\n\n当前时间。\n当前地点。\n角色目标。\n角色已知信息。\n角色资源。\n当前关系。\n当前问题。\n上一幕留下的后果。\n\n然后再写。\n这会比：\n\n“写真实一点”\n\n有效得多。\n\n\n\n五十、可以建立一个 Scene State Card\n写每一幕之前，\n作者自己只要记：\n\n时间：\n地点：\n人物：\n身体：\n资源：\n关系：\n已知信息：\n误解 / 不知道：\n当前目标：\n当前问题：\n世界后台正在发生：\n上一幕留下的后果：\n\n不需要每项都填很长。\n很多时候：\n\n一行几个词。\n\n目的不是：\n\n做表格。\n\n而是：\n\n防止 Scene 变成白房间。\n\n\n\n\n五十一、状态流最大的价值：让事件有“来处”\n比如：\n\n李成突然拒绝姐姐。\n\n如果没有状态：\n\n像剧情需要。\n\n但如果前面已经知道：\n\n两人五年没联系。\n姐姐曾在父亲葬礼上指责他。\n李成一直认为自己不欠姐姐。\n\n那么拒绝：\n\n有来处。\n\n这就是：\n\n状态支撑行动。\n\n\n\n\n五十二、状态流也让结果有“去处”\n比如：\n\n姐姐最后借钱。\n\n不是：\n\n结束。\n\n因为新的状态是：\n\n李成欠姐姐人情。\n姐姐知道他的真实财务。\n姐姐开始进入饭馆经营。\n\n这些状态继续：\n\n流向下一幕。\n\n所以状态流同时连接：\n\n过去和未来。\n\n\n\n\n五十三、真实感其实来自“连续性”\n真正让人觉得假的，\n往往不是：\n\n某一个细节不真实。\n\n而是：\n\n世界没有记忆。\n\n人物刚受伤：\n\n下一幕忘了。\n\n刚吵架：\n\n下一幕正常聊天。\n\n刚花掉所有钱：\n\n下一幕继续消费。\n\n刚得知真相：\n\n下一幕行为不变。\n\n这种东西读者会很敏感。\n所以真实感的一个底层词其实是：\n\n连续性（Continuity）。\n\n而状态流就是：\n\n连续性的载体。\n\n\n\n\n五十四、所以状态流和“现实密度”可以区分\n如果要给两个概念分工：\n\n状态流（State Stream）\n\n指：\n\n各种状态随着故事持续存在、更新、继承。\n\n而：\n\n现实密度（Reality Density）\n\n指：\n\n文本在单位篇幅里让读者感知到了多少与当前局面有关的现实信息。\n\n一个是：\n\n机制。\n\n一个是：\n\n阅读效果。\n\n这样会比较清楚。\n\n\n\n五十五、你以后诊断 AI 文，可以这样说\n不要只说：\n\n“太白描。”\n\n可以说：\n\n事件流过强，状态流过弱。\n\n或者：\n\n对话在推进，但资源状态、关系状态和信息状态没有同步更新。\n\n或者：\n\nScene 有动作，但缺少世界模型信息，所以读者不知道这些动作为什么重要。\n\n或者：\n\n每一幕都像重新生成，上一幕的状态没有继承。\n\n这就已经可以：\n\n精确定位。\n\n\n\n\n五十六、一个简单改写流程\n拿到一段很薄的 AI 文，\n不要全部重写。\n第一步：\n\n圈出所有 Event。\n\n也就是：\n\n发生了什么。\n\n第二步：\n\n看 Event 之间有没有 State。\n\n第三步：\n\n补最重要的 2—3 种状态。\n\n比如：\n\n时间。\n关系。\n资源。\n\n第四步：\n\n看有没有一个地方需要 Model。\n\n解释：\n\n某件事为什么重要。\n\n第五步：\n\n检查这些状态有没有进入后续行动。\n\n这样改一轮，\n文本通常就会：\n\n厚很多。\n\n\n\n\n五十七、一个例子：纯事件版\n\n“你还欠我十万。”赵明说。\n“我知道。”\n“什么时候还？”\n“月底。”\n“我等不了。”\n“那你想怎么样？”\n“明天给我。”\n\n这就是：\n\n纯事件。\n\n\n\n\n五十八、状态化以后\n\n“你还欠我十万。”\n赵明把手机放到桌上，屏幕上还是刚才那张转账截图。\n李成没有去看。\n那十万块他不是忘了。这个月店里的账他算过三遍，卡里能动的钱只剩两万六，后天还要发四个人工资。\n“我知道。”\n“什么时候还？”\n“月底。”\n赵明笑了一下。\n“月底？”\n李成这才抬头。\n他知道赵明为什么急。赵明那边的装修队三天后要进场，定金就是八万。两个人的问题其实一样，都不是没钱，是钱卡在了错误的地方。\n“我等不了。”\n“那你想怎么样？”\n“明天给我。”\n\n事件几乎没变。\n但现在有：\n\n资源状态。\n时间状态。\n双方问题。\n世界知识。\n关系理解。\n\n所以场景突然：\n\n像真的。\n\n\n\n\n五十九、真正的真人感，很多时候就是“作者知道得比写出来的多”\n这是很关键的一点。\n作者脑中知道：\n\n店有几个人。\n工资什么时候发。\n赵明为什么缺钱。\n两个人以前怎么认识。\n这个行业钱怎么周转。\n\n正文只露出：\n\n一点。\n\n但读者会感觉：\n\n后面还有东西。\n\nAI 文经常相反。\n它写出来的：\n\n就是它此刻全部拥有的世界。\n\n所以读者感觉：\n\n一眼到底。\n\n\n\n\n六十、所以提高 AI 小说真实感，第一步不是“让它写得像人”\n而是：\n\n先让它拥有一个持续的世界状态。\n\n只要状态存在，\n文本自然会有：\n\n选择性信息。\n\n如果状态都没有，\n要求：\n\n“更真实、更细腻、更生活化”\n\n往往只会得到：\n\n更多表情。\n更多动作。\n更多环境形容词。\n\n而不是：\n\n真正的信息量。\n\n\n\n\n六十一、状态流的最小记忆框架\n如果不想记十几类，\n可以压成六个词：\n\n人、物、时、知、关系、世界。\n\n\n人\n\n人物身体、情绪、目标现在怎样。\n\n\n\n物\n\n钱、工具、资源、空间现在怎样。\n\n\n\n时\n\n时间、期限、顺序现在怎样。\n\n\n\n知\n\n谁知道什么，谁不知道什么。\n\n\n\n关系\n\n谁欠谁、信谁、怕谁、控制谁。\n\n\n\n世界\n\n主角之外什么正在运行，规则怎么起作用。\n\n写 Scene 时偶尔扫一遍：\n\n就够用了。\n\n\n\n\n\n六十二、再压成一句话\n如果只留一个问题：\n\n除了“发生了什么”，现在还有什么正在存在？\n\n这句话非常适合：\n\n对付 AI 白房间问题。\n\n因为它强迫作者：\n\n从事件\n\n退一步看到：\n\n整体局面。\n\n\n\n\n六十三、把它接回整本书\n本书前面已经有：\n\n问题空间\n\n回答：\n\n世界可以提出什么问题。\n\n然后：\n\n局面\n\n回答：\n\n这个问题为什么现在必须处理。\n\n接着：\n\nScene\n\n回答：\n\n人物怎样行动并造成变化。\n\n现在补上：\n\n状态流\n\n回答：\n\n在这一切发生过程中，世界怎样持续存在、被更新、被继承。\n\n于是可以写成：\n\nProblem Space\n→ Current State\n→ Situation\n→ Action / Event\n→ State Update\n→ New State\n→ New Situation\n\n这就非常完整了。\n\n\n\n附录暂时结论\nAI 小说经常显得：\n\n薄。\n白。\n假。\n像人物站在空房间里念台词。\n\n很多时候并不是：\n\n没有剧情。\n\n而是：\n\n只有事件流，没有足够的状态流。\n\n所谓状态流，\n就是：\n\n人物、资源、时间、信息、关系、问题和世界状态，在故事中持续存在、不断更新，并被后面的 Scene 继承。\n\n它让读者知道的不只是：\n\n“发生了什么。”\n\n还包括：\n\n“现在是什么样。”\n\n而小说里偶尔出现的：\n\n背景解释。\n行业常识。\n规则说明。\n知识信息。\n\n则属于：\n\n模型信息。\n\n它回答：\n\n“为什么这个世界会这样运作。”\n\n所以一段成熟小说通常同时包含三种东西：\n\nEvent —— 事件\nState —— 状态\nModel —— 模型\n\n事件负责：\n\n动。\n\n状态负责：\n\n厚。\n\n模型负责：\n\n懂。\n\n三者一起，\n世界才会：\n\n像真的存在。\n\n以后如果一段 AI 小说读起来很薄，\n不要只说：\n\n“细节不够。”\n\n可以直接检查：\n\n事件流是不是过强？\n状态流是不是过弱？\n模型信息是不是缺失？\n上一幕的状态有没有被下一幕继承？\n\n如果只想记一个最简单的问题：\n\n除了“发生了什么”，现在还有什么正在存在？\n\n这个问题，就是状态流的入口。\n而如果再压成一句定义：\n\n小说的真实感，来自一个持续存在、不断被事件更新、并且拥有记忆的世界状态。",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>附录 D: 状态流（State Stream）</span>"
     ]
   }
 ]

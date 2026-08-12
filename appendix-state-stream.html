@@ -1,0 +1,3112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>附录 D — 附录 D: 状态流（State Stream） – webnovel-study</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./appendix-problem-space.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./appendix-checklist.html">Appendices</a></li><li class="breadcrumb-item"><a href="./appendix-state-stream.html"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">附录 D: 状态流（State Stream）</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">webnovel-study</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">简介</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">写小说，究竟是在做什么</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">小说到底写在哪里</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">空白页：第一笔从哪里来</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">局面：让一个 Scene 获得内容</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">人物为什么会行动</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">行动：人物究竟做什么</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">阻力：为什么事情不能直接成功</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">第8章　变化：Scene 为什么值得存在</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">结果：一次行动怎样产生后果</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">新局面：一个 Scene 怎样产生下一个 Scene</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">因果链：为什么下一幕会自然发生</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">升级：怎样让故事越往后越难停下来</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">期待：读者为什么愿意继续看</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">不确定：怎样让未来不能被完全看穿</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">价值：为什么结果会让人真正在乎</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-16.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">变化：为什么读者会被“发生了变化”吸引</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-17.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">第17章　人物是行动者</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-18.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">人物的内在模型</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-19.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">人物关系：两个人之间究竟存在什么</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-20.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">故事需要多少世界</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-21.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">从 Scene 反推世界</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-22.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">让世界制造故事</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-23.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">故事线：一串 Scene 怎样形成一条线</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-24.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">目标线：怎样把一个大目标写成几十个 Scene</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-25.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">问题线：一个问题怎样撑起整部长篇</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-26.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">阶段：长篇为什么必须不断进入新的状态</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-27.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">高潮与解决：故事怎样真正收束</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-28.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">从想法到第一章</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-29.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">不知道下一章写什么怎么办</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-30.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">卡文到底卡在哪里</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-31.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Scene 训练：怎样把故事基本功练到自动化</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-32.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">续写训练：怎样让故事从上一幕自然长出下一幕</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-33.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">拆小说：怎样把别人的作品变成自己的能力</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-34.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">模仿：怎样借别人的结构练出自己的东西</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-35.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">反馈与改写：怎样把一次写作真正变成能力</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix-checklist.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">附录 A：写作检查清单</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix-glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">附录 C：小说写作术语表</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix-problem-space.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">附录 C：问题空间</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix-state-stream.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">附录 D: 状态流（State Stream）</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">目录</h2>
+   
+  <ul>
+  <li><a href="#附录d-状态流state-stream为什么小说世界会显得真实" id="toc-附录d-状态流state-stream为什么小说世界会显得真实" class="nav-link active" data-scroll-target="#附录d-状态流state-stream为什么小说世界会显得真实">附录D　状态流（State Stream）：为什么小说世界会显得真实</a></li>
+  <li><a href="#一什么叫状态流" id="toc-一什么叫状态流" class="nav-link" data-scroll-target="#一什么叫状态流">一、什么叫“状态流”</a></li>
+  <li><a href="#二ai-最常见的问题只有事件流" id="toc-二ai-最常见的问题只有事件流" class="nav-link" data-scroll-target="#二ai-最常见的问题只有事件流">二、AI 最常见的问题：只有事件流</a></li>
+  <li><a href="#三真人小说通常会做一件事不停补当前状态" id="toc-三真人小说通常会做一件事不停补当前状态" class="nav-link" data-scroll-target="#三真人小说通常会做一件事不停补当前状态">三、真人小说通常会做一件事：不停补当前状态</a></li>
+  <li><a href="#四所以真实感不是多写细节" id="toc-四所以真实感不是多写细节" class="nav-link" data-scroll-target="#四所以真实感不是多写细节">四、所以真实感不是“多写细节”</a></li>
+  <li><a href="#五什么叫和当前局面有关" id="toc-五什么叫和当前局面有关" class="nav-link" data-scroll-target="#五什么叫和当前局面有关">五、什么叫“和当前局面有关”</a></li>
+  <li><a href="#六我更愿意把真实感理解成世界一直在" id="toc-六我更愿意把真实感理解成世界一直在" class="nav-link" data-scroll-target="#六我更愿意把真实感理解成世界一直在">六、我更愿意把“真实感”理解成：世界一直在</a></li>
+  <li><a href="#七状态流的第一类空间状态" id="toc-七状态流的第一类空间状态" class="nav-link" data-scroll-target="#七状态流的第一类空间状态">七、状态流的第一类：空间状态</a></li>
+  <li><a href="#八状态流的第二类身体状态" id="toc-八状态流的第二类身体状态" class="nav-link" data-scroll-target="#八状态流的第二类身体状态">八、状态流的第二类：身体状态</a></li>
+  <li><a href="#九状态流的第三类资源状态" id="toc-九状态流的第三类资源状态" class="nav-link" data-scroll-target="#九状态流的第三类资源状态">九、状态流的第三类：资源状态</a></li>
+  <li><a href="#十状态流的第四类时间状态" id="toc-十状态流的第四类时间状态" class="nav-link" data-scroll-target="#十状态流的第四类时间状态">十、状态流的第四类：时间状态</a></li>
+  <li><a href="#十一状态流的第五类信息状态" id="toc-十一状态流的第五类信息状态" class="nav-link" data-scroll-target="#十一状态流的第五类信息状态">十一、状态流的第五类：信息状态</a></li>
+  <li><a href="#十二状态流的第六类关系状态" id="toc-十二状态流的第六类关系状态" class="nav-link" data-scroll-target="#十二状态流的第六类关系状态">十二、状态流的第六类：关系状态</a></li>
+  <li><a href="#十三状态流的第七类情绪状态" id="toc-十三状态流的第七类情绪状态" class="nav-link" data-scroll-target="#十三状态流的第七类情绪状态">十三、状态流的第七类：情绪状态</a></li>
+  <li><a href="#十四状态流的第八类目标状态" id="toc-十四状态流的第八类目标状态" class="nav-link" data-scroll-target="#十四状态流的第八类目标状态">十四、状态流的第八类：目标状态</a></li>
+  <li><a href="#十五状态流的第九类问题状态" id="toc-十五状态流的第九类问题状态" class="nav-link" data-scroll-target="#十五状态流的第九类问题状态">十五、状态流的第九类：问题状态</a></li>
+  <li><a href="#十六状态流的第十类世界状态" id="toc-十六状态流的第十类世界状态" class="nav-link" data-scroll-target="#十六状态流的第十类世界状态">十六、状态流的第十类：世界状态</a></li>
+  <li><a href="#十七还有一类非常重要知识状态" id="toc-十七还有一类非常重要知识状态" class="nav-link" data-scroll-target="#十七还有一类非常重要知识状态">十七、还有一类非常重要：知识状态</a></li>
+  <li><a href="#十八为什么需要模型信息" id="toc-十八为什么需要模型信息" class="nav-link" data-scroll-target="#十八为什么需要模型信息">十八、为什么需要“模型信息”</a></li>
+  <li><a href="#十九所以小说文本其实有三种东西" id="toc-十九所以小说文本其实有三种东西" class="nav-link" data-scroll-target="#十九所以小说文本其实有三种东西">十九、所以小说文本其实有三种东西</a>
+  <ul class="collapse">
+  <li><a href="#事件" id="toc-事件" class="nav-link" data-scroll-target="#事件">事件</a></li>
+  <li><a href="#状态" id="toc-状态" class="nav-link" data-scroll-target="#状态">状态</a></li>
+  <li><a href="#模型" id="toc-模型" class="nav-link" data-scroll-target="#模型">模型</a></li>
+  </ul></li>
+  <li><a href="#二十ai-文最常见的失衡event-太多state-和-model-太少" id="toc-二十ai-文最常见的失衡event-太多state-和-model-太少" class="nav-link" data-scroll-target="#二十ai-文最常见的失衡event-太多state-和-model-太少">二十、AI 文最常见的失衡：Event 太多，State 和 Model 太少</a></li>
+  <li><a href="#二十一这就是为什么-ai-人物经常没有生活感" id="toc-二十一这就是为什么-ai-人物经常没有生活感" class="nav-link" data-scroll-target="#二十一这就是为什么-ai-人物经常没有生活感">二十一、这就是为什么 AI 人物经常没有“生活感”</a></li>
+  <li><a href="#二十二真实人物不是围绕剧情存在" id="toc-二十二真实人物不是围绕剧情存在" class="nav-link" data-scroll-target="#二十二真实人物不是围绕剧情存在">二十二、真实人物不是“围绕剧情存在”</a></li>
+  <li><a href="#二十三所以写-scene-时可以先做一件事写场前状态" id="toc-二十三所以写-scene-时可以先做一件事写场前状态" class="nav-link" data-scroll-target="#二十三所以写-scene-时可以先做一件事写场前状态">二十三、所以写 Scene 时可以先做一件事：写“场前状态”</a></li>
+  <li><a href="#二十四状态流不是全部告诉读者" id="toc-二十四状态流不是全部告诉读者" class="nav-link" data-scroll-target="#二十四状态流不是全部告诉读者">二十四、状态流不是“全部告诉读者”</a></li>
+  <li><a href="#二十五怎么判断一个状态该不该写" id="toc-二十五怎么判断一个状态该不该写" class="nav-link" data-scroll-target="#二十五怎么判断一个状态该不该写">二十五、怎么判断一个状态该不该写</a></li>
+  <li><a href="#二十六对话后面为什么经常要跟状态" id="toc-二十六对话后面为什么经常要跟状态" class="nav-link" data-scroll-target="#二十六对话后面为什么经常要跟状态">二十六、对话后面为什么经常要跟状态</a></li>
+  <li><a href="#二十七一个非常实用的写法对白状态对白" id="toc-二十七一个非常实用的写法对白状态对白" class="nav-link" data-scroll-target="#二十七一个非常实用的写法对白状态对白">二十七、一个非常实用的写法：对白—状态—对白</a></li>
+  <li><a href="#二十八还可以对白历史对白" id="toc-二十八还可以对白历史对白" class="nav-link" data-scroll-target="#二十八还可以对白历史对白">二十八、还可以：对白—历史—对白</a></li>
+  <li><a href="#二十九还可以对白知识对白" id="toc-二十九还可以对白知识对白" class="nav-link" data-scroll-target="#二十九还可以对白知识对白">二十九、还可以：对白—知识—对白</a></li>
+  <li><a href="#三十还可以对白环境变化对白" id="toc-三十还可以对白环境变化对白" class="nav-link" data-scroll-target="#三十还可以对白环境变化对白">三十、还可以：对白—环境变化—对白</a></li>
+  <li><a href="#三十一状态流最重要的效果之一让场面有余量" id="toc-三十一状态流最重要的效果之一让场面有余量" class="nav-link" data-scroll-target="#三十一状态流最重要的效果之一让场面有余量">三十一、状态流最重要的效果之一：让场面有“余量”</a></li>
+  <li><a href="#三十二但状态流也会写坏" id="toc-三十二但状态流也会写坏" class="nav-link" data-scroll-target="#三十二但状态流也会写坏">三十二、但状态流也会写坏</a></li>
+  <li><a href="#三十三另一个问题状态信息只出现一次不再影响后面" id="toc-三十三另一个问题状态信息只出现一次不再影响后面" class="nav-link" data-scroll-target="#三十三另一个问题状态信息只出现一次不再影响后面">三十三、另一个问题：状态信息只出现一次，不再影响后面</a></li>
+  <li><a href="#三十四什么叫状态继承" id="toc-三十四什么叫状态继承" class="nav-link" data-scroll-target="#三十四什么叫状态继承">三十四、什么叫“状态继承”</a></li>
+  <li><a href="#三十五状态流和前面的问题空间怎么接" id="toc-三十五状态流和前面的问题空间怎么接" class="nav-link" data-scroll-target="#三十五状态流和前面的问题空间怎么接">三十五、状态流和前面的“问题空间”怎么接</a></li>
+  <li><a href="#三十六状态流和-scene-怎么接" id="toc-三十六状态流和-scene-怎么接" class="nav-link" data-scroll-target="#三十六状态流和-scene-怎么接">三十六、状态流和 Scene 怎么接</a></li>
+  <li><a href="#三十七所以-scene-可以看成状态更新器" id="toc-三十七所以-scene-可以看成状态更新器" class="nav-link" data-scroll-target="#三十七所以-scene-可以看成状态更新器">三十七、所以 Scene 可以看成“状态更新器”</a></li>
+  <li><a href="#三十八状态流和人物真实感怎么接" id="toc-三十八状态流和人物真实感怎么接" class="nav-link" data-scroll-target="#三十八状态流和人物真实感怎么接">三十八、状态流和人物真实感怎么接</a></li>
+  <li><a href="#三十九状态流和世界真实感怎么接" id="toc-三十九状态流和世界真实感怎么接" class="nav-link" data-scroll-target="#三十九状态流和世界真实感怎么接">三十九、状态流和世界真实感怎么接</a></li>
+  <li><a href="#四十知识性信息为什么让小说显得真实" id="toc-四十知识性信息为什么让小说显得真实" class="nav-link" data-scroll-target="#四十知识性信息为什么让小说显得真实">四十、知识性信息为什么让小说显得真实</a></li>
+  <li><a href="#四十一ai-为什么容易写成泛化名词" id="toc-四十一ai-为什么容易写成泛化名词" class="nav-link" data-scroll-target="#四十一ai-为什么容易写成泛化名词">四十一、AI 为什么容易写成“泛化名词”</a></li>
+  <li><a href="#四十二但专业知识不要变成百科解释" id="toc-四十二但专业知识不要变成百科解释" class="nav-link" data-scroll-target="#四十二但专业知识不要变成百科解释">四十二、但专业知识不要变成百科解释</a></li>
+  <li><a href="#四十三状态信息真正好的形式顺着当前注意力进入" id="toc-四十三状态信息真正好的形式顺着当前注意力进入" class="nav-link" data-scroll-target="#四十三状态信息真正好的形式顺着当前注意力进入">四十三、状态信息真正好的形式：顺着当前注意力进入</a></li>
+  <li><a href="#四十四一个很实用的状态插入点" id="toc-四十四一个很实用的状态插入点" class="nav-link" data-scroll-target="#四十四一个很实用的状态插入点">四十四、一个很实用的“状态插入点”</a></li>
+  <li><a href="#四十五写对话时可以避免对话连打" id="toc-四十五写对话时可以避免对话连打" class="nav-link" data-scroll-target="#四十五写对话时可以避免对话连打">四十五、写对话时，可以避免“对话连打”</a></li>
+  <li><a href="#四十六状态流不等于慢" id="toc-四十六状态流不等于慢" class="nav-link" data-scroll-target="#四十六状态流不等于慢">四十六、状态流不等于“慢”</a></li>
+  <li><a href="#四十七真正的信息密度不是字多" id="toc-四十七真正的信息密度不是字多" class="nav-link" data-scroll-target="#四十七真正的信息密度不是字多">四十七、真正的信息密度不是“字多”</a></li>
+  <li><a href="#四十八我们可以建立一个非常实用的诊断表" id="toc-四十八我们可以建立一个非常实用的诊断表" class="nav-link" data-scroll-target="#四十八我们可以建立一个非常实用的诊断表">四十八、我们可以建立一个非常实用的诊断表</a>
+  <ul class="collapse">
+  <li><a href="#空间" id="toc-空间" class="nav-link" data-scroll-target="#空间">空间</a></li>
+  <li><a href="#身体" id="toc-身体" class="nav-link" data-scroll-target="#身体">身体</a></li>
+  <li><a href="#资源" id="toc-资源" class="nav-link" data-scroll-target="#资源">资源</a></li>
+  <li><a href="#信息" id="toc-信息" class="nav-link" data-scroll-target="#信息">信息</a></li>
+  <li><a href="#关系" id="toc-关系" class="nav-link" data-scroll-target="#关系">关系</a></li>
+  <li><a href="#目标" id="toc-目标" class="nav-link" data-scroll-target="#目标">目标</a></li>
+  <li><a href="#问题" id="toc-问题" class="nav-link" data-scroll-target="#问题">问题</a></li>
+  <li><a href="#世界" id="toc-世界" class="nav-link" data-scroll-target="#世界">世界</a></li>
+  <li><a href="#历史" id="toc-历史" class="nav-link" data-scroll-target="#历史">历史</a></li>
+  <li><a href="#模型-1" id="toc-模型-1" class="nav-link" data-scroll-target="#模型-1">模型</a></li>
+  </ul></li>
+  <li><a href="#四十九ai-写作最值得加的不是更多文学性而是状态管理" id="toc-四十九ai-写作最值得加的不是更多文学性而是状态管理" class="nav-link" data-scroll-target="#四十九ai-写作最值得加的不是更多文学性而是状态管理">四十九、AI 写作最值得加的不是“更多文学性”，而是“状态管理”</a></li>
+  <li><a href="#五十可以建立一个-scene-state-card" id="toc-五十可以建立一个-scene-state-card" class="nav-link" data-scroll-target="#五十可以建立一个-scene-state-card">五十、可以建立一个 Scene State Card</a></li>
+  <li><a href="#五十一状态流最大的价值让事件有来处" id="toc-五十一状态流最大的价值让事件有来处" class="nav-link" data-scroll-target="#五十一状态流最大的价值让事件有来处">五十一、状态流最大的价值：让事件有“来处”</a></li>
+  <li><a href="#五十二状态流也让结果有去处" id="toc-五十二状态流也让结果有去处" class="nav-link" data-scroll-target="#五十二状态流也让结果有去处">五十二、状态流也让结果有“去处”</a></li>
+  <li><a href="#五十三真实感其实来自连续性" id="toc-五十三真实感其实来自连续性" class="nav-link" data-scroll-target="#五十三真实感其实来自连续性">五十三、真实感其实来自“连续性”</a></li>
+  <li><a href="#五十四所以状态流和现实密度可以区分" id="toc-五十四所以状态流和现实密度可以区分" class="nav-link" data-scroll-target="#五十四所以状态流和现实密度可以区分">五十四、所以状态流和“现实密度”可以区分</a></li>
+  <li><a href="#五十五你以后诊断-ai-文可以这样说" id="toc-五十五你以后诊断-ai-文可以这样说" class="nav-link" data-scroll-target="#五十五你以后诊断-ai-文可以这样说">五十五、你以后诊断 AI 文，可以这样说</a></li>
+  <li><a href="#五十六一个简单改写流程" id="toc-五十六一个简单改写流程" class="nav-link" data-scroll-target="#五十六一个简单改写流程">五十六、一个简单改写流程</a></li>
+  <li><a href="#五十七一个例子纯事件版" id="toc-五十七一个例子纯事件版" class="nav-link" data-scroll-target="#五十七一个例子纯事件版">五十七、一个例子：纯事件版</a></li>
+  <li><a href="#五十八状态化以后" id="toc-五十八状态化以后" class="nav-link" data-scroll-target="#五十八状态化以后">五十八、状态化以后</a></li>
+  <li><a href="#五十九真正的真人感很多时候就是作者知道得比写出来的多" id="toc-五十九真正的真人感很多时候就是作者知道得比写出来的多" class="nav-link" data-scroll-target="#五十九真正的真人感很多时候就是作者知道得比写出来的多">五十九、真正的真人感，很多时候就是“作者知道得比写出来的多”</a></li>
+  <li><a href="#六十所以提高-ai-小说真实感第一步不是让它写得像人" id="toc-六十所以提高-ai-小说真实感第一步不是让它写得像人" class="nav-link" data-scroll-target="#六十所以提高-ai-小说真实感第一步不是让它写得像人">六十、所以提高 AI 小说真实感，第一步不是“让它写得像人”</a></li>
+  <li><a href="#六十一状态流的最小记忆框架" id="toc-六十一状态流的最小记忆框架" class="nav-link" data-scroll-target="#六十一状态流的最小记忆框架">六十一、状态流的最小记忆框架</a>
+  <ul class="collapse">
+  <li><a href="#人" id="toc-人" class="nav-link" data-scroll-target="#人">人</a></li>
+  <li><a href="#物" id="toc-物" class="nav-link" data-scroll-target="#物">物</a></li>
+  <li><a href="#时" id="toc-时" class="nav-link" data-scroll-target="#时">时</a></li>
+  <li><a href="#知" id="toc-知" class="nav-link" data-scroll-target="#知">知</a></li>
+  <li><a href="#关系-1" id="toc-关系-1" class="nav-link" data-scroll-target="#关系-1">关系</a></li>
+  <li><a href="#世界-1" id="toc-世界-1" class="nav-link" data-scroll-target="#世界-1">世界</a></li>
+  </ul></li>
+  <li><a href="#六十二再压成一句话" id="toc-六十二再压成一句话" class="nav-link" data-scroll-target="#六十二再压成一句话">六十二、再压成一句话</a></li>
+  <li><a href="#六十三把它接回整本书" id="toc-六十三把它接回整本书" class="nav-link" data-scroll-target="#六十三把它接回整本书">六十三、把它接回整本书</a></li>
+  <li><a href="#附录暂时结论" id="toc-附录暂时结论" class="nav-link" data-scroll-target="#附录暂时结论">附录暂时结论</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./appendix-checklist.html">Appendices</a></li><li class="breadcrumb-item"><a href="./appendix-state-stream.html"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">附录 D: 状态流（State Stream）</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">附录 D — 附录 D: 状态流（State Stream）</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="附录d-状态流state-stream为什么小说世界会显得真实" class="level1">
+<h1>附录D　状态流（State Stream）：为什么小说世界会显得真实</h1>
+<p>很多 AI 写出来的小说，有一个很明显的问题。</p>
+<p>它不一定完全不好看。</p>
+<p>人物也会说话。</p>
+<p>事情也会发生。</p>
+<p>甚至：</p>
+<blockquote class="blockquote">
+<p>有冲突。</p>
+<p>有反转。</p>
+<p>有节奏。</p>
+<p>有结果。</p>
+</blockquote>
+<p>但是读起来就是：</p>
+<blockquote class="blockquote">
+<p><strong>薄。</strong></p>
+</blockquote>
+<p>人物像站在一个白房间里说话。</p>
+<p>一句接一句。</p>
+<p>做一个动作。</p>
+<p>再说一句话。</p>
+<p>然后再做一个动作。</p>
+<p>事情确实在发生，</p>
+<p>但你总觉得：</p>
+<blockquote class="blockquote">
+<p><strong>这个世界不像真的存在。</strong></p>
+</blockquote>
+<p>这类问题非常常见。</p>
+<p>而且它很难描述。</p>
+<p>你可能会说：</p>
+<blockquote class="blockquote">
+<p>“信息量不够。”</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>“细节太少。”</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>“太白描了。”</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>“不像真人写的。”</p>
+</blockquote>
+<p>这些感觉都对。</p>
+<p>但如果只有这些词，</p>
+<p>你还是很难：</p>
+<blockquote class="blockquote">
+<p>定位。</p>
+</blockquote>
+<p>因为你不知道：</p>
+<blockquote class="blockquote">
+<p>到底缺的是哪种信息。</p>
+</blockquote>
+<p>这一篇附录就专门解决这个问题。</p>
+<p>我把它暂时称为：</p>
+<blockquote class="blockquote">
+<p><strong>状态流（State Stream）。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="一什么叫状态流" class="level1">
+<h1>一、什么叫“状态流”</h1>
+<p>先说最简单的。</p>
+<p>小说里不只有：</p>
+<blockquote class="blockquote">
+<p><strong>发生了什么。</strong></p>
+</blockquote>
+<p>还应该让读者知道：</p>
+<blockquote class="blockquote">
+<p><strong>现在是什么样。</strong></p>
+</blockquote>
+<p>这两个不是一回事。</p>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>王海来找李成要钱。</p>
+</blockquote>
+<p>这是：</p>
+<blockquote class="blockquote">
+<p><strong>事件。</strong></p>
+</blockquote>
+<p>但同时还有很多东西正在存在：</p>
+<blockquote class="blockquote">
+<p>李成现在有没有钱？</p>
+<p>王海和他以前是什么关系？</p>
+<p>两个人谁知道什么？</p>
+<p>欠款到底怎么来的？</p>
+<p>还有几天到期？</p>
+<p>李成现在站在哪里？</p>
+<p>王海身后有没有别人？</p>
+<p>李成现在最怕什么？</p>
+<p>这笔钱如果还不上会发生什么？</p>
+</blockquote>
+<p>这些不是新事件。</p>
+<p>它们是：</p>
+<blockquote class="blockquote">
+<p><strong>当前状态。</strong></p>
+</blockquote>
+<p>所以可以先非常简单地理解：</p>
+<blockquote class="blockquote">
+<p><strong>事件流 = 正在发生什么。</strong></p>
+<p><strong>状态流 = 现在已经是什么样。</strong></p>
+</blockquote>
+<p>小说真实不真实，</p>
+<p>很多时候就取决于：</p>
+<blockquote class="blockquote">
+<p>这两条东西有没有一起存在。</p>
+</blockquote>
+<hr>
+</section>
+<section id="二ai-最常见的问题只有事件流" class="level1">
+<h1>二、AI 最常见的问题：只有事件流</h1>
+<p>比如 AI 很容易写成这样：</p>
+<blockquote class="blockquote">
+<p>“你怎么来了？”李成问。</p>
+<p>“来看看你。”王海说道。</p>
+<p>“我没什么好看的。”</p>
+<p>“钱呢？”</p>
+<p>李成脸色一变。</p>
+<p>“再给我几天。”</p>
+<p>“三天。”</p>
+<p>“三天不够。”</p>
+<p>“那是你的事。”</p>
+<p>王海说完，转身离开。</p>
+</blockquote>
+<p>这段并不是完全不能看。</p>
+<p>它有：</p>
+<blockquote class="blockquote">
+<p>人物。</p>
+<p>对话。</p>
+<p>压力。</p>
+<p>截止时间。</p>
+</blockquote>
+<p>但是它非常像：</p>
+<blockquote class="blockquote">
+<p><strong>骨架。</strong></p>
+</blockquote>
+<p>你知道：</p>
+<blockquote class="blockquote">
+<p>两个人说了什么。</p>
+</blockquote>
+<p>但你不知道：</p>
+<blockquote class="blockquote">
+<p>这个世界为什么会走到今天。</p>
+</blockquote>
+<p>你也不知道：</p>
+<blockquote class="blockquote">
+<p>两个人此刻到底处在什么状态。</p>
+</blockquote>
+<p>所以读者脑子里很难形成：</p>
+<blockquote class="blockquote">
+<p>一个完整现实。</p>
+</blockquote>
+<hr>
+</section>
+<section id="三真人小说通常会做一件事不停补当前状态" class="level1">
+<h1>三、真人小说通常会做一件事：不停补当前状态</h1>
+<p>还是同一场戏。</p>
+<p>稍微加一点状态：</p>
+<blockquote class="blockquote">
+<p>“你怎么来了？”</p>
+<p>李成没让开门。</p>
+<p>楼道里的声控灯刚灭，王海站在暗处，只能看见烟头一明一暗。楼下麻将馆还没散，洗牌声隔着两层楼都听得见。</p>
+<p>“来看看你。”</p>
+<p>王海笑了一下。</p>
+<p>李成盯着他手里的烟。两人以前一起跑工地那几年，王海从来不抽烟。</p>
+<p>“我没什么好看的。”</p>
+<p>“钱呢？”</p>
+<p>李成没说话。</p>
+<p>那一百万本来是材料款。去年项目停工以后，他先拿三十万给工人补了工资，剩下的后来又陆陆续续垫进了母亲住院的费用里。王海知道前一件事，不知道后一件。</p>
+<p>“再给我几天。”</p>
+<p>“三天。”</p>
+<p>王海把烟头按在墙上。</p>
+<p>“周五下午，我带人过来。”</p>
+</blockquote>
+<p>你会发现：</p>
+<blockquote class="blockquote">
+<p>事件并没有增加多少。</p>
+</blockquote>
+<p>王海还是：</p>
+<blockquote class="blockquote">
+<p>来催债。</p>
+</blockquote>
+<p>两个人还是：</p>
+<blockquote class="blockquote">
+<p>谈三天。</p>
+</blockquote>
+<p>但文本突然：</p>
+<blockquote class="blockquote">
+<p>厚了。</p>
+</blockquote>
+<p>为什么？</p>
+<p>因为读者开始知道：</p>
+<blockquote class="blockquote">
+<p><strong>现在到底是什么样。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="四所以真实感不是多写细节" class="level1">
+<h1>四、所以真实感不是“多写细节”</h1>
+<p>这一点特别重要。</p>
+<p>很多人发现 AI 写得薄，</p>
+<p>第一反应是：</p>
+<blockquote class="blockquote">
+<p>“多加描写。”</p>
+</blockquote>
+<p>于是变成：</p>
+<blockquote class="blockquote">
+<p>窗帘是蓝色的。</p>
+<p>桌子是木头的。</p>
+<p>灯光很昏黄。</p>
+<p>她有一双漂亮的眼睛。</p>
+<p>风吹过窗户。</p>
+</blockquote>
+<p>这些东西可能有用。</p>
+<p>但也可能完全没用。</p>
+<p>因为真正缺的不是：</p>
+<blockquote class="blockquote">
+<p><strong>细节数量。</strong></p>
+</blockquote>
+<p>而是：</p>
+<blockquote class="blockquote">
+<p><strong>和当前局面有关的状态信息。</strong></p>
+</blockquote>
+<p>这两个差很多。</p>
+<hr>
+</section>
+<section id="五什么叫和当前局面有关" class="level1">
+<h1>五、什么叫“和当前局面有关”</h1>
+<p>催债 Scene 里，</p>
+<p>有价值的信息可能是：</p>
+<blockquote class="blockquote">
+<p>李成银行卡里只剩三千块。</p>
+</blockquote>
+<p>有价值：</p>
+<blockquote class="blockquote">
+<p>王海知道他还有一套房。</p>
+</blockquote>
+<p>有价值：</p>
+<blockquote class="blockquote">
+<p>李成母亲刚出院。</p>
+</blockquote>
+<p>有价值：</p>
+<blockquote class="blockquote">
+<p>王海以前和他一起做过工程。</p>
+</blockquote>
+<p>有价值：</p>
+<blockquote class="blockquote">
+<p>三天后是材料商统一结账日。</p>
+</blockquote>
+<p>这些信息都会改变：</p>
+<blockquote class="blockquote">
+<p>人物怎么说。</p>
+<p>人物怎么判断。</p>
+<p>人物接下来能做什么。</p>
+</blockquote>
+<p>这就叫：</p>
+<blockquote class="blockquote">
+<p><strong>相关状态信息。</strong></p>
+</blockquote>
+<p>反过来：</p>
+<blockquote class="blockquote">
+<p>沙发是什么颜色。</p>
+</blockquote>
+<p>如果和当前局面完全没关系，</p>
+<p>那它就只是：</p>
+<blockquote class="blockquote">
+<p>装饰信息。</p>
+</blockquote>
+<hr>
+</section>
+<section id="六我更愿意把真实感理解成世界一直在" class="level1">
+<h1>六、我更愿意把“真实感”理解成：世界一直在</h1>
+<p>现实世界有一个特点：</p>
+<blockquote class="blockquote">
+<p><strong>你不看它，它也还在。</strong></p>
+</blockquote>
+<p>你不看银行卡，</p>
+<p>余额不会消失。</p>
+<p>你不去医院，</p>
+<p>医院还是有自己的流程。</p>
+<p>你不想债务，</p>
+<p>三天还是会过去。</p>
+<p>你不和姐姐联系，</p>
+<p>两人的关系历史也不会自动清零。</p>
+<p>所以小说有真实感，</p>
+<p>其实就是让读者感觉：</p>
+<blockquote class="blockquote">
+<p><strong>人物没有看到的东西，也在继续存在。</strong></p>
+</blockquote>
+<p>这非常重要。</p>
+<hr>
+</section>
+<section id="七状态流的第一类空间状态" class="level1">
+<h1>七、状态流的第一类：空间状态</h1>
+<p>最基础的一类：</p>
+<blockquote class="blockquote">
+<p>人现在在哪。</p>
+</blockquote>
+<p>不是只写：</p>
+<blockquote class="blockquote">
+<p>“他们在客厅。”</p>
+</blockquote>
+<p>而是要知道：</p>
+<blockquote class="blockquote">
+<p>谁离谁近。</p>
+<p>谁站着。</p>
+<p>谁坐着。</p>
+<p>门开没开。</p>
+<p>谁挡住路。</p>
+<p>谁已经准备走。</p>
+<p>谁坐在主位。</p>
+</blockquote>
+<p>这些空间信息很多时候其实同时是：</p>
+<blockquote class="blockquote">
+<p>关系信息。</p>
+</blockquote>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>李成没有让开门。</p>
+</blockquote>
+<p>这不只是动作。</p>
+<p>它意味着：</p>
+<blockquote class="blockquote">
+<p>他不愿意让王海进入自己的私人空间。</p>
+</blockquote>
+<p>如果王海自己推门进来，</p>
+<p>关系又变了。</p>
+<p>所以空间状态经常在告诉读者：</p>
+<blockquote class="blockquote">
+<p><strong>谁控制这个场面。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="八状态流的第二类身体状态" class="level1">
+<h1>八、状态流的第二类：身体状态</h1>
+<p>人物不是一颗会说话的脑袋。</p>
+<p>他还有身体。</p>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>饿。</p>
+<p>困。</p>
+<p>发烧。</p>
+<p>手抖。</p>
+<p>喝醉。</p>
+<p>受伤。</p>
+<p>几天没睡。</p>
+<p>刚跑完一段路。</p>
+<p>穿着不合适。</p>
+</blockquote>
+<p>这些都会影响：</p>
+<blockquote class="blockquote">
+<p>判断。</p>
+<p>语气。</p>
+<p>行动。</p>
+</blockquote>
+<p>比如一个人刚熬了两夜，</p>
+<p>他和别人谈判的方式就不应该：</p>
+<blockquote class="blockquote">
+<p>和精神饱满时完全一样。</p>
+</blockquote>
+<p>所以身体状态能让人物：</p>
+<blockquote class="blockquote">
+<p>落地。</p>
+</blockquote>
+<hr>
+</section>
+<section id="九状态流的第三类资源状态" class="level1">
+<h1>九、状态流的第三类：资源状态</h1>
+<p>这一类特别重要。</p>
+<p>人物现在：</p>
+<blockquote class="blockquote">
+<p>有多少钱。</p>
+<p>有多少时间。</p>
+<p>有多少人手。</p>
+<p>有多少信用。</p>
+<p>有多少粮食。</p>
+<p>有多少体力。</p>
+<p>手里还有什么工具。</p>
+</blockquote>
+<p>如果小说里资源没有状态，</p>
+<p>人物就会像：</p>
+<blockquote class="blockquote">
+<p>随时都能掏出需要的东西。</p>
+</blockquote>
+<p>这也是 AI 文很常见的问题。</p>
+<p>上一章说：</p>
+<blockquote class="blockquote">
+<p>主角没钱。</p>
+</blockquote>
+<p>下一章又：</p>
+<blockquote class="blockquote">
+<p>随手打车、住酒店、买设备。</p>
+</blockquote>
+<p>读者不一定立刻指出来。</p>
+<p>但会感觉：</p>
+<blockquote class="blockquote">
+<p>假。</p>
+</blockquote>
+<p>因为资源状态没有被持续维护。</p>
+<hr>
+</section>
+<section id="十状态流的第四类时间状态" class="level1">
+<h1>十、状态流的第四类：时间状态</h1>
+<p>时间不是：</p>
+<blockquote class="blockquote">
+<p>“三天后”写一次就结束。</p>
+</blockquote>
+<p>它应该持续存在。</p>
+<p>比如：</p>
+<p>第一天：</p>
+<blockquote class="blockquote">
+<p>还剩三天。</p>
+</blockquote>
+<p>第二天：</p>
+<blockquote class="blockquote">
+<p>还剩两天。</p>
+</blockquote>
+<p>晚上：</p>
+<blockquote class="blockquote">
+<p>银行已经下班。</p>
+</blockquote>
+<p>周末：</p>
+<blockquote class="blockquote">
+<p>某些机构不开门。</p>
+</blockquote>
+<p>这些都会改变：</p>
+<blockquote class="blockquote">
+<p>可选行动空间。</p>
+</blockquote>
+<p>所以时间状态不是装饰。</p>
+<p>它会真正参与：</p>
+<blockquote class="blockquote">
+<p>因果。</p>
+</blockquote>
+<hr>
+</section>
+<section id="十一状态流的第五类信息状态" class="level1">
+<h1>十一、状态流的第五类：信息状态</h1>
+<p>这一类非常容易被忽略。</p>
+<p>每个人现在到底：</p>
+<blockquote class="blockquote">
+<p>知道什么？</p>
+</blockquote>
+<p>不知道什么？</p>
+<p>误以为什么？</p>
+<p>怀疑什么？</p>
+<p>这是小说里非常重要的一层。</p>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>王海知道项目停工。</p>
+<p>但不知道李成母亲住院。</p>
+</blockquote>
+<p>李成知道：</p>
+<blockquote class="blockquote">
+<p>王海来要钱。</p>
+</blockquote>
+<p>但不知道：</p>
+<blockquote class="blockquote">
+<p>王海是不是已经知道房产的事。</p>
+</blockquote>
+<p>这就形成：</p>
+<blockquote class="blockquote">
+<p>信息差。</p>
+</blockquote>
+<p>于是每一句对话都不再只是：</p>
+<blockquote class="blockquote">
+<p>字面意思。</p>
+</blockquote>
+<p>人物还在：</p>
+<blockquote class="blockquote">
+<p>试探。</p>
+<p>隐瞒。</p>
+<p>判断。</p>
+</blockquote>
+<p>这就是很多真人对话看起来更“活”的原因之一。</p>
+<hr>
+</section>
+<section id="十二状态流的第六类关系状态" class="level1">
+<h1>十二、状态流的第六类：关系状态</h1>
+<p>关系不是：</p>
+<blockquote class="blockquote">
+<p>“他们是兄弟。”</p>
+</blockquote>
+<p>这么简单。</p>
+<p>真正有用的是：</p>
+<blockquote class="blockquote">
+<p>现在这段关系处在什么状态。</p>
+</blockquote>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>以前亲近，现在疏远。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>表面合作，实际互不信任。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>A 欠 B 人情。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>B 觉得 A 背叛过自己。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>两个人刚刚吵过架。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>一方正在试着恢复关系。</p>
+</blockquote>
+<p>这些关系状态会直接改变：</p>
+<blockquote class="blockquote">
+<p>一句普通话意味着什么。</p>
+</blockquote>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>“吃饭了吗？”</p>
+</blockquote>
+<p>陌生人说：</p>
+<blockquote class="blockquote">
+<p>很普通。</p>
+</blockquote>
+<p>五年没联系的母亲说：</p>
+<blockquote class="blockquote">
+<p>可能就完全不是普通问候。</p>
+</blockquote>
+<hr>
+</section>
+<section id="十三状态流的第七类情绪状态" class="level1">
+<h1>十三、状态流的第七类：情绪状态</h1>
+<p>这里要特别注意。</p>
+<p>情绪状态不是：</p>
+<blockquote class="blockquote">
+<p>每隔两句写“他很愤怒”“她很紧张”。</p>
+</blockquote>
+<p>真正有用的是：</p>
+<blockquote class="blockquote">
+<p><strong>人物此刻怎样理解这个局面。</strong></p>
+</blockquote>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>李成看见王海抽烟。</p>
+</blockquote>
+<p>他想到：</p>
+<blockquote class="blockquote">
+<p>王海以前不抽。</p>
+</blockquote>
+<p>于是他判断：</p>
+<blockquote class="blockquote">
+<p>对方今天不是随便来问一句。</p>
+</blockquote>
+<p>这比直接写：</p>
+<blockquote class="blockquote">
+<p>“李成顿时紧张起来。”</p>
+</blockquote>
+<p>信息量更高。</p>
+<p>因为它同时给了：</p>
+<blockquote class="blockquote">
+<p>观察。</p>
+<p>历史。</p>
+<p>判断。</p>
+<p>情绪。</p>
+</blockquote>
+<hr>
+</section>
+<section id="十四状态流的第八类目标状态" class="level1">
+<h1>十四、状态流的第八类：目标状态</h1>
+<p>人物的目标也不是固定一句：</p>
+<blockquote class="blockquote">
+<p>“我要赚钱。”</p>
+</blockquote>
+<p>目标本身会更新。</p>
+<p>例如：</p>
+<p>开始：</p>
+<blockquote class="blockquote">
+<p>想借到一百万。</p>
+</blockquote>
+<p>发现银行不贷以后：</p>
+<blockquote class="blockquote">
+<p>改成找担保人。</p>
+</blockquote>
+<p>担保人拒绝以后：</p>
+<blockquote class="blockquote">
+<p>改成卖房。</p>
+</blockquote>
+<p>如果目标状态没有更新，</p>
+<p>人物就会一直重复：</p>
+<blockquote class="blockquote">
+<p>同一句愿望。</p>
+</blockquote>
+<p>所以目标也属于：</p>
+<blockquote class="blockquote">
+<p>当前状态。</p>
+</blockquote>
+<hr>
+</section>
+<section id="十五状态流的第九类问题状态" class="level1">
+<h1>十五、状态流的第九类：问题状态</h1>
+<p>一个问题不是：</p>
+<blockquote class="blockquote">
+<p>出现以后一直长一样。</p>
+</blockquote>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>缺钱。</p>
+</blockquote>
+<p>开始：</p>
+<blockquote class="blockquote">
+<p>缺一百万。</p>
+</blockquote>
+<p>后来：</p>
+<blockquote class="blockquote">
+<p>银行拒贷。</p>
+</blockquote>
+<p>问题变成：</p>
+<blockquote class="blockquote">
+<p>没有正常融资渠道。</p>
+</blockquote>
+<p>再后来：</p>
+<blockquote class="blockquote">
+<p>姐姐愿意给钱但要入股。</p>
+</blockquote>
+<p>问题变成：</p>
+<blockquote class="blockquote">
+<p>钱和控制权冲突。</p>
+</blockquote>
+<p>所以小说不是：</p>
+<blockquote class="blockquote">
+<p>只有“问题”。</p>
+</blockquote>
+<p>还要维护：</p>
+<blockquote class="blockquote">
+<p><strong>问题现在发展到哪一步。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="十六状态流的第十类世界状态" class="level1">
+<h1>十六、状态流的第十类：世界状态</h1>
+<p>这一类最容易让小说突然变厚。</p>
+<p>人物之外，</p>
+<p>世界也在动。</p>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>工程项目停工。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>粮价上涨。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>公司正在裁员。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>城里开始封路。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>宗门正在选新掌门。</p>
+</blockquote>
+<p>这些不是主角此刻做出来的。</p>
+<p>但它们会：</p>
+<blockquote class="blockquote">
+<p>改变主角能做什么。</p>
+</blockquote>
+<p>真正有世界感的小说，</p>
+<p>往往让你感觉：</p>
+<blockquote class="blockquote">
+<p><strong>主角不行动，世界也会自己继续走。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="十七还有一类非常重要知识状态" class="level1">
+<h1>十七、还有一类非常重要：知识状态</h1>
+<p>你前面说：</p>
+<blockquote class="blockquote">
+<p>真人小说会时不时解释一个东西是什么。</p>
+</blockquote>
+<p>这个观察很准。</p>
+<p>比如小说写：</p>
+<blockquote class="blockquote">
+<p>“材料款。”</p>
+</blockquote>
+<p>真人作者可能顺手补一句：</p>
+<blockquote class="blockquote">
+<p>工地上的材料款和普通欠账不太一样。甲方一旦压住工程款，下面供应商的钱就会一层层跟着拖，最后谁手里现金多，谁才能撑过那几个月。</p>
+</blockquote>
+<p>这段不是事件。</p>
+<p>也不是人物动作。</p>
+<p>它在做的是：</p>
+<blockquote class="blockquote">
+<p><strong>让读者理解这个世界怎样运转。</strong></p>
+</blockquote>
+<p>我把它叫：</p>
+<blockquote class="blockquote">
+<p><strong>模型信息（Model Information）。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="十八为什么需要模型信息" class="level1">
+<h1>十八、为什么需要“模型信息”</h1>
+<p>因为读者不是这个世界里的人。</p>
+<p>很多东西作者知道，</p>
+<p>人物知道，</p>
+<p>但读者：</p>
+<blockquote class="blockquote">
+<p>不知道。</p>
+</blockquote>
+<p>如果不解释，</p>
+<p>读者只看到：</p>
+<blockquote class="blockquote">
+<p>“材料款没结。”</p>
+</blockquote>
+<p>却不知道：</p>
+<blockquote class="blockquote">
+<p>为什么严重。</p>
+</blockquote>
+<p>所以有时作者需要补：</p>
+<blockquote class="blockquote">
+<p>这个东西是什么。</p>
+<p>一般怎么运作。</p>
+<p>为什么现在重要。</p>
+<p>违反以后会怎样。</p>
+</blockquote>
+<p>这就是：</p>
+<blockquote class="blockquote">
+<p>世界模型。</p>
+</blockquote>
+<hr>
+</section>
+<section id="十九所以小说文本其实有三种东西" class="level1">
+<h1>十九、所以小说文本其实有三种东西</h1>
+<p>可以先记一个很实用的三分法：</p>
+<blockquote class="blockquote">
+<p><strong>事件（Event）</strong></p>
+<p><strong>状态（State）</strong></p>
+<p><strong>模型（Model）</strong></p>
+</blockquote>
+<section id="事件" class="level3">
+<h3 class="anchored" data-anchor-id="事件">事件</h3>
+<blockquote class="blockquote">
+<p>现在发生了什么？</p>
+</blockquote>
+</section>
+<section id="状态" class="level3">
+<h3 class="anchored" data-anchor-id="状态">状态</h3>
+<blockquote class="blockquote">
+<p>现在是什么样？</p>
+</blockquote>
+</section>
+<section id="模型" class="level3">
+<h3 class="anchored" data-anchor-id="模型">模型</h3>
+<blockquote class="blockquote">
+<p>为什么这些东西会这样运作？</p>
+</blockquote>
+<p>这三个一起存在，</p>
+<p>小说才容易：</p>
+<blockquote class="blockquote">
+<p>又动，又厚，又真实。</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="二十ai-文最常见的失衡event-太多state-和-model-太少" class="level1">
+<h1>二十、AI 文最常见的失衡：Event 太多，State 和 Model 太少</h1>
+<p>很多 AI 小说大概是：</p>
+<blockquote class="blockquote">
+<p>70% 对话和动作。</p>
+<p>20% 简单情绪。</p>
+<p>10% 环境装饰。</p>
+</blockquote>
+<p>但缺：</p>
+<blockquote class="blockquote">
+<p>资源状态。</p>
+<p>关系历史。</p>
+<p>信息差。</p>
+<p>当前问题状态。</p>
+<p>世界运行。</p>
+<p>背景机制。</p>
+</blockquote>
+<p>所以读起来像：</p>
+<blockquote class="blockquote">
+<p><strong>一条纯剧情轨道。</strong></p>
+</blockquote>
+<p>人物只为下一句而存在。</p>
+<p>世界只为当前 Scene 临时生成。</p>
+<hr>
+</section>
+<section id="二十一这就是为什么-ai-人物经常没有生活感" class="level1">
+<h1>二十一、这就是为什么 AI 人物经常没有“生活感”</h1>
+<p>真人角色往往同时有：</p>
+<blockquote class="blockquote">
+<p>钱的问题。</p>
+<p>工作状态。</p>
+<p>家庭状态。</p>
+<p>身体状态。</p>
+<p>过去历史。</p>
+<p>今天心情。</p>
+<p>明天安排。</p>
+</blockquote>
+<p>他说一句话时，</p>
+<p>这些东西都在背后。</p>
+<p>而 AI 经常只有：</p>
+<blockquote class="blockquote">
+<p>当前剧情任务。</p>
+</blockquote>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>“这一幕要让他和姐姐吵架。”</p>
+</blockquote>
+<p>于是所有句子都围绕：</p>
+<blockquote class="blockquote">
+<p>吵架。</p>
+</blockquote>
+<p>人物就像：</p>
+<blockquote class="blockquote">
+<p>只为这一幕被加载出来。</p>
+</blockquote>
+<p>所以不真实。</p>
+<hr>
+</section>
+<section id="二十二真实人物不是围绕剧情存在" class="level1">
+<h1>二十二、真实人物不是“围绕剧情存在”</h1>
+<p>而是：</p>
+<blockquote class="blockquote">
+<p><strong>他本来就在生活，剧情只是撞进了他的生活。</strong></p>
+</blockquote>
+<p>比如债主上门之前，</p>
+<p>李成可能正在：</p>
+<blockquote class="blockquote">
+<p>给母亲算药费。</p>
+<p>处理工人消息。</p>
+<p>吃昨天剩下的饭。</p>
+<p>看银行短信。</p>
+</blockquote>
+<p>然后：</p>
+<blockquote class="blockquote">
+<p>王海来了。</p>
+</blockquote>
+<p>这时候“催债”才像：</p>
+<blockquote class="blockquote">
+<p>撞进一个真实存在的生活。</p>
+</blockquote>
+<p>而不是：</p>
+<blockquote class="blockquote">
+<p>场景一开始，世界才突然生成。</p>
+</blockquote>
+<hr>
+</section>
+<section id="二十三所以写-scene-时可以先做一件事写场前状态" class="level1">
+<h1>二十三、所以写 Scene 时可以先做一件事：写“场前状态”</h1>
+<p>不要急着写第一句对白。</p>
+<p>先用几行回答：</p>
+<blockquote class="blockquote">
+<p>人物刚才在干什么？</p>
+<p>他今天已经经历了什么？</p>
+<p>手头有什么未完成？</p>
+<p>身体怎么样？</p>
+<p>钱怎么样？</p>
+<p>时间怎么样？</p>
+<p>关系怎么样？</p>
+<p>他现在最担心什么？</p>
+</blockquote>
+<p>不一定全部写进正文。</p>
+<p>但作者自己要知道。</p>
+<p>这会明显提高：</p>
+<blockquote class="blockquote">
+<p>Scene 的真实感。</p>
+</blockquote>
+<hr>
+</section>
+<section id="二十四状态流不是全部告诉读者" class="level1">
+<h1>二十四、状态流不是“全部告诉读者”</h1>
+<p>这一点也很重要。</p>
+<p>作者知道：</p>
+<blockquote class="blockquote">
+<p>20 个状态。</p>
+</blockquote>
+<p>正文可能只放：</p>
+<blockquote class="blockquote">
+<p>3 个。</p>
+</blockquote>
+<p>因为小说不是：</p>
+<blockquote class="blockquote">
+<p>数据库导出。</p>
+</blockquote>
+<p>真正的技巧是：</p>
+<blockquote class="blockquote">
+<p><strong>在对的时刻，露出对当前 Scene 有作用的状态。</strong></p>
+</blockquote>
+<p>比如王海问：</p>
+<blockquote class="blockquote">
+<p>“钱呢？”</p>
+</blockquote>
+<p>这时候补：</p>
+<blockquote class="blockquote">
+<p>李成银行卡余额。</p>
+</blockquote>
+<p>很自然。</p>
+<p>如果在两个人刚见面时突然介绍：</p>
+<blockquote class="blockquote">
+<p>李成小学成绩。</p>
+</blockquote>
+<p>就完全无关。</p>
+<p>所以状态流的核心不是：</p>
+<blockquote class="blockquote">
+<p>多。</p>
+</blockquote>
+<p>而是：</p>
+<blockquote class="blockquote">
+<p><strong>相关 + 及时。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="二十五怎么判断一个状态该不该写" class="level1">
+<h1>二十五、怎么判断一个状态该不该写</h1>
+<p>可以问：</p>
+<blockquote class="blockquote">
+<p><strong>它会不会改变读者对当前局面的理解？</strong></p>
+</blockquote>
+<p>如果会：</p>
+<blockquote class="blockquote">
+<p>值得。</p>
+</blockquote>
+<p>或者：</p>
+<blockquote class="blockquote">
+<p><strong>它会不会改变人物接下来的选择？</strong></p>
+</blockquote>
+<p>如果会：</p>
+<blockquote class="blockquote">
+<p>很值得。</p>
+</blockquote>
+<p>或者：</p>
+<blockquote class="blockquote">
+<p><strong>它会不会让当前一句话产生更深含义？</strong></p>
+</blockquote>
+<p>如果会：</p>
+<blockquote class="blockquote">
+<p>值得。</p>
+</blockquote>
+<p>这三个判断已经很实用。</p>
+<hr>
+</section>
+<section id="二十六对话后面为什么经常要跟状态" class="level1">
+<h1>二十六、对话后面为什么经常要跟状态</h1>
+<p>你前面观察到：</p>
+<blockquote class="blockquote">
+<p>真人小说的对话后面经常跟当前状态。</p>
+</blockquote>
+<p>这是因为纯对白只告诉读者：</p>
+<blockquote class="blockquote">
+<p>说了什么。</p>
+</blockquote>
+<p>但人物说完一句话以后，</p>
+<p>场面其实已经：</p>
+<blockquote class="blockquote">
+<p>变了。</p>
+</blockquote>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>“三天。”</p>
+</blockquote>
+<p>说完这句话以后，</p>
+<p>变化的是：</p>
+<blockquote class="blockquote">
+<p>时间压力。</p>
+</blockquote>
+<p>人物可能：</p>
+<blockquote class="blockquote">
+<p>看向日历。</p>
+<p>想到周五银行几点下班。</p>
+<p>想到一笔钱星期六才能到账。</p>
+</blockquote>
+<p>这就把一句台词：</p>
+<blockquote class="blockquote">
+<p>接到世界状态上。</p>
+</blockquote>
+<p>于是对白不再飘。</p>
+<hr>
+</section>
+<section id="二十七一个非常实用的写法对白状态对白" class="level1">
+<h1>二十七、一个非常实用的写法：对白—状态—对白</h1>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>“三天。”</p>
+<p>李成看了一眼手机。今天已经周二晚上九点，真正能办事的时间只剩两个白天。银行那边上午刚拒了他的贷款。</p>
+<p>“三天不够。”</p>
+<p>“那是你的事。”</p>
+</blockquote>
+<p>这里状态信息不是：</p>
+<blockquote class="blockquote">
+<p>插科打诨。</p>
+</blockquote>
+<p>它直接解释：</p>
+<blockquote class="blockquote">
+<p>为什么三天不够。</p>
+</blockquote>
+<p>这就是好状态。</p>
+<hr>
+</section>
+<section id="二十八还可以对白历史对白" class="level1">
+<h1>二十八、还可以：对白—历史—对白</h1>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>“你去找你姐。”</p>
+<p>李成没说话。</p>
+<p>他上一次给姐姐打电话还是五年前父亲葬礼那天。那次两个人只说了不到三分钟，最后还是姐姐先挂的。</p>
+<p>“我不找她。”</p>
+</blockquote>
+<p>一句：</p>
+<blockquote class="blockquote">
+<p>“我不找她”</p>
+</blockquote>
+<p>因为有了历史，</p>
+<p>重量完全不同。</p>
+<hr>
+</section>
+<section id="二十九还可以对白知识对白" class="level1">
+<h1>二十九、还可以：对白—知识—对白</h1>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>“项目停了，钱就没了？”</p>
+<p>“不是这么算。”</p>
+<p>工程停工最麻烦的地方不是完全没钱，而是账全悬在半空里。甲方不确认结算，施工方就拿不到款，下面材料商和工人的钱却照样要付。</p>
+<p>李成抬头看他。</p>
+<p>“所以我现在不是没工程，是钱出不来。”</p>
+</blockquote>
+<p>知识信息直接帮助读者：</p>
+<blockquote class="blockquote">
+<p>理解问题。</p>
+</blockquote>
+<p>这就是模型流。</p>
+<hr>
+</section>
+<section id="三十还可以对白环境变化对白" class="level1">
+<h1>三十、还可以：对白—环境变化—对白</h1>
+<blockquote class="blockquote">
+<p>“你再说一遍。”</p>
+<p>门外电梯“叮”了一声。</p>
+<p>两个人同时停下来。</p>
+<p>一个老太太拎着菜从电梯里出来，看了他们一眼。</p>
+<p>王海等人走远，才重新开口。</p>
+<p>“我说，周五我带人来。”</p>
+</blockquote>
+<p>环境不是装饰。</p>
+<p>它改变了：</p>
+<blockquote class="blockquote">
+<p>说话节奏。</p>
+<p>公开程度。</p>
+<p>人物行为。</p>
+</blockquote>
+<p>这就是环境进入状态流。</p>
+<hr>
+</section>
+<section id="三十一状态流最重要的效果之一让场面有余量" class="level1">
+<h1>三十一、状态流最重要的效果之一：让场面有“余量”</h1>
+<p>纯事件流的文本像：</p>
+<blockquote class="blockquote">
+<p>A → B → C → D</p>
+</blockquote>
+<p>非常直。</p>
+<p>状态流加入以后，</p>
+<p>变成：</p>
+<blockquote class="blockquote">
+<p>A</p>
+<p>旁边还有 X</p>
+<p>B</p>
+<p>人物还记得 Y</p>
+<p>世界正在发生 Z</p>
+<p>C</p>
+</blockquote>
+<p>于是读者感觉：</p>
+<blockquote class="blockquote">
+<p><strong>这个场面不只是为了完成剧情。</strong></p>
+</blockquote>
+<p>它有：</p>
+<blockquote class="blockquote">
+<p>余量。</p>
+</blockquote>
+<p>这种余量就是：</p>
+<blockquote class="blockquote">
+<p>生活感。</p>
+</blockquote>
+<hr>
+</section>
+<section id="三十二但状态流也会写坏" class="level1">
+<h1>三十二、但状态流也会写坏</h1>
+<p>最常见的问题是：</p>
+<blockquote class="blockquote">
+<p><strong>什么都写。</strong></p>
+</blockquote>
+<p>人物喝水。</p>
+<p>就写杯子。</p>
+<p>看窗外。</p>
+<p>就写天气。</p>
+<p>坐下。</p>
+<p>就写椅子。</p>
+<p>最后事件走不动。</p>
+<p>所以状态流不是：</p>
+<blockquote class="blockquote">
+<p>每句都加说明。</p>
+</blockquote>
+<p>而是：</p>
+<blockquote class="blockquote">
+<p><strong>持续维护，但选择性呈现。</strong></p>
+</blockquote>
+<p>作者脑中状态很多。</p>
+<p>文本里：</p>
+<blockquote class="blockquote">
+<p>只露最有用的。</p>
+</blockquote>
+<hr>
+</section>
+<section id="三十三另一个问题状态信息只出现一次不再影响后面" class="level1">
+<h1>三十三、另一个问题：状态信息只出现一次，不再影响后面</h1>
+<p>比如作者写：</p>
+<blockquote class="blockquote">
+<p>主角腿受伤。</p>
+</blockquote>
+<p>下一章：</p>
+<blockquote class="blockquote">
+<p>跑五公里。</p>
+</blockquote>
+<p>那伤就只是：</p>
+<blockquote class="blockquote">
+<p>一次性装饰。</p>
+</blockquote>
+<p>真正的状态应该：</p>
+<blockquote class="blockquote">
+<p>被继承。</p>
+</blockquote>
+<p>受伤以后：</p>
+<blockquote class="blockquote">
+<p>行动速度变。</p>
+<p>选择变。</p>
+<p>别人反应变。</p>
+</blockquote>
+<p>所以“状态流”之所以叫流，</p>
+<p>关键就在：</p>
+<blockquote class="blockquote">
+<p><strong>状态会往后流。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="三十四什么叫状态继承" class="level1">
+<h1>三十四、什么叫“状态继承”</h1>
+<p>Scene 1 结束：</p>
+<blockquote class="blockquote">
+<p>李成只剩三千块。</p>
+<p>姐姐知道他欠债。</p>
+<p>王海给三天期限。</p>
+</blockquote>
+<p>Scene 2 开始时：</p>
+<p>这些都还应该存在。</p>
+<p>不能：</p>
+<blockquote class="blockquote">
+<p>钱突然没限制。</p>
+<p>姐姐又像不知道。</p>
+<p>时间又无限。</p>
+</blockquote>
+<p>这就叫：</p>
+<blockquote class="blockquote">
+<p>状态继承。</p>
+</blockquote>
+<p>AI 文非常容易：</p>
+<blockquote class="blockquote">
+<p>每个 Scene 重新开始。</p>
+</blockquote>
+<p>所以状态继承尤其值得专门检查。</p>
+<hr>
+</section>
+<section id="三十五状态流和前面的问题空间怎么接" class="level1">
+<h1>三十五、状态流和前面的“问题空间”怎么接</h1>
+<p>问题空间回答：</p>
+<blockquote class="blockquote">
+<p><strong>世界能产生什么问题。</strong></p>
+</blockquote>
+<p>状态流回答：</p>
+<blockquote class="blockquote">
+<p><strong>这些问题现在发展到什么状态。</strong></p>
+</blockquote>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>债务</p>
+</blockquote>
+<p>属于问题空间。</p>
+<p>但具体到当前小说里：</p>
+<blockquote class="blockquote">
+<p>欠多少？</p>
+<p>欠谁？</p>
+<p>什么时候到期？</p>
+<p>对方知道什么？</p>
+<p>人物有没有别的资产？</p>
+</blockquote>
+<p>这些就是：</p>
+<blockquote class="blockquote">
+<p>当前状态。</p>
+</blockquote>
+<p>所以：</p>
+<blockquote class="blockquote">
+<p><strong>Problem Space 是可能性。</strong></p>
+<p><strong>State Stream 是当前值。</strong></p>
+</blockquote>
+<p>这个区分非常重要。</p>
+<hr>
+</section>
+<section id="三十六状态流和-scene-怎么接" class="level1">
+<h1>三十六、状态流和 Scene 怎么接</h1>
+<p>我们前面一直说：</p>
+<blockquote class="blockquote">
+<p>Scene = 把一个局面写到发生变化。</p>
+</blockquote>
+<p>现在可以更精确一点：</p>
+<blockquote class="blockquote">
+<p><strong>Scene 就是一组状态被事件改变的过程。</strong></p>
+</blockquote>
+<p>开头：</p>
+<blockquote class="blockquote">
+<p>State A</p>
+</blockquote>
+<p>经过：</p>
+<blockquote class="blockquote">
+<p>Action / Event</p>
+</blockquote>
+<p>最后：</p>
+<blockquote class="blockquote">
+<p>State B</p>
+</blockquote>
+<p>比如：</p>
+<p>开头：</p>
+<blockquote class="blockquote">
+<p>王海还没正式给期限。</p>
+</blockquote>
+<p>结尾：</p>
+<blockquote class="blockquote">
+<p>三天。</p>
+</blockquote>
+<p>这就是：</p>
+<blockquote class="blockquote">
+<p>时间状态改变。</p>
+</blockquote>
+<p>同时：</p>
+<blockquote class="blockquote">
+<p>关系状态恶化。</p>
+<p>风险状态上升。</p>
+<p>李成目标被迫具体化。</p>
+</blockquote>
+<p>所以一个 Scene 往往不是只改一个状态。</p>
+<p>而是：</p>
+<blockquote class="blockquote">
+<p>一组状态一起更新。</p>
+</blockquote>
+<hr>
+</section>
+<section id="三十七所以-scene-可以看成状态更新器" class="level1">
+<h1>三十七、所以 Scene 可以看成“状态更新器”</h1>
+<p>这个视角特别适合诊断。</p>
+<p>写完一幕问：</p>
+<blockquote class="blockquote">
+<p><strong>这幕到底更新了什么状态？</strong></p>
+</blockquote>
+<p>如果答案：</p>
+<blockquote class="blockquote">
+<p>什么都没有。</p>
+</blockquote>
+<p>那这幕很可能：</p>
+<blockquote class="blockquote">
+<p>没有推进。</p>
+</blockquote>
+<p>如果只是：</p>
+<blockquote class="blockquote">
+<p>增加一个事实</p>
+</blockquote>
+<p>但人物、关系、问题、资源全没变化，</p>
+<p>它可能更像：</p>
+<blockquote class="blockquote">
+<p>信息展示。</p>
+</blockquote>
+<hr>
+</section>
+<section id="三十八状态流和人物真实感怎么接" class="level1">
+<h1>三十八、状态流和人物真实感怎么接</h1>
+<p>真实人物不是：</p>
+<blockquote class="blockquote">
+<p>有很多性格形容词。</p>
+</blockquote>
+<p>而是：</p>
+<blockquote class="blockquote">
+<p><strong>身上同时挂着很多状态。</strong></p>
+</blockquote>
+<p>例如一个普通人此刻可能同时：</p>
+<blockquote class="blockquote">
+<p>缺钱。</p>
+<p>和妻子冷战。</p>
+<p>昨晚没睡。</p>
+<p>明天要开会。</p>
+<p>父亲刚住院。</p>
+<p>还没回复老板消息。</p>
+</blockquote>
+<p>这就是现实的人。</p>
+<p>而 AI 人物常常只有：</p>
+<blockquote class="blockquote">
+<p>当前主线状态。</p>
+</blockquote>
+<p>所以人物显得：</p>
+<blockquote class="blockquote">
+<p>单薄。</p>
+</blockquote>
+<hr>
+</section>
+<section id="三十九状态流和世界真实感怎么接" class="level1">
+<h1>三十九、状态流和世界真实感怎么接</h1>
+<p>真实世界也同时存在很多状态：</p>
+<blockquote class="blockquote">
+<p>天气。</p>
+<p>价格。</p>
+<p>交通。</p>
+<p>政策。</p>
+<p>社会秩序。</p>
+<p>组织运行。</p>
+<p>资源供给。</p>
+<p>人物之间的历史。</p>
+</blockquote>
+<p>作者不需要全写。</p>
+<p>但要让读者偶尔感觉到：</p>
+<blockquote class="blockquote">
+<p><strong>主角之外还有东西在动。</strong></p>
+</blockquote>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>菜价涨了。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>工厂最近开始裁员。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>城里这几天旅馆都满。</p>
+</blockquote>
+<p>一句就可能：</p>
+<blockquote class="blockquote">
+<p>打开一个更大的世界。</p>
+</blockquote>
+<hr>
+</section>
+<section id="四十知识性信息为什么让小说显得真实" class="level1">
+<h1>四十、知识性信息为什么让小说显得真实</h1>
+<p>因为真实的人：</p>
+<blockquote class="blockquote">
+<p>会知道自己所在领域的一些常识。</p>
+</blockquote>
+<p>厨师看后厨，</p>
+<p>不会只看到：</p>
+<blockquote class="blockquote">
+<p>锅。</p>
+</blockquote>
+<p>他会看到：</p>
+<blockquote class="blockquote">
+<p>火候。</p>
+<p>出菜速度。</p>
+<p>菜品损耗。</p>
+<p>冰箱温度。</p>
+<p>备料。</p>
+</blockquote>
+<p>程序员看项目，</p>
+<p>会看到：</p>
+<blockquote class="blockquote">
+<p>依赖。</p>
+<p>服务。</p>
+<p>日志。</p>
+<p>发布流程。</p>
+</blockquote>
+<p>所以专业知识会让人物和世界：</p>
+<blockquote class="blockquote">
+<p>有具体结构。</p>
+</blockquote>
+<p>这也是 AI 泛化小说经常缺的。</p>
+<hr>
+</section>
+<section id="四十一ai-为什么容易写成泛化名词" class="level1">
+<h1>四十一、AI 为什么容易写成“泛化名词”</h1>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>公司。</p>
+<p>项目。</p>
+<p>文件。</p>
+<p>老板。</p>
+<p>任务。</p>
+</blockquote>
+<p>这些词本身：</p>
+<blockquote class="blockquote">
+<p>太宽。</p>
+</blockquote>
+<p>真人作者如果熟悉领域，</p>
+<p>会更具体：</p>
+<blockquote class="blockquote">
+<p>回款。</p>
+<p>投标。</p>
+<p>施工日志。</p>
+<p>周转率。</p>
+<p>对账单。</p>
+<p>供应商账期。</p>
+</blockquote>
+<p>一具体，</p>
+<p>世界就开始：</p>
+<blockquote class="blockquote">
+<p>有机制。</p>
+</blockquote>
+<p>所以提高真实感的一个非常简单的方法是：</p>
+<blockquote class="blockquote">
+<p><strong>把泛化名词换成真正属于这个领域的名词。</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="四十二但专业知识不要变成百科解释" class="level1">
+<h1>四十二、但专业知识不要变成百科解释</h1>
+<p>还是那个原则：</p>
+<blockquote class="blockquote">
+<p>当前局面需要多少，就解释多少。</p>
+</blockquote>
+<p>比如：</p>
+<p>人物正在：</p>
+<blockquote class="blockquote">
+<p>为回款焦虑。</p>
+</blockquote>
+<p>那就解释：</p>
+<blockquote class="blockquote">
+<p>回款相关。</p>
+</blockquote>
+<p>不用突然讲：</p>
+<blockquote class="blockquote">
+<p>整个建筑行业历史。</p>
+</blockquote>
+<p>知识信息要服务：</p>
+<blockquote class="blockquote">
+<p>当前理解。</p>
+</blockquote>
+<hr>
+</section>
+<section id="四十三状态信息真正好的形式顺着当前注意力进入" class="level1">
+<h1>四十三、状态信息真正好的形式：顺着当前注意力进入</h1>
+<p>人物看到银行卡：</p>
+<blockquote class="blockquote">
+<p>资源状态进入。</p>
+</blockquote>
+<p>人物看到旧照片：</p>
+<blockquote class="blockquote">
+<p>关系历史进入。</p>
+</blockquote>
+<p>人物听见“停工”：</p>
+<blockquote class="blockquote">
+<p>行业知识进入。</p>
+</blockquote>
+<p>人物看时间：</p>
+<blockquote class="blockquote">
+<p>Deadline 进入。</p>
+</blockquote>
+<p>这样读者不会觉得：</p>
+<blockquote class="blockquote">
+<p>作者停下来讲课。</p>
+</blockquote>
+<p>信息像：</p>
+<blockquote class="blockquote">
+<p>从 Scene 自己长出来。</p>
+</blockquote>
+<hr>
+</section>
+<section id="四十四一个很实用的状态插入点" class="level1">
+<h1>四十四、一个很实用的“状态插入点”</h1>
+<p>通常以下时刻很适合补状态：</p>
+<blockquote class="blockquote">
+<p>人物刚进入场景时。</p>
+<p>一句重要对白以后。</p>
+<p>人物准备做决定时。</p>
+<p>行动失败以后。</p>
+<p>人物注意到异常时。</p>
+<p>场景准备结束时。</p>
+</blockquote>
+<p>因为这些地方：</p>
+<blockquote class="blockquote">
+<p>读者本来就需要重新判断局面。</p>
+</blockquote>
+<hr>
+</section>
+<section id="四十五写对话时可以避免对话连打" class="level1">
+<h1>四十五、写对话时，可以避免“对话连打”</h1>
+<p>如果连续出现：</p>
+<blockquote class="blockquote">
+<p>A 说。</p>
+<p>B 说。</p>
+<p>A 说。</p>
+<p>B 说。</p>
+<p>A 说。</p>
+</blockquote>
+<p>可以停一下问：</p>
+<blockquote class="blockquote">
+<p><strong>现在有什么状态值得更新或提醒？</strong></p>
+</blockquote>
+<p>可能是：</p>
+<blockquote class="blockquote">
+<p>谁开始不耐烦。</p>
+<p>时间过去多久。</p>
+<p>谁发现了什么。</p>
+<p>房间里谁进来了。</p>
+<p>某句话触发了什么历史。</p>
+<p>谁的目标变了。</p>
+</blockquote>
+<p>放一项进去。</p>
+<p>对话就会：</p>
+<blockquote class="blockquote">
+<p>落地。</p>
+</blockquote>
+<hr>
+</section>
+<section id="四十六状态流不等于慢" class="level1">
+<h1>四十六、状态流不等于“慢”</h1>
+<p>这是另一个误区。</p>
+<p>状态信息可以非常短。</p>
+<p>例如：</p>
+<blockquote class="blockquote">
+<p>“三天。”</p>
+<p>李成看了眼手机。周二，晚上九点十三分。</p>
+<p>“不够。”</p>
+</blockquote>
+<p>只有一句。</p>
+<p>但：</p>
+<blockquote class="blockquote">
+<p>时间突然具体。</p>
+</blockquote>
+<p>所以状态流不是：</p>
+<blockquote class="blockquote">
+<p>把节奏拖慢。</p>
+</blockquote>
+<p>而是：</p>
+<blockquote class="blockquote">
+<p>提高单位文字的信息密度。</p>
+</blockquote>
+<hr>
+</section>
+<section id="四十七真正的信息密度不是字多" class="level1">
+<h1>四十七、真正的信息密度不是“字多”</h1>
+<p>同样 100 字，</p>
+<p>一种写法：</p>
+<blockquote class="blockquote">
+<p>描写很多颜色、表情、动作。</p>
+</blockquote>
+<p>另一种写法：</p>
+<blockquote class="blockquote">
+<p>同时交代资源、关系、时间、信息差。</p>
+</blockquote>
+<p>后者：</p>
+<blockquote class="blockquote">
+<p>信息密度更高。</p>
+</blockquote>
+<p>所以以后不要笼统说：</p>
+<blockquote class="blockquote">
+<p>“AI 信息量低。”</p>
+</blockquote>
+<p>可以更精确地问：</p>
+<blockquote class="blockquote">
+<p><strong>是哪一种状态信息太少？</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="四十八我们可以建立一个非常实用的诊断表" class="level1">
+<h1>四十八、我们可以建立一个非常实用的诊断表</h1>
+<p>如果一段 AI 小说读起来：</p>
+<blockquote class="blockquote">
+<p>薄。</p>
+</blockquote>
+<p>就查下面这些：</p>
+<section id="空间" class="level3">
+<h3 class="anchored" data-anchor-id="空间">空间</h3>
+<blockquote class="blockquote">
+<p>我知道人在哪里、怎么站、谁控制空间吗？</p>
+</blockquote>
+</section>
+<section id="身体" class="level3">
+<h3 class="anchored" data-anchor-id="身体">身体</h3>
+<blockquote class="blockquote">
+<p>人物现在的身体状态存在吗？</p>
+</blockquote>
+</section>
+<section id="资源" class="level3">
+<h3 class="anchored" data-anchor-id="资源">资源</h3>
+<blockquote class="blockquote">
+<p>钱、时间、工具、人手有没有明确状态？</p>
+</blockquote>
+</section>
+<section id="信息" class="level3">
+<h3 class="anchored" data-anchor-id="信息">信息</h3>
+<blockquote class="blockquote">
+<p>谁知道什么、谁不知道什么？</p>
+</blockquote>
+</section>
+<section id="关系" class="level3">
+<h3 class="anchored" data-anchor-id="关系">关系</h3>
+<blockquote class="blockquote">
+<p>两个人当前关系到底是什么状态？</p>
+</blockquote>
+</section>
+<section id="目标" class="level3">
+<h3 class="anchored" data-anchor-id="目标">目标</h3>
+<blockquote class="blockquote">
+<p>当前目标有没有变化？</p>
+</blockquote>
+</section>
+<section id="问题" class="level3">
+<h3 class="anchored" data-anchor-id="问题">问题</h3>
+<blockquote class="blockquote">
+<p>问题现在发展到哪一步？</p>
+</blockquote>
+</section>
+<section id="世界" class="level3">
+<h3 class="anchored" data-anchor-id="世界">世界</h3>
+<blockquote class="blockquote">
+<p>主角之外的世界是否在运行？</p>
+</blockquote>
+</section>
+<section id="历史" class="level3">
+<h3 class="anchored" data-anchor-id="历史">历史</h3>
+<blockquote class="blockquote">
+<p>过去有没有继续影响现在？</p>
+</blockquote>
+</section>
+<section id="模型-1" class="level3">
+<h3 class="anchored" data-anchor-id="模型-1">模型</h3>
+<blockquote class="blockquote">
+<p>读者是否知道关键事物为什么重要、怎么运作？</p>
+</blockquote>
+<p>哪几项长期空白，</p>
+<p>文本就会：</p>
+<blockquote class="blockquote">
+<p>往那个方向发薄。</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="四十九ai-写作最值得加的不是更多文学性而是状态管理" class="level1">
+<h1>四十九、AI 写作最值得加的不是“更多文学性”，而是“状态管理”</h1>
+<p>如果你以后让 AI 辅助写小说，</p>
+<p>与其只告诉它：</p>
+<blockquote class="blockquote">
+<p>“写得细腻一点。”</p>
+</blockquote>
+<p>不如要求它：</p>
+<blockquote class="blockquote">
+<p><strong>持续维护人物、资源、关系、信息、时间和世界状态。</strong></p>
+</blockquote>
+<p>这个指令更具体。</p>
+<p>甚至可以让 AI 在写 Scene 前先内部列：</p>
+<blockquote class="blockquote">
+<p>当前时间。</p>
+<p>当前地点。</p>
+<p>角色目标。</p>
+<p>角色已知信息。</p>
+<p>角色资源。</p>
+<p>当前关系。</p>
+<p>当前问题。</p>
+<p>上一幕留下的后果。</p>
+</blockquote>
+<p>然后再写。</p>
+<p>这会比：</p>
+<blockquote class="blockquote">
+<p>“写真实一点”</p>
+</blockquote>
+<p>有效得多。</p>
+<hr>
+</section>
+<section id="五十可以建立一个-scene-state-card" class="level1">
+<h1>五十、可以建立一个 Scene State Card</h1>
+<p>写每一幕之前，</p>
+<p>作者自己只要记：</p>
+<blockquote class="blockquote">
+<p><strong>时间：</strong></p>
+<p><strong>地点：</strong></p>
+<p><strong>人物：</strong></p>
+<p><strong>身体：</strong></p>
+<p><strong>资源：</strong></p>
+<p><strong>关系：</strong></p>
+<p><strong>已知信息：</strong></p>
+<p><strong>误解 / 不知道：</strong></p>
+<p><strong>当前目标：</strong></p>
+<p><strong>当前问题：</strong></p>
+<p><strong>世界后台正在发生：</strong></p>
+<p><strong>上一幕留下的后果：</strong></p>
+</blockquote>
+<p>不需要每项都填很长。</p>
+<p>很多时候：</p>
+<blockquote class="blockquote">
+<p>一行几个词。</p>
+</blockquote>
+<p>目的不是：</p>
+<blockquote class="blockquote">
+<p>做表格。</p>
+</blockquote>
+<p>而是：</p>
+<blockquote class="blockquote">
+<p>防止 Scene 变成白房间。</p>
+</blockquote>
+<hr>
+</section>
+<section id="五十一状态流最大的价值让事件有来处" class="level1">
+<h1>五十一、状态流最大的价值：让事件有“来处”</h1>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>李成突然拒绝姐姐。</p>
+</blockquote>
+<p>如果没有状态：</p>
+<blockquote class="blockquote">
+<p>像剧情需要。</p>
+</blockquote>
+<p>但如果前面已经知道：</p>
+<blockquote class="blockquote">
+<p>两人五年没联系。</p>
+<p>姐姐曾在父亲葬礼上指责他。</p>
+<p>李成一直认为自己不欠姐姐。</p>
+</blockquote>
+<p>那么拒绝：</p>
+<blockquote class="blockquote">
+<p>有来处。</p>
+</blockquote>
+<p>这就是：</p>
+<blockquote class="blockquote">
+<p>状态支撑行动。</p>
+</blockquote>
+<hr>
+</section>
+<section id="五十二状态流也让结果有去处" class="level1">
+<h1>五十二、状态流也让结果有“去处”</h1>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>姐姐最后借钱。</p>
+</blockquote>
+<p>不是：</p>
+<blockquote class="blockquote">
+<p>结束。</p>
+</blockquote>
+<p>因为新的状态是：</p>
+<blockquote class="blockquote">
+<p>李成欠姐姐人情。</p>
+<p>姐姐知道他的真实财务。</p>
+<p>姐姐开始进入饭馆经营。</p>
+</blockquote>
+<p>这些状态继续：</p>
+<blockquote class="blockquote">
+<p>流向下一幕。</p>
+</blockquote>
+<p>所以状态流同时连接：</p>
+<blockquote class="blockquote">
+<p>过去和未来。</p>
+</blockquote>
+<hr>
+</section>
+<section id="五十三真实感其实来自连续性" class="level1">
+<h1>五十三、真实感其实来自“连续性”</h1>
+<p>真正让人觉得假的，</p>
+<p>往往不是：</p>
+<blockquote class="blockquote">
+<p>某一个细节不真实。</p>
+</blockquote>
+<p>而是：</p>
+<blockquote class="blockquote">
+<p>世界没有记忆。</p>
+</blockquote>
+<p>人物刚受伤：</p>
+<blockquote class="blockquote">
+<p>下一幕忘了。</p>
+</blockquote>
+<p>刚吵架：</p>
+<blockquote class="blockquote">
+<p>下一幕正常聊天。</p>
+</blockquote>
+<p>刚花掉所有钱：</p>
+<blockquote class="blockquote">
+<p>下一幕继续消费。</p>
+</blockquote>
+<p>刚得知真相：</p>
+<blockquote class="blockquote">
+<p>下一幕行为不变。</p>
+</blockquote>
+<p>这种东西读者会很敏感。</p>
+<p>所以真实感的一个底层词其实是：</p>
+<blockquote class="blockquote">
+<p><strong>连续性（Continuity）。</strong></p>
+</blockquote>
+<p>而状态流就是：</p>
+<blockquote class="blockquote">
+<p>连续性的载体。</p>
+</blockquote>
+<hr>
+</section>
+<section id="五十四所以状态流和现实密度可以区分" class="level1">
+<h1>五十四、所以状态流和“现实密度”可以区分</h1>
+<p>如果要给两个概念分工：</p>
+<blockquote class="blockquote">
+<p><strong>状态流（State Stream）</strong></p>
+</blockquote>
+<p>指：</p>
+<blockquote class="blockquote">
+<p>各种状态随着故事持续存在、更新、继承。</p>
+</blockquote>
+<p>而：</p>
+<blockquote class="blockquote">
+<p><strong>现实密度（Reality Density）</strong></p>
+</blockquote>
+<p>指：</p>
+<blockquote class="blockquote">
+<p>文本在单位篇幅里让读者感知到了多少与当前局面有关的现实信息。</p>
+</blockquote>
+<p>一个是：</p>
+<blockquote class="blockquote">
+<p>机制。</p>
+</blockquote>
+<p>一个是：</p>
+<blockquote class="blockquote">
+<p>阅读效果。</p>
+</blockquote>
+<p>这样会比较清楚。</p>
+<hr>
+</section>
+<section id="五十五你以后诊断-ai-文可以这样说" class="level1">
+<h1>五十五、你以后诊断 AI 文，可以这样说</h1>
+<p>不要只说：</p>
+<blockquote class="blockquote">
+<p>“太白描。”</p>
+</blockquote>
+<p>可以说：</p>
+<blockquote class="blockquote">
+<p><strong>事件流过强，状态流过弱。</strong></p>
+</blockquote>
+<p>或者：</p>
+<blockquote class="blockquote">
+<p><strong>对话在推进，但资源状态、关系状态和信息状态没有同步更新。</strong></p>
+</blockquote>
+<p>或者：</p>
+<blockquote class="blockquote">
+<p><strong>Scene 有动作，但缺少世界模型信息，所以读者不知道这些动作为什么重要。</strong></p>
+</blockquote>
+<p>或者：</p>
+<blockquote class="blockquote">
+<p><strong>每一幕都像重新生成，上一幕的状态没有继承。</strong></p>
+</blockquote>
+<p>这就已经可以：</p>
+<blockquote class="blockquote">
+<p>精确定位。</p>
+</blockquote>
+<hr>
+</section>
+<section id="五十六一个简单改写流程" class="level1">
+<h1>五十六、一个简单改写流程</h1>
+<p>拿到一段很薄的 AI 文，</p>
+<p>不要全部重写。</p>
+<p>第一步：</p>
+<blockquote class="blockquote">
+<p>圈出所有 Event。</p>
+</blockquote>
+<p>也就是：</p>
+<blockquote class="blockquote">
+<p>发生了什么。</p>
+</blockquote>
+<p>第二步：</p>
+<blockquote class="blockquote">
+<p>看 Event 之间有没有 State。</p>
+</blockquote>
+<p>第三步：</p>
+<blockquote class="blockquote">
+<p>补最重要的 2—3 种状态。</p>
+</blockquote>
+<p>比如：</p>
+<blockquote class="blockquote">
+<p>时间。</p>
+<p>关系。</p>
+<p>资源。</p>
+</blockquote>
+<p>第四步：</p>
+<blockquote class="blockquote">
+<p>看有没有一个地方需要 Model。</p>
+</blockquote>
+<p>解释：</p>
+<blockquote class="blockquote">
+<p>某件事为什么重要。</p>
+</blockquote>
+<p>第五步：</p>
+<blockquote class="blockquote">
+<p>检查这些状态有没有进入后续行动。</p>
+</blockquote>
+<p>这样改一轮，</p>
+<p>文本通常就会：</p>
+<blockquote class="blockquote">
+<p>厚很多。</p>
+</blockquote>
+<hr>
+</section>
+<section id="五十七一个例子纯事件版" class="level1">
+<h1>五十七、一个例子：纯事件版</h1>
+<blockquote class="blockquote">
+<p>“你还欠我十万。”赵明说。</p>
+<p>“我知道。”</p>
+<p>“什么时候还？”</p>
+<p>“月底。”</p>
+<p>“我等不了。”</p>
+<p>“那你想怎么样？”</p>
+<p>“明天给我。”</p>
+</blockquote>
+<p>这就是：</p>
+<blockquote class="blockquote">
+<p>纯事件。</p>
+</blockquote>
+<hr>
+</section>
+<section id="五十八状态化以后" class="level1">
+<h1>五十八、状态化以后</h1>
+<blockquote class="blockquote">
+<p>“你还欠我十万。”</p>
+<p>赵明把手机放到桌上，屏幕上还是刚才那张转账截图。</p>
+<p>李成没有去看。</p>
+<p>那十万块他不是忘了。这个月店里的账他算过三遍，卡里能动的钱只剩两万六，后天还要发四个人工资。</p>
+<p>“我知道。”</p>
+<p>“什么时候还？”</p>
+<p>“月底。”</p>
+<p>赵明笑了一下。</p>
+<p>“月底？”</p>
+<p>李成这才抬头。</p>
+<p>他知道赵明为什么急。赵明那边的装修队三天后要进场，定金就是八万。两个人的问题其实一样，都不是没钱，是钱卡在了错误的地方。</p>
+<p>“我等不了。”</p>
+<p>“那你想怎么样？”</p>
+<p>“明天给我。”</p>
+</blockquote>
+<p>事件几乎没变。</p>
+<p>但现在有：</p>
+<blockquote class="blockquote">
+<p>资源状态。</p>
+<p>时间状态。</p>
+<p>双方问题。</p>
+<p>世界知识。</p>
+<p>关系理解。</p>
+</blockquote>
+<p>所以场景突然：</p>
+<blockquote class="blockquote">
+<p>像真的。</p>
+</blockquote>
+<hr>
+</section>
+<section id="五十九真正的真人感很多时候就是作者知道得比写出来的多" class="level1">
+<h1>五十九、真正的真人感，很多时候就是“作者知道得比写出来的多”</h1>
+<p>这是很关键的一点。</p>
+<p>作者脑中知道：</p>
+<blockquote class="blockquote">
+<p>店有几个人。</p>
+<p>工资什么时候发。</p>
+<p>赵明为什么缺钱。</p>
+<p>两个人以前怎么认识。</p>
+<p>这个行业钱怎么周转。</p>
+</blockquote>
+<p>正文只露出：</p>
+<blockquote class="blockquote">
+<p>一点。</p>
+</blockquote>
+<p>但读者会感觉：</p>
+<blockquote class="blockquote">
+<p>后面还有东西。</p>
+</blockquote>
+<p>AI 文经常相反。</p>
+<p>它写出来的：</p>
+<blockquote class="blockquote">
+<p>就是它此刻全部拥有的世界。</p>
+</blockquote>
+<p>所以读者感觉：</p>
+<blockquote class="blockquote">
+<p>一眼到底。</p>
+</blockquote>
+<hr>
+</section>
+<section id="六十所以提高-ai-小说真实感第一步不是让它写得像人" class="level1">
+<h1>六十、所以提高 AI 小说真实感，第一步不是“让它写得像人”</h1>
+<p>而是：</p>
+<blockquote class="blockquote">
+<p><strong>先让它拥有一个持续的世界状态。</strong></p>
+</blockquote>
+<p>只要状态存在，</p>
+<p>文本自然会有：</p>
+<blockquote class="blockquote">
+<p>选择性信息。</p>
+</blockquote>
+<p>如果状态都没有，</p>
+<p>要求：</p>
+<blockquote class="blockquote">
+<p>“更真实、更细腻、更生活化”</p>
+</blockquote>
+<p>往往只会得到：</p>
+<blockquote class="blockquote">
+<p>更多表情。</p>
+<p>更多动作。</p>
+<p>更多环境形容词。</p>
+</blockquote>
+<p>而不是：</p>
+<blockquote class="blockquote">
+<p>真正的信息量。</p>
+</blockquote>
+<hr>
+</section>
+<section id="六十一状态流的最小记忆框架" class="level1">
+<h1>六十一、状态流的最小记忆框架</h1>
+<p>如果不想记十几类，</p>
+<p>可以压成六个词：</p>
+<blockquote class="blockquote">
+<p><strong>人、物、时、知、关系、世界。</strong></p>
+</blockquote>
+<section id="人" class="level3">
+<h3 class="anchored" data-anchor-id="人">人</h3>
+<blockquote class="blockquote">
+<p>人物身体、情绪、目标现在怎样。</p>
+</blockquote>
+</section>
+<section id="物" class="level3">
+<h3 class="anchored" data-anchor-id="物">物</h3>
+<blockquote class="blockquote">
+<p>钱、工具、资源、空间现在怎样。</p>
+</blockquote>
+</section>
+<section id="时" class="level3">
+<h3 class="anchored" data-anchor-id="时">时</h3>
+<blockquote class="blockquote">
+<p>时间、期限、顺序现在怎样。</p>
+</blockquote>
+</section>
+<section id="知" class="level3">
+<h3 class="anchored" data-anchor-id="知">知</h3>
+<blockquote class="blockquote">
+<p>谁知道什么，谁不知道什么。</p>
+</blockquote>
+</section>
+<section id="关系-1" class="level3">
+<h3 class="anchored" data-anchor-id="关系-1">关系</h3>
+<blockquote class="blockquote">
+<p>谁欠谁、信谁、怕谁、控制谁。</p>
+</blockquote>
+</section>
+<section id="世界-1" class="level3">
+<h3 class="anchored" data-anchor-id="世界-1">世界</h3>
+<blockquote class="blockquote">
+<p>主角之外什么正在运行，规则怎么起作用。</p>
+</blockquote>
+<p>写 Scene 时偶尔扫一遍：</p>
+<blockquote class="blockquote">
+<p>就够用了。</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="六十二再压成一句话" class="level1">
+<h1>六十二、再压成一句话</h1>
+<p>如果只留一个问题：</p>
+<blockquote class="blockquote">
+<p><strong>除了“发生了什么”，现在还有什么正在存在？</strong></p>
+</blockquote>
+<p>这句话非常适合：</p>
+<blockquote class="blockquote">
+<p>对付 AI 白房间问题。</p>
+</blockquote>
+<p>因为它强迫作者：</p>
+<blockquote class="blockquote">
+<p>从事件</p>
+</blockquote>
+<p>退一步看到：</p>
+<blockquote class="blockquote">
+<p>整体局面。</p>
+</blockquote>
+<hr>
+</section>
+<section id="六十三把它接回整本书" class="level1">
+<h1>六十三、把它接回整本书</h1>
+<p>本书前面已经有：</p>
+<blockquote class="blockquote">
+<p><strong>问题空间</strong></p>
+</blockquote>
+<p>回答：</p>
+<blockquote class="blockquote">
+<p>世界可以提出什么问题。</p>
+</blockquote>
+<p>然后：</p>
+<blockquote class="blockquote">
+<p><strong>局面</strong></p>
+</blockquote>
+<p>回答：</p>
+<blockquote class="blockquote">
+<p>这个问题为什么现在必须处理。</p>
+</blockquote>
+<p>接着：</p>
+<blockquote class="blockquote">
+<p><strong>Scene</strong></p>
+</blockquote>
+<p>回答：</p>
+<blockquote class="blockquote">
+<p>人物怎样行动并造成变化。</p>
+</blockquote>
+<p>现在补上：</p>
+<blockquote class="blockquote">
+<p><strong>状态流</strong></p>
+</blockquote>
+<p>回答：</p>
+<blockquote class="blockquote">
+<p>在这一切发生过程中，世界怎样持续存在、被更新、被继承。</p>
+</blockquote>
+<p>于是可以写成：</p>
+<blockquote class="blockquote">
+<p><strong>Problem Space</strong></p>
+<p>→ <strong>Current State</strong></p>
+<p>→ <strong>Situation</strong></p>
+<p>→ <strong>Action / Event</strong></p>
+<p>→ <strong>State Update</strong></p>
+<p>→ <strong>New State</strong></p>
+<p>→ <strong>New Situation</strong></p>
+</blockquote>
+<p>这就非常完整了。</p>
+<hr>
+</section>
+<section id="附录暂时结论" class="level1">
+<h1>附录暂时结论</h1>
+<p>AI 小说经常显得：</p>
+<blockquote class="blockquote">
+<p>薄。</p>
+<p>白。</p>
+<p>假。</p>
+<p>像人物站在空房间里念台词。</p>
+</blockquote>
+<p>很多时候并不是：</p>
+<blockquote class="blockquote">
+<p>没有剧情。</p>
+</blockquote>
+<p>而是：</p>
+<blockquote class="blockquote">
+<p><strong>只有事件流，没有足够的状态流。</strong></p>
+</blockquote>
+<p>所谓状态流，</p>
+<p>就是：</p>
+<blockquote class="blockquote">
+<p><strong>人物、资源、时间、信息、关系、问题和世界状态，在故事中持续存在、不断更新，并被后面的 Scene 继承。</strong></p>
+</blockquote>
+<p>它让读者知道的不只是：</p>
+<blockquote class="blockquote">
+<p><strong>“发生了什么。”</strong></p>
+</blockquote>
+<p>还包括：</p>
+<blockquote class="blockquote">
+<p><strong>“现在是什么样。”</strong></p>
+</blockquote>
+<p>而小说里偶尔出现的：</p>
+<blockquote class="blockquote">
+<p>背景解释。</p>
+<p>行业常识。</p>
+<p>规则说明。</p>
+<p>知识信息。</p>
+</blockquote>
+<p>则属于：</p>
+<blockquote class="blockquote">
+<p><strong>模型信息。</strong></p>
+</blockquote>
+<p>它回答：</p>
+<blockquote class="blockquote">
+<p><strong>“为什么这个世界会这样运作。”</strong></p>
+</blockquote>
+<p>所以一段成熟小说通常同时包含三种东西：</p>
+<blockquote class="blockquote">
+<p><strong>Event —— 事件</strong></p>
+<p><strong>State —— 状态</strong></p>
+<p><strong>Model —— 模型</strong></p>
+</blockquote>
+<p>事件负责：</p>
+<blockquote class="blockquote">
+<p>动。</p>
+</blockquote>
+<p>状态负责：</p>
+<blockquote class="blockquote">
+<p>厚。</p>
+</blockquote>
+<p>模型负责：</p>
+<blockquote class="blockquote">
+<p>懂。</p>
+</blockquote>
+<p>三者一起，</p>
+<p>世界才会：</p>
+<blockquote class="blockquote">
+<p>像真的存在。</p>
+</blockquote>
+<p>以后如果一段 AI 小说读起来很薄，</p>
+<p>不要只说：</p>
+<blockquote class="blockquote">
+<p>“细节不够。”</p>
+</blockquote>
+<p>可以直接检查：</p>
+<blockquote class="blockquote">
+<p><strong>事件流是不是过强？</strong></p>
+<p><strong>状态流是不是过弱？</strong></p>
+<p><strong>模型信息是不是缺失？</strong></p>
+<p><strong>上一幕的状态有没有被下一幕继承？</strong></p>
+</blockquote>
+<p>如果只想记一个最简单的问题：</p>
+<blockquote class="blockquote">
+<p><strong>除了“发生了什么”，现在还有什么正在存在？</strong></p>
+</blockquote>
+<p>这个问题，就是状态流的入口。</p>
+<p>而如果再压成一句定义：</p>
+<blockquote class="blockquote">
+<p><strong>小说的真实感，来自一个持续存在、不断被事件更新、并且拥有记忆的世界状态。</strong></p>
+</blockquote>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./appendix-problem-space.html" class="pagination-link" aria-label="附录 C：问题空间">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">附录 C：问题空间</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
